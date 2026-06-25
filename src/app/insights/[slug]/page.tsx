@@ -253,8 +253,9 @@ const articleContent: Record<string, {
   },
 };
 
-export default function InsightArticlePage({ params }: { params: { slug: string } }) {
-  const article = articleContent[params.slug];
+export default async function InsightArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const article = articleContent[slug];
 
   if (!article) {
     return (
