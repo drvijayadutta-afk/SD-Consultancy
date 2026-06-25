@@ -182,7 +182,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #e8eef4;
 }
 
-/* Logo ECG heartbeat-to-growth line animation */
 .logo-ecg-line {
   stroke-dasharray: 70 9999;
   stroke-dashoffset: 70;
@@ -267,6 +266,12 @@ h1, h2, h3, h4, h5, h6 {
   80%  { stroke-dashoffset: 0; opacity: 0.12; }
   100% { stroke-dashoffset: 0; opacity: 0.08; }
 }
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 30s linear infinite; }
 
 .animate-float        { animation: float 6s ease-in-out infinite; }
 .animate-float-slow   { animation: float-slow 8s ease-in-out infinite; }
