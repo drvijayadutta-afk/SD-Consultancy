@@ -33,7 +33,7 @@ export function SectionHeader({ eyebrow, title, subtitle, centered = false, ligh
         <p className={cn(
           'text-base md:text-lg leading-relaxed max-w-3xl',
           centered && 'mx-auto',
-          light ? 'text-white/70' : 'text-[#3A3A3A]/70 dark:text-white/60'
+          light ? 'text-white/80' : 'text-[#3A3A3A]/75 dark:text-white/70'
         )}>
           {subtitle}
         </p>
