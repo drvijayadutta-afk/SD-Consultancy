@@ -66,7 +66,7 @@ export function IndustriesSection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-4 leading-tight">
             Deep Healthcare<br className="hidden md:block" /> Sector Expertise
           </h2>
-          <p className="text-[#3A3A3A]/55 dark:text-white/45 max-w-lg mx-auto">
+          <p className="text-[#3A3A3A]/75 dark:text-white/65 max-w-lg mx-auto">
             Specialized knowledge and proven strategies for every healthcare vertical we serve.
           </p>
         </AnimatedSection>
@@ -78,18 +78,16 @@ export function IndustriesSection() {
                 href={ind.href}
                 className="group flex gap-5 bg-white dark:bg-[#111c2e] rounded-2xl p-6 border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-xl hover:shadow-[#1F3A5F]/8 dark:hover:shadow-black/30 transition-all duration-300 hover:-translate-y-1"
               >
-                {/* Left color block */}
                 <div
                   className={`flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br ${ind.accent} flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300`}
                 >
                   <span className="text-white text-[10px] font-bold font-mono tracking-wider">{ind.abbr}</span>
                 </div>
-
                 <div className="flex-1 min-w-0">
                   <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white mb-1.5 group-hover:text-[#2E75B6] transition-colors">
                     {ind.label}
                   </h3>
-                  <p className="text-sm text-[#3A3A3A]/55 dark:text-white/45 leading-relaxed mb-3">
+                  <p className="text-sm text-[#3A3A3A]/75 dark:text-white/65 leading-relaxed mb-3">
                     {ind.desc}
                   </p>
                   <div className="flex items-center gap-1.5 text-xs font-semibold" style={{ color: ind.color }}>

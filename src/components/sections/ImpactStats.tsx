@@ -2,23 +2,21 @@ import { StatCounter } from '@/components/ui/StatCounter';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 
 const stats = [
-  { value: 10,  suffix: '+', label: 'Years of Sector Expertise',        color: '#2E75B6', icon: '🏥', desc: 'Deep, frontline healthcare experience' },
-  { value: 30,  suffix: '+', label: 'Healthcare Organizations Served',  color: '#4F8A77', icon: '🤝', desc: 'Across hospitals, diagnostics & healthtech' },
-  { value: 98,  suffix: '%', label: 'Client Retention Rate',            color: '#B8924A', icon: '⭐', desc: 'Long-term partnerships built on results' },
-  { value: 6,   suffix: '',  label: 'Healthcare Verticals',             color: '#4F8A77', icon: '📊', desc: 'Specialized expertise across each sector' },
+  { value: 10, suffix: '+', label: 'Years of Sector Expertise',       color: '#2E75B6', icon: '🏥', desc: 'Deep, frontline healthcare experience' },
+  { value: 30, suffix: '+', label: 'Healthcare Organizations Served', color: '#4F8A77', icon: '🤝', desc: 'Across hospitals, diagnostics & healthtech' },
+  { value: 98, suffix: '%', label: 'Client Retention Rate',           color: '#B8924A', icon: '⭐', desc: 'Long-term partnerships built on results' },
+  { value: 6,  suffix: '',  label: 'Healthcare Verticals',            color: '#4F8A77', icon: '📊', desc: 'Specialized expertise across each sector' },
 ];
 
 export function ImpactStats() {
   return (
     <section className="py-28 relative overflow-hidden bg-gradient-to-br from-[#0d1a2e] via-[#1F3A5F] to-[#162d4a]">
-      {/* Background orbs */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#2E75B6]/15 rounded-full blur-[140px]" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#4F8A77]/10 rounded-full blur-[120px]" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[200px] bg-[#B8924A]/5 rounded-full blur-[100px]" />
       </div>
 
-      {/* Decorative grid */}
       <div
         className="absolute inset-0 opacity-[0.02] pointer-events-none"
         style={{
@@ -27,7 +25,6 @@ export function ImpactStats() {
         }}
       />
 
-      {/* Decorative ECG line */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <svg viewBox="0 0 1200 60" preserveAspectRatio="none" className="absolute top-1/2 -translate-y-1/2 w-full h-16 opacity-[0.07]">
           <path
@@ -57,7 +54,7 @@ export function ImpactStats() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-white leading-tight">
             Measurable Impact<br className="hidden md:block" /> Across Healthcare
           </h2>
-          <p className="text-white/45 mt-4 max-w-lg mx-auto">
+          <p className="text-white/70 mt-4 max-w-lg mx-auto">
             Every engagement is built around one objective: sustainable market leadership.
           </p>
         </AnimatedSection>
@@ -65,21 +62,19 @@ export function ImpactStats() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {stats.map((stat, i) => (
             <AnimatedSection key={stat.label} delay={i * 120}>
-              <div className="relative group glass-card rounded-2xl p-7 md:p-8 text-center border border-white/8 hover:border-white/20 hover:bg-white/8 transition-all duration-400 hover:-translate-y-1.5 overflow-hidden">
-                {/* Glow behind on hover */}
+              <div className="relative group glass-card rounded-2xl p-7 md:p-8 text-center border border-white/8 hover:border-white/20 hover:bg-white/8 transition-all duration-300 hover:-translate-y-1.5 overflow-hidden">
                 <div
-                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none rounded-2xl blur-sm"
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl blur-sm"
                   style={{ background: `radial-gradient(circle at 50% 0%, ${stat.color}18 0%, transparent 60%)` }}
                 />
-
                 <div className="relative">
                   <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{stat.icon}</div>
                   <div className="stat-number text-4xl md:text-5xl font-bold mb-1" style={{ color: stat.color }}>
                     <StatCounter value={stat.value} suffix={stat.suffix} label="" />
                   </div>
                   <div className="text-sm font-semibold text-white/80 mb-1">{stat.label}</div>
-                  <div className="text-xs text-white/35">{stat.desc}</div>
-                  <div className="mt-5 h-px rounded-full mx-auto w-10 opacity-40 group-hover:w-16 transition-all duration-400" style={{ backgroundColor: stat.color }} />
+                  <div className="text-xs text-white/60">{stat.desc}</div>
+                  <div className="mt-5 h-px rounded-full mx-auto w-10 opacity-40 group-hover:w-16 transition-all duration-300" style={{ backgroundColor: stat.color }} />
                 </div>
               </div>
             </AnimatedSection>

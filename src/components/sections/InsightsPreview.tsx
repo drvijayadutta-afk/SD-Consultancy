@@ -43,7 +43,6 @@ export function InsightsPreview() {
     <section className="py-28 bg-[#f8fafc] dark:bg-[#0d1520]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Header */}
         <AnimatedSection>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
             <div>
@@ -54,7 +53,7 @@ export function InsightsPreview() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#1F3A5F] dark:text-white leading-tight mb-3">
                 Healthcare Brand Insights
               </h2>
-              <p className="text-[#3A3A3A]/55 dark:text-white/45 max-w-lg">
+              <p className="text-[#3A3A3A]/75 dark:text-white/65 max-w-lg">
                 Strategic perspectives for healthcare leaders navigating complex markets.
               </p>
             </div>
@@ -68,7 +67,6 @@ export function InsightsPreview() {
           </div>
         </AnimatedSection>
 
-        {/* Featured + side cards layout */}
         <div className="grid lg:grid-cols-5 gap-5">
 
           {/* Featured article — spans 3 cols */}
@@ -77,7 +75,6 @@ export function InsightsPreview() {
               href={`/insights/${featured.slug}`}
               className="group block bg-white dark:bg-[#111c2e] rounded-2xl overflow-hidden border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-2xl hover:shadow-[#1F3A5F]/10 dark:hover:shadow-black/30 transition-all duration-300 hover:-translate-y-1 h-full"
             >
-              {/* Color bar */}
               <div className="h-2" style={{ background: `linear-gradient(to right, ${featured.color}, #1F3A5F)` }} />
               <div className="p-8 md:p-10 flex flex-col h-[calc(100%-8px)]">
                 <div className="flex items-center gap-3 mb-6">
@@ -87,16 +84,16 @@ export function InsightsPreview() {
                   >
                     {featured.category}
                   </span>
-                  <span className="text-xs text-[#3A3A3A]/35 dark:text-white/25 font-semibold tracking-widest uppercase">Featured</span>
+                  <span className="text-xs text-[#3A3A3A]/55 dark:text-white/45 font-semibold tracking-widest uppercase">Featured</span>
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-4 leading-snug group-hover:text-[#2E75B6] transition-colors flex-1">
                   {featured.title}
                 </h3>
-                <p className="text-[#3A3A3A]/60 dark:text-white/50 leading-relaxed mb-8">
+                <p className="text-[#3A3A3A]/75 dark:text-white/65 leading-relaxed mb-8">
                   {featured.excerpt}
                 </p>
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-5 text-xs text-[#3A3A3A]/40 dark:text-white/30">
+                  <div className="flex items-center gap-5 text-xs text-[#3A3A3A]/60 dark:text-white/55">
                     <span className="flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5" />{featured.date}</span>
                     <span className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" />{featured.readTime}</span>
                   </div>
@@ -128,7 +125,7 @@ export function InsightsPreview() {
                       {article.title}
                     </h3>
                     <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-50 dark:border-white/5">
-                      <span className="text-xs text-[#3A3A3A]/40 dark:text-white/30 flex items-center gap-1.5">
+                      <span className="text-xs text-[#3A3A3A]/60 dark:text-white/55 flex items-center gap-1.5">
                         <Clock className="w-3 h-3" />{article.readTime}
                       </span>
                       <div className="flex items-center gap-1.5 text-xs font-semibold" style={{ color: article.color }}>

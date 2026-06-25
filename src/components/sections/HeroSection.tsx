@@ -50,14 +50,12 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden hero-gradient">
 
-      {/* ── Background: animated gradient orbs ── */}
+      {/* Background: animated gradient orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-60 -right-60 w-[800px] h-[800px] rounded-full bg-[#2E75B6]/18 blur-[140px] animate-pulse-slow" />
         <div className="absolute -bottom-60 -left-60 w-[700px] h-[700px] rounded-full bg-[#4F8A77]/12 blur-[120px] animate-pulse-slower" />
         <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-[#1F3A5F]/30 blur-[100px] animate-orb" />
         <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] rounded-full bg-[#B8924A]/8 blur-[80px] animate-float-slow" style={{ animationDelay: '3s' }} />
-
-        {/* Subtle grid */}
         <div
           className="absolute inset-0 opacity-[0.025]"
           style={{
@@ -68,7 +66,7 @@ export function HeroSection() {
         />
       </div>
 
-      {/* ── Background: large decorative ECG line — brand motif ── */}
+      {/* Background: large decorative ECG line */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <svg
           viewBox="0 0 1400 180"
@@ -83,7 +81,6 @@ export function HeroSection() {
             }, 1000);
           }}
         >
-          {/* Heartbeat-to-growth curve spanning full width */}
           <path
             d="M 0 110 L 180 110 L 220 80 L 260 110 L 280 50 L 320 150 L 360 90 L 400 110 L 500 110 C 600 110 700 85 800 70 C 900 55 1000 50 1100 40 C 1200 30 1300 25 1400 18"
             stroke="url(#heroEcgGrad)"
@@ -91,7 +88,6 @@ export function HeroSection() {
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="animate-ecg-bg"
             style={{
               strokeDasharray: 1400,
               strokeDashoffset: 1400,
@@ -110,13 +106,12 @@ export function HeroSection() {
         </svg>
       </div>
 
-      {/* ── Main content ── */}
+      {/* Main content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT — headline + CTAs */}
           <div>
-            {/* Eyebrow badge */}
             <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full border border-[#4F8A77]/35 bg-[#4F8A77]/10 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-[#4F8A77] animate-pulse" />
               <span className="text-[#4F8A77] text-xs font-bold tracking-[0.18em] uppercase">
@@ -140,7 +135,7 @@ export function HeroSection() {
 
             <p
               ref={subtextRef}
-              className="text-lg text-white/62 leading-relaxed mb-10 max-w-[520px]"
+              className="text-lg text-white/80 leading-relaxed mb-10 max-w-[520px]"
             >
               We help healthcare organizations build stronger brands, deeper stakeholder trust, and sustainable growth through integrated strategy, communications, and creative excellence.
             </p>
@@ -152,7 +147,7 @@ export function HeroSection() {
                   className="btn-gradient inline-flex items-center gap-2.5 px-7 py-4 text-white font-bold rounded-xl shadow-lg shadow-[#B8924A]/25 hover:shadow-xl hover:shadow-[#B8924A]/35 text-sm"
                 >
                   <span>Book a Strategy Consultation</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 transition-transform" />
                 </Link>
                 <Link
                   href="/hclf-framework"
@@ -164,7 +159,7 @@ export function HeroSection() {
 
               <div ref={pillarsRef} className="flex flex-wrap gap-x-5 gap-y-2">
                 {pillars.map((pillar) => (
-                  <div key={pillar} className="flex items-center gap-1.5 text-sm text-white/55">
+                  <div key={pillar} className="flex items-center gap-1.5 text-sm text-white/75">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#4F8A77] flex-shrink-0" />
                     {pillar}
                   </div>
@@ -178,11 +173,9 @@ export function HeroSection() {
             <div className="relative animate-float-slow">
 
               {/* Main HCLF card */}
-              <div className="glass-card rounded-2xl p-7 mb-4 border border-white/10 hover:border-white/20 transition-all duration-500 group/card">
-                {/* Card header */}
+              <div className="glass-card rounded-2xl p-7 mb-4 border border-white/10 hover:border-white/20 transition-all duration-500">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2E75B6] to-[#4F8A77] flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#2E75B6]/30">
-                    {/* Mini SD logo badge */}
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <text x="10" y="11" textAnchor="middle" dominantBaseline="middle"
                         fill="white" fontFamily="Space Grotesk, sans-serif" fontWeight="700" fontSize="7" letterSpacing="0.5">
@@ -192,7 +185,7 @@ export function HeroSection() {
                   </div>
                   <div>
                     <div className="text-white font-semibold text-sm">HCLF™ Framework</div>
-                    <div className="text-white/45 text-xs">Proprietary 6-Phase Methodology</div>
+                    <div className="text-white/65 text-xs">Proprietary 6-Phase Methodology</div>
                   </div>
                   <div className="ml-auto">
                     <span className="px-2 py-0.5 rounded-full bg-[#B8924A]/20 text-[#B8924A] text-[10px] font-bold tracking-wide">
@@ -201,7 +194,6 @@ export function HeroSection() {
                   </div>
                 </div>
 
-                {/* Phase grid */}
                 <div className="grid grid-cols-3 gap-2.5">
                   {phases.map((item, i) => (
                     <div
@@ -209,10 +201,7 @@ export function HeroSection() {
                       className="bg-white/5 rounded-xl p-3 border border-white/8 hover:border-white/25 hover:bg-white/10 transition-all duration-300 cursor-default group/phase"
                       style={{ transitionDelay: `${i * 30}ms` }}
                     >
-                      <div
-                        className="text-[10px] font-bold font-mono mb-1.5 tracking-wider"
-                        style={{ color: item.color }}
-                      >
+                      <div className="text-[10px] font-bold font-mono mb-1.5 tracking-wider" style={{ color: item.color }}>
                         {item.num}
                       </div>
                       <div className="text-white/75 text-[11px] font-medium leading-tight group-hover/phase:text-white transition-colors">
@@ -222,16 +211,12 @@ export function HeroSection() {
                   ))}
                 </div>
 
-                {/* Card footer */}
                 <div className="mt-5 pt-4 border-t border-white/8 flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#4F8A77] animate-pulse" />
-                    <span className="text-white/40 text-xs">From intelligence to impact</span>
+                    <span className="text-white/65 text-xs">From intelligence to impact</span>
                   </div>
-                  <Link
-                    href="/hclf-framework"
-                    className="text-[#4F8A77] text-xs font-semibold hover:text-[#6aaa95] flex items-center gap-1 transition-colors"
-                  >
+                  <Link href="/hclf-framework" className="text-[#4F8A77] text-xs font-semibold hover:text-[#6aaa95] flex items-center gap-1 transition-colors">
                     Explore <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
@@ -240,26 +225,22 @@ export function HeroSection() {
               {/* Stats strip */}
               <div className="grid grid-cols-3 gap-3">
                 {[
-                  { value: '10+',  label: 'Years Expertise',        color: '#2E75B6' },
-                  { value: '30+',  label: 'Organizations Served',   color: '#4F8A77' },
-                  { value: '98%',  label: 'Client Retention',       color: '#B8924A' },
+                  { value: '10+', label: 'Years Expertise',      color: '#2E75B6' },
+                  { value: '30+', label: 'Organizations Served', color: '#4F8A77' },
+                  { value: '98%', label: 'Client Retention',     color: '#B8924A' },
                 ].map((stat) => (
                   <div
                     key={stat.label}
                     className="glass-card rounded-xl p-4 text-center hover:bg-white/12 transition-all duration-300 hover:-translate-y-1 border border-white/8 hover:border-white/18 group/stat"
                   >
-                    <div
-                      className="stat-number text-2xl font-bold mb-0.5 group-hover/stat:scale-110 transition-transform duration-200"
-                      style={{ color: stat.color }}
-                    >
+                    <div className="stat-number text-2xl font-bold mb-0.5 group-hover/stat:scale-110 transition-transform duration-200" style={{ color: stat.color }}>
                       {stat.value}
                     </div>
-                    <div className="text-white/45 text-[10px] leading-tight">{stat.label}</div>
+                    <div className="text-white/70 text-[10px] leading-tight">{stat.label}</div>
                   </div>
                 ))}
               </div>
 
-              {/* Decorative glow behind card */}
               <div className="absolute -inset-8 bg-gradient-to-br from-[#2E75B6]/8 to-[#4F8A77]/5 rounded-3xl blur-2xl -z-10 pointer-events-none" />
             </div>
           </div>
@@ -267,7 +248,7 @@ export function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/35">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40">
         <span className="text-[10px] tracking-[0.25em] uppercase font-medium">Scroll</span>
         <div className="w-px h-10 bg-gradient-to-b from-white/40 to-transparent animate-scroll" />
       </div>
