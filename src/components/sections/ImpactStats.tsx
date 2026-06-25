@@ -2,8 +2,8 @@ import { StatCounter } from '@/components/ui/StatCounter';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 
 const stats = [
-  { value: 200, suffix: '+', label: 'Healthcare Projects Delivered' },
-  { value: 15, suffix: '+', label: 'Years of Sector Expertise' },
+  { value: 50, suffix: '+', label: 'Healthcare Projects Delivered' },
+  { value: 10, suffix: '+', label: 'Years of Sector Expertise' },
   { value: 50, suffix: '+', label: 'Healthcare Organizations Served' },
   { value: 98, suffix: '%', label: 'Client Retention Rate' },
 ];
@@ -18,7 +18,9 @@ export function ImpactStats() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-14">
           <p className="text-[#4F8A77] text-xs font-semibold tracking-[0.2em] uppercase mb-3">Client Outcomes</p>
-          <h2 className="text-3xl md:text-4xl font-bold font-heading text-white">Measurable Impact Across Healthcare</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-heading text-white">
+            Measurable Impact Across Healthcare
+          </h2>
         </AnimatedSection>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, i) => (
