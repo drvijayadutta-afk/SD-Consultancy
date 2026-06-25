@@ -58,29 +58,30 @@ export function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-  <div className="relative flex-shrink-0">
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:scale-105 transition-transform duration-200">
-      <rect width="40" height="40" rx="10" fill="url(#navLogoGrad)"/>
-      <rect x="18" y="9" width="4" height="22" rx="2" fill="white"/>
-      <rect x="9" y="18" width="22" height="4" rx="2" fill="white"/>
-      <circle cx="20" cy="20" r="6" fill="none" stroke="white" strokeWidth="1.5" strokeOpacity="0.4"/>
-      <defs>
-        <linearGradient id="navLogoGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#1F3A5F"/>
-          <stop offset="1" stopColor="#2E75B6"/>
-        </linearGradient>
-      </defs>
-    </svg>
-  </div>
-  <div>
-    <div className="text-[#1F3A5F] dark:text-white font-bold text-lg leading-tight font-heading">
-      S.D Consultancy
-    </div>
-    <div className="text-[#4F8A77] text-[10px] font-medium tracking-widest uppercase">
-      360° Healthcare Strategy
-    </div>
-  </div>
-</Link>
+            <div className="relative flex-shrink-0">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                className="group-hover:scale-105 transition-transform duration-200">
+                <rect width="40" height="40" rx="10" fill="url(#navLogoGrad)"/>
+                <rect x="18" y="9" width="4" height="22" rx="2" fill="white"/>
+                <rect x="9" y="18" width="22" height="4" rx="2" fill="white"/>
+                <circle cx="20" cy="20" r="6" fill="none" stroke="white" strokeWidth="1.5" strokeOpacity="0.4"/>
+                <defs>
+                  <linearGradient id="navLogoGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#1F3A5F"/>
+                    <stop offset="1" stopColor="#2E75B6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div>
+              <div className="text-[#1F3A5F] dark:text-white font-bold text-lg leading-tight font-heading">
+                S.D Consultancy
+              </div>
+              <div className="text-[#4F8A77] text-[10px] font-medium tracking-widest uppercase">
+                360° Healthcare Strategy
+              </div>
+            </div>
+          </Link>
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-1">
