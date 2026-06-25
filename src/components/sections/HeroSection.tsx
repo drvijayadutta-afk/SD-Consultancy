@@ -50,12 +50,14 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden hero-gradient">
 
-      {/* Background: animated gradient orbs */}
+      {/* ── Background: animated gradient orbs ── */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-60 -right-60 w-[800px] h-[800px] rounded-full bg-[#2E75B6]/18 blur-[140px] animate-pulse-slow" />
         <div className="absolute -bottom-60 -left-60 w-[700px] h-[700px] rounded-full bg-[#4F8A77]/12 blur-[120px] animate-pulse-slower" />
         <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-[#1F3A5F]/30 blur-[100px] animate-orb" />
         <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] rounded-full bg-[#B8924A]/8 blur-[80px] animate-float-slow" style={{ animationDelay: '3s' }} />
+
+        {/* Subtle grid */}
         <div
           className="absolute inset-0 opacity-[0.025]"
           style={{
@@ -66,7 +68,7 @@ export function HeroSection() {
         />
       </div>
 
-      {/* Background: large decorative ECG line */}
+      {/* ── Background: large decorative ECG line — brand motif ── */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <svg
           viewBox="0 0 1400 180"
@@ -81,6 +83,7 @@ export function HeroSection() {
             }, 1000);
           }}
         >
+          {/* Heartbeat-to-growth curve spanning full width */}
           <path
             d="M 0 110 L 180 110 L 220 80 L 260 110 L 280 50 L 320 150 L 360 90 L 400 110 L 500 110 C 600 110 700 85 800 70 C 900 55 1000 50 1100 40 C 1200 30 1300 25 1400 18"
             stroke="url(#heroEcgGrad)"
@@ -88,6 +91,7 @@ export function HeroSection() {
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
+            className="animate-ecg-bg"
             style={{
               strokeDasharray: 1400,
               strokeDashoffset: 1400,
@@ -106,12 +110,13 @@ export function HeroSection() {
         </svg>
       </div>
 
-      {/* Main content */}
+      {/* ── Main content ── */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT — headline + CTAs */}
           <div>
+            {/* Eyebrow badge */}
             <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full border border-[#4F8A77]/35 bg-[#4F8A77]/10 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-[#4F8A77] animate-pulse" />
               <span className="text-[#4F8A77] text-xs font-bold tracking-[0.18em] uppercase">
@@ -174,8 +179,10 @@ export function HeroSection() {
 
               {/* Main HCLF card */}
               <div className="glass-card rounded-2xl p-7 mb-4 border border-white/10 hover:border-white/20 transition-all duration-500 group/card">
+                {/* Card header */}
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2E75B6] to-[#4F8A77] flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#2E75B6]/30">
+                    {/* Mini SD logo badge */}
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <text x="10" y="11" textAnchor="middle" dominantBaseline="middle"
                         fill="white" fontFamily="Space Grotesk, sans-serif" fontWeight="700" fontSize="7" letterSpacing="0.5">
@@ -194,6 +201,7 @@ export function HeroSection() {
                   </div>
                 </div>
 
+                {/* Phase grid */}
                 <div className="grid grid-cols-3 gap-2.5">
                   {phases.map((item, i) => (
                     <div
@@ -214,6 +222,7 @@ export function HeroSection() {
                   ))}
                 </div>
 
+                {/* Card footer */}
                 <div className="mt-5 pt-4 border-t border-white/8 flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#4F8A77] animate-pulse" />
@@ -231,9 +240,9 @@ export function HeroSection() {
               {/* Stats strip */}
               <div className="grid grid-cols-3 gap-3">
                 {[
-                  { value: '50+',  label: 'Projects Delivered', color: '#2E75B6' },
-                  { value: '10+',  label: 'Years Expertise',    color: '#4F8A77' },
-                  { value: '98%',  label: 'Client Retention',   color: '#B8924A' },
+                  { value: '10+',  label: 'Years Expertise',        color: '#2E75B6' },
+                  { value: '30+',  label: 'Organizations Served',   color: '#4F8A77' },
+                  { value: '98%',  label: 'Client Retention',       color: '#B8924A' },
                 ].map((stat) => (
                   <div
                     key={stat.label}
@@ -250,6 +259,7 @@ export function HeroSection() {
                 ))}
               </div>
 
+              {/* Decorative glow behind card */}
               <div className="absolute -inset-8 bg-gradient-to-br from-[#2E75B6]/8 to-[#4F8A77]/5 rounded-3xl blur-2xl -z-10 pointer-events-none" />
             </div>
           </div>

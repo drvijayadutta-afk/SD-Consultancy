@@ -197,12 +197,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ============================================================
    LOGO — S·D ECG HEARTBEAT LINE ANIMATION
-   The line beneath the monogram begins as a heartbeat and
-   resolves into a rising growth curve — clinical insight
-   becoming market momentum.
    ============================================================ */
 
-/* Estimated path length ~70 units for M 3 34 L 9 34 L 12 24 L 16 40 L 20 30 L 23 34 C 31 34 38 27 41 25 */
 .logo-ecg-line {
   stroke-dasharray: 70 9999;
   stroke-dashoffset: 70;
@@ -300,6 +296,13 @@ h1, h2, h3, h4, h5, h6 {
 /* ============================================================
    ANIMATION UTILITY CLASSES
    ============================================================ */
+
+/* Marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 30s linear infinite; }
 
 .animate-float        { animation: float 6s ease-in-out infinite; }
 .animate-float-slow   { animation: float-slow 8s ease-in-out infinite; }
