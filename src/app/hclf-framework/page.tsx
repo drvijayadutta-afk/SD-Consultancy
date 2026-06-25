@@ -159,6 +159,7 @@ export default function HCLFPage() {
 
   return (
     <>
+      {/* Hero */}
       <section className="hero-gradient pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
@@ -169,7 +170,7 @@ export default function HCLFPage() {
               The HCLF™ Framework
             </h1>
             <p className="text-xl text-white/65 leading-relaxed mb-4">
-              Healthcare Communications &amp; Leadership Framework
+              Healthcare Communications & Leadership Framework
             </p>
             <p className="text-white/55 leading-relaxed">
               A proprietary 6-phase methodology designed exclusively for healthcare organizations pursuing sustainable market leadership. Built by a doctor with a decade of frontline healthcare marketing expertise.
@@ -178,37 +179,64 @@ export default function HCLFPage() {
         </div>
       </section>
 
+      {/* Framework Overview Visual */}
       <section className="py-20 bg-white dark:bg-[#0f1923]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader eyebrow="Six-Phase Methodology" title="From Intelligence to Impact"
+          <SectionHeader
+            eyebrow="Six-Phase Methodology"
+            title="From Intelligence to Impact"
             subtitle="Each phase builds on the last, creating a comprehensive strategic foundation for lasting market leadership."
-            centered className="mb-14" />
+            centered
+            className="mb-14"
+          />
 
+          {/* Phase Flow */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-16">
             {phases.map((phase, i) => (
-              <button key={phase.num}
+              <button
+                key={phase.num}
                 onClick={() => setActivePhase(activePhase === i ? null : i)}
                 className="group text-center p-5 rounded-2xl border-2 transition-all duration-300 hover:-translate-y-1"
                 style={{
                   borderColor: activePhase === i ? phase.color : 'transparent',
                   backgroundColor: activePhase === i ? phase.color + '10' : '#f8fafc',
-                }}>
+                }}
+              >
                 <div className="text-2xl mb-3">{phase.icon}</div>
-                <div className="text-xs font-bold font-mono mb-2" style={{ color: phase.color }}>Phase {phase.num}</div>
-                <div className="text-xs font-semibold text-[#1F3A5F] dark:text-white leading-tight">{phase.title}</div>
+                <div
+                  className="text-xs font-bold font-mono mb-2"
+                  style={{ color: phase.color }}
+                >
+                  Phase {phase.num}
+                </div>
+                <div className="text-xs font-semibold text-[#1F3A5F] dark:text-white leading-tight">
+                  {phase.title}
+                </div>
               </button>
             ))}
           </div>
 
+          {/* Active Phase Detail */}
           {activePhase !== null && (
             <AnimatedSection direction="none">
-              <div className="rounded-3xl p-8 md:p-12 border-2"
-                style={{ borderColor: phases[activePhase].color + '30', backgroundColor: phases[activePhase].color + '05' }}>
+              <div
+                className="rounded-3xl p-8 md:p-12 border-2"
+                style={{ borderColor: phases[activePhase].color + '30', backgroundColor: phases[activePhase].color + '05' }}
+              >
                 <div className="grid lg:grid-cols-2 gap-10">
                   <div>
-                    <div className="text-xs font-bold font-mono mb-3" style={{ color: phases[activePhase].color }}>PHASE {phases[activePhase].num}</div>
-                    <h2 className="text-2xl md:text-3xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-4">{phases[activePhase].title}</h2>
-                    <p className="text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed mb-6">{phases[activePhase].description}</p>
+                    <div
+                      className="text-xs font-bold font-mono mb-3"
+                      style={{ color: phases[activePhase].color }}
+                    >
+                      PHASE {phases[activePhase].num}
+                    </div>
+                    <h2 className="text-2xl md:text-3xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-4">
+                      {phases[activePhase].title}
+                    </h2>
+                    <p className="text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed mb-6">
+                      {phases[activePhase].description}
+                    </p>
                     <h3 className="font-semibold text-[#1F3A5F] dark:text-white mb-4">Key Activities</h3>
                     <ul className="space-y-2">
                       {phases[activePhase].activities.map((act) => (
@@ -223,7 +251,10 @@ export default function HCLFPage() {
                     <h3 className="font-semibold text-[#1F3A5F] dark:text-white mb-4">Deliverables</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {phases[activePhase].deliverables.map((d) => (
-                        <div key={d} className="flex items-center gap-3 p-4 bg-white dark:bg-[#162d4a] rounded-xl border border-gray-100 dark:border-white/5">
+                        <div
+                          key={d}
+                          className="flex items-center gap-3 p-4 bg-white dark:bg-[#162d4a] rounded-xl border border-gray-100 dark:border-white/5"
+                        >
                           <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: phases[activePhase].color }} />
                           <span className="text-sm font-medium text-[#1F3A5F] dark:text-white">{d}</span>
                         </div>
@@ -235,23 +266,35 @@ export default function HCLFPage() {
             </AnimatedSection>
           )}
 
-          {activePhase === null && (
-            <p className="text-center text-[#3A3A3A]/50 dark:text-white/40 text-sm">Click any phase above to explore its details →</p>
+          {!activePhase && (
+            <p className="text-center text-[#3A3A3A]/50 dark:text-white/40 text-sm">
+              Click any phase above to explore its details →
+            </p>
           )}
         </div>
       </section>
 
+      {/* Expanded Phase List */}
       <section className="py-24 bg-[#f8fafc] dark:bg-[#0d1520]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader eyebrow="Deep Dive" title="Explore Every Phase" centered className="mb-12" />
+          <SectionHeader
+            eyebrow="Deep Dive"
+            title="Explore Every Phase"
+            centered
+            className="mb-12"
+          />
           <div className="space-y-4">
             {phases.map((phase, i) => (
               <AnimatedSection key={phase.num} delay={i * 80}>
                 <details className="group bg-white dark:bg-[#162d4a] rounded-2xl border border-gray-100 dark:border-white/5 overflow-hidden">
                   <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
                     <div className="flex items-center gap-4">
-                      <span className="text-sm font-bold font-mono px-3 py-1 rounded-lg"
-                        style={{ color: phase.color, backgroundColor: phase.color + '15' }}>{phase.num}</span>
+                      <span
+                        className="text-sm font-bold font-mono px-3 py-1 rounded-lg"
+                        style={{ color: phase.color, backgroundColor: phase.color + '15' }}
+                      >
+                        {phase.num}
+                      </span>
                       <span className="text-2xl">{phase.icon}</span>
                       <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white">{phase.title}</h3>
                     </div>
@@ -291,12 +334,19 @@ export default function HCLFPage() {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-[#1F3A5F] to-[#2E75B6]">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold font-heading text-white mb-4">Ready to Apply the HCLF™ Framework to Your Organization?</h2>
-          <p className="text-white/70 mb-8">Schedule a framework consultation to understand how each phase applies to your specific healthcare organization and growth objectives.</p>
-          <Link href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#1F3A5F] font-bold rounded-xl hover:bg-[#DCE9F4] transition-all hover:-translate-y-1 shadow-xl">
+          <h2 className="text-3xl font-bold font-heading text-white mb-4">
+            Ready to Apply the HCLF™ Framework to Your Organization?
+          </h2>
+          <p className="text-white/70 mb-8">
+            Schedule a framework consultation to understand how each phase applies to your specific healthcare organization and growth objectives.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#1F3A5F] font-bold rounded-xl hover:bg-[#DCE9F4] transition-all hover:-translate-y-1 shadow-xl"
+          >
             Book a Framework Consultation
             <ArrowRight className="w-5 h-5" />
           </Link>
