@@ -1,5 +1,4 @@
 import { HeroSection } from '@/components/sections/HeroSection';
-import { TrustedPartners } from '@/components/sections/TrustedPartners';
 import { OurDifference } from '@/components/sections/OurDifference';
 import { HCLFOverview } from '@/components/sections/HCLFOverview';
 import { ServicesHighlight } from '@/components/sections/ServicesHighlight';
@@ -13,7 +12,6 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <TrustedPartners />
       <OurDifference />
       <ImpactStats />
       <HCLFOverview />
