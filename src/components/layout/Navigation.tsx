@@ -23,7 +23,6 @@ const navLinks = [
   { label: 'HCLF™ Framework', href: '/hclf-framework' },
   { label: 'Industries', href: '/industries' },
   { label: 'Insights', href: '/insights' },
-  { label: 'Case Studies', href: '/case-studies' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -101,6 +100,8 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
+
+          {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <SDLogo gradientId="navSDGrad" />
             <div>
@@ -116,6 +117,7 @@ export function Navigation() {
             </div>
           </Link>
 
+          {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-0.5">
             {navLinks.map((link) => (
               <div
@@ -165,6 +167,7 @@ export function Navigation() {
             ))}
           </div>
 
+          {/* Right Actions */}
           <div className="flex items-center gap-3">
             <button
               onClick={toggleTheme}
@@ -201,6 +204,7 @@ export function Navigation() {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {mobileOpen && (
         <div className="lg:hidden bg-white dark:bg-[#0f1923] border-t border-gray-100 dark:border-white/10 shadow-2xl">
           <div className="h-0.5 bg-gradient-to-r from-[#1F3A5F] via-[#2E75B6] to-[#4F8A77]" />

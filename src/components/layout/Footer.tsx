@@ -2,13 +2,12 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Mail, Phone, MapPin, ArrowRight, Send } from 'lucide-react';
+import { Mail, MapPin, ArrowRight, Send } from 'lucide-react';
 
 const footerLinks = {
   Company: [
     { label: 'About Us', href: '/about' },
     { label: 'HCLF™ Framework', href: '/hclf-framework' },
-    { label: 'Case Studies', href: '/case-studies' },
     { label: 'Insights', href: '/insights' },
     { label: 'Contact', href: '/contact' },
   ],
@@ -20,8 +19,8 @@ const footerLinks = {
   ],
   Industries: [
     { label: 'Hospital Chains', href: '/industries#hospitals' },
+    { label: 'Specialty Hospitals', href: '/industries#specialty' },
     { label: 'Diagnostics Networks', href: '/industries#diagnostics' },
-    { label: 'IVF & Fertility', href: '/industries#ivf' },
     { label: 'HealthTech', href: '/industries#healthtech' },
     { label: 'MedTech', href: '/industries#medtech' },
   ],
@@ -91,7 +90,9 @@ export function Footer() {
 
   return (
     <footer className="bg-[#0b1520] text-white">
+      {/* CTA Banner */}
       <div className="relative overflow-hidden bg-gradient-to-br from-[#1F3A5F] via-[#1a3358] to-[#162d4a]">
+        {/* Decorative ECG line */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-8">
           <svg viewBox="0 0 1200 80" preserveAspectRatio="none" className="absolute bottom-0 w-full h-20">
             <path
@@ -114,7 +115,7 @@ export function Footer() {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading mb-4">
             Ready to Transform Your Healthcare Brand?
           </h2>
-          <p className="text-white/75 mb-8 max-w-xl mx-auto leading-relaxed">
+          <p className="text-white/70 mb-8 max-w-xl mx-auto leading-relaxed">
             Let&apos;s build your healthcare brand leadership strategy together. Book a complimentary consultation today.
           </p>
           <Link
@@ -127,8 +128,10 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+          {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6 group">
               <FooterLogo />
@@ -144,18 +147,13 @@ export function Footer() {
               &ldquo;Clinical insight becoming market momentum.&rdquo;
             </p>
 
+            {/* Contact */}
             <div className="space-y-3 mb-8">
               <a href="mailto:drvijayadutta@gmail.com" className="flex items-center gap-3 text-sm text-white/70 hover:text-[#4F8A77] transition-colors group/contact">
                 <span className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center group-hover/contact:bg-[#4F8A77]/20 transition-colors">
                   <Mail className="w-3.5 h-3.5 text-[#4F8A77]" />
                 </span>
                 drvijayadutta@gmail.com
-              </a>
-              <a href="tel:+919999999999" className="flex items-center gap-3 text-sm text-white/70 hover:text-[#4F8A77] transition-colors group/contact">
-                <span className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center group-hover/contact:bg-[#4F8A77]/20 transition-colors">
-                  <Phone className="w-3.5 h-3.5 text-[#4F8A77]" />
-                </span>
-                +91 99999 99999
               </a>
               <div className="flex items-start gap-3 text-sm text-white/70">
                 <span className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center flex-shrink-0">
@@ -165,6 +163,7 @@ export function Footer() {
               </div>
             </div>
 
+            {/* Socials */}
             <div className="flex gap-2">
               {socials.map(({ symbol, href, label }) => (
                 <a
@@ -179,6 +178,7 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Links */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
               <h3 className="text-xs font-bold text-white/80 mb-5 tracking-[0.15em] uppercase">{title}</h3>
@@ -199,6 +199,7 @@ export function Footer() {
           ))}
         </div>
 
+        {/* Newsletter */}
         <div className="mt-12 pt-10 border-t border-white/8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
@@ -231,13 +232,14 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-white/8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/55">
             © {new Date().getFullYear()} S.D Consultancy. All rights reserved. Founded 2026.
           </p>
           <div className="flex gap-6">
             {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map((item) => (
-              <Link key={item} href="#" className="text-xs text-white/55 hover:text-white/70 transition-colors">
+              <Link key={item} href="#" className="text-xs text-white/55 hover:text-white/60 transition-colors">
                 {item}
               </Link>
             ))}

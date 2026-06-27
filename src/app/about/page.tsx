@@ -6,7 +6,7 @@ import { ContactCTA } from '@/components/sections/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'About S.D Consultancy | Dr. Vijaya Dutta | Healthcare Brand Strategy',
-  description: 'S.D Consultancy was founded by Dr. Vijaya Dutta — BDS, Rank 14 IP University, formerly Senior Executive Marketing at Manipal Hospitals & Max Healthcare. India\'s premier 360° healthcare brand strategy consultancy.',
+  description: 'S.D Consultancy was founded by Dr. Vijaya Dutta — BDS, PMT Rank 14 IP University, formerly Senior Executive Marketing at Manipal Hospitals & Max Healthcare. India\'s premier 360° healthcare brand strategy consultancy.',
 };
 
 const expertise = [
@@ -20,7 +20,7 @@ const expertise = [
 
 const credentials = [
   { label: 'BDS Graduate',           sub: 'ESIC Dental College',                    color: '#2E75B6' },
-  { label: 'Rank 14',                sub: 'IP University (2018)',                    color: '#B8924A' },
+  { label: 'PMT Rank 14',            sub: 'IP University (2018)',                    color: '#B8924A' },
   { label: 'Manipal Hospitals',      sub: 'Sr. Executive – Marketing (South)',       color: '#4F8A77' },
   { label: 'Max Healthcare',         sub: 'Healthcare Brand & Communications',       color: '#1F3A5F' },
 ];
@@ -35,8 +35,8 @@ const values = [
 const timeline = [
   {
     year: '2018',
-    title: 'BDS — Rank 14, IP University',
-    event: 'Graduated as a dental surgeon from ESIC Dental College, ranking 14th in IP University — a rigorous clinical foundation that instilled the deep healthcare fluency underpinning every strategic decision ahead.',
+    title: 'BDS — PMT Rank 14, IP University',
+    event: 'Graduated as a dental surgeon from ESIC Dental College, securing PMT Rank 14 at IP University — a rigorous clinical foundation that instilled the deep healthcare fluency underpinning every strategic decision ahead.',
     color: '#2E75B6',
   },
   {
@@ -54,7 +54,7 @@ const timeline = [
   {
     year: '2025',
     title: 'Kidney Resignation Letter Campaign',
-    event: 'Ideated the concept of the nationally acclaimed “Kidney Resignation Letter” campaign for World Kidney Day 2025 — a bold, thought-provoking initiative by Manipal Hospitals that reached millions and sparked a nationwide conversation around preventive kidney health.',
+    event: 'Ideated the concept of the nationally acclaimed "Kidney Resignation Letter" campaign for World Kidney Day 2025 — a bold, thought-provoking initiative by Manipal Hospitals that reached millions and sparked a nationwide conversation around preventive kidney health.',
     color: '#B8924A',
   },
   {
@@ -83,6 +83,7 @@ export default function AboutPage() {
     <>
       {/* ── HERO ── */}
       <section className="hero-gradient relative pt-32 pb-24 overflow-hidden">
+        {/* Background orbs */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute -top-40 -right-40 w-[700px] h-[700px] rounded-full bg-[#2E75B6]/12 blur-[140px]" />
           <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-[#4F8A77]/10 blur-[120px]" />
@@ -131,9 +132,11 @@ export default function AboutPage() {
               </div>
             </AnimatedSection>
 
+            {/* Right — founder card */}
             <AnimatedSection direction="right">
               <div className="relative">
                 <div className="glass-card rounded-3xl p-8 border border-white/12 hover:border-white/22 transition-all duration-500">
+                  {/* Gradient top bar */}
                   <div className="absolute top-0 left-8 right-8 h-0.5 rounded-full bg-gradient-to-r from-[#2E75B6] via-[#4F8A77] to-[#B8924A]" />
 
                   <div className="flex items-start gap-5 mb-8">
@@ -189,25 +192,23 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-5 text-[#3A3A3A]/70 dark:text-white/65 leading-relaxed">
                 <p>
-                  Dr. Vijaya Dutta graduated in 2018 as a dental surgeon from ESIC Dental College, ranking 14th in IP University — a distinction that reflected both academic rigor and an analytical mind primed for complex problem-solving.
+                  Dr. Vijaya Dutta graduated in 2018 as a dental surgeon from ESIC Dental College, securing PMT Rank 14 at IP University — a distinction that reflected both academic rigor and an analytical mind primed for complex problem-solving.
                 </p>
                 <p>
                   Her path took an unconventional turn when she entered the marketing division of Max Healthcare, one of India&apos;s most respected premium hospital networks. There, she immersed herself in the full spectrum of healthcare brand-building: patient communication strategy, multi-specialty campaign design, and the nuanced art of making clinical excellence visible to patients, physicians, and partner organizations.
                 </p>
                 <p>
-                  At Manipal Hospitals, as Senior Executive – Marketing (Regional Office South, Bangalore), she scaled that expertise across one of Asia&apos;s largest integrated healthcare networks. She led branding and communications for 6 South Region units and the South East Region (Vijayawada & Bhubaneswar), and drove Manipal Hospitals Global&apos;s international patient footfall campaigns.
+                  At Manipal Hospitals, as Senior Executive – Marketing (Regional Office South, Bangalore), she scaled that expertise across one of Asia&apos;s largest integrated healthcare networks. She led physician referral network development, drove regional brand campaigns, and built patient acquisition systems that blended clinical insight with data-driven strategy.
                 </p>
                 <p>
-                  Her creative instincts found national recognition when she ideated the &ldquo;Kidney Resignation Letter&rdquo; campaign for World Kidney Day 2025 — a campaign that went nationally viral and became one of Manipal Hospitals&apos; most celebrated brand moments.
-                </p>
-                <p>
-                  That body of work became the founding insight of S.D Consultancy and the HCLF™ Framework.
+                  The pattern she witnessed — world-class clinical capabilities consistently struggling to communicate their value — became the founding insight of S.D Consultancy and the HCLF™ Framework.
                 </p>
               </div>
             </AnimatedSection>
 
             <AnimatedSection direction="right">
               <div className="space-y-4">
+                {/* Expertise areas */}
                 <div className="mb-8">
                   <div className="text-xs font-bold tracking-widest uppercase text-[#3A3A3A]/45 dark:text-white/35 mb-4">Areas of Expertise</div>
                   <div className="grid grid-cols-1 gap-3">
@@ -301,10 +302,10 @@ export default function AboutPage() {
               },
             ].map((item, i) => (
               <AnimatedSection key={item.label} delay={i * 120}>
-                <div className="group relative bg-[#f8fafc] dark:bg-[#162d4a] rounded-2xl p-8 border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-2xl hover:shadow-[#2E75B6]/10 dark:hover:shadow-black/30 transition-all duration-300 hover:-translate-y-2 h-full overflow-hidden">
+                <div className="group relative bg-[#f8fafc] dark:bg-[#162d4a] rounded-2xl p-8 border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-2xl hover:shadow-[#2E75B6]/10 dark:hover:shadow-black/30 transition-all duration-400 hover:-translate-y-2 h-full overflow-hidden">
                   <div className={`absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r ${item.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
                   <div
-                    className="w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110"
+                    className="w-13 h-13 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110"
                     style={{ backgroundColor: item.color + '15' }}
                   >
                     <item.icon className="w-6 h-6" style={{ color: item.color }} />
@@ -369,7 +370,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {values.map((v, i) => (
               <AnimatedSection key={v.title} delay={i * 100}>
-                <div className="group bg-[#f8fafc] dark:bg-[#162d4a] rounded-2xl p-7 border border-gray-100 dark:border-white/5 hover:border-transparent hover:-translate-y-2 hover:shadow-xl hover:shadow-[#2E75B6]/10 dark:hover:shadow-black/30 transition-all duration-300 text-center h-full">
+                <div className="group bg-[#f8fafc] dark:bg-[#162d4a] rounded-2xl p-7 border border-gray-100 dark:border-white/5 hover:border-transparent hover:-translate-y-2 hover:shadow-xl hover:shadow-[#2E75B6]/10 dark:hover:shadow-black/30 transition-all duration-400 text-center h-full">
                   <div className="w-14 h-14 rounded-2xl bg-[#DCE9F4] dark:bg-[#2E75B6]/20 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
                     <v.icon className="w-7 h-7 text-[#2E75B6]" />
                   </div>
@@ -391,6 +392,7 @@ export default function AboutPage() {
             backgroundSize: '48px 48px',
           }}
         />
+        {/* ECG decorative */}
         <div className="absolute bottom-0 left-0 right-0 pointer-events-none opacity-20">
           <svg viewBox="0 0 1400 80" className="w-full">
             <path d="M 0 60 L 200 60 L 240 40 L 270 60 L 285 20 L 310 80 L 340 50 L 370 60 L 600 60 C 800 60 1000 40 1200 30 C 1300 25 1370 22 1400 20"
@@ -418,12 +420,17 @@ export default function AboutPage() {
           </AnimatedSection>
 
           <div className="relative">
+            {/* Vertical line */}
             <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/15 to-transparent md:-translate-x-1/2" />
+
             <div className="space-y-8">
               {timeline.map((item, i) => (
                 <AnimatedSection key={item.year + item.title} delay={i * 100}>
                   <div className={`relative flex items-start gap-6 md:gap-0 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                    {/* Spacer */}
                     <div className="flex-1 hidden md:block" />
+
+                    {/* Dot */}
                     <div className="relative z-10 flex-shrink-0 md:mx-8">
                       <div
                         className="w-12 h-12 rounded-full border-2 border-[#0f1923] flex items-center justify-center shadow-lg"
@@ -432,6 +439,8 @@ export default function AboutPage() {
                         <span className="text-white font-bold font-mono text-[10px]">{item.year.slice(0, 4)}</span>
                       </div>
                     </div>
+
+                    {/* Card */}
                     <div className="flex-1">
                       <div className="group bg-white/5 backdrop-blur-sm border border-white/8 rounded-2xl p-6 hover:bg-white/9 hover:border-white/18 transition-all duration-300">
                         <div className="flex items-center gap-3 mb-3">
