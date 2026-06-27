@@ -42,6 +42,8 @@ export function InsightsPreview() {
   return (
     <section className="py-28 bg-[#f8fafc] dark:bg-[#0d1520]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Header */}
         <AnimatedSection>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
             <div>
@@ -66,12 +68,16 @@ export function InsightsPreview() {
           </div>
         </AnimatedSection>
 
+        {/* Featured + side cards layout */}
         <div className="grid lg:grid-cols-5 gap-5">
+
+          {/* Featured article — spans 3 cols */}
           <AnimatedSection className="lg:col-span-3">
             <Link
               href={`/insights/${featured.slug}`}
               className="group block bg-white dark:bg-[#111c2e] rounded-2xl overflow-hidden border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-2xl hover:shadow-[#1F3A5F]/10 dark:hover:shadow-black/30 transition-all duration-300 hover:-translate-y-1 h-full"
             >
+              {/* Color bar */}
               <div className="h-2" style={{ background: `linear-gradient(to right, ${featured.color}, #1F3A5F)` }} />
               <div className="p-8 md:p-10 flex flex-col h-[calc(100%-8px)]">
                 <div className="flex items-center gap-3 mb-6">
@@ -102,6 +108,7 @@ export function InsightsPreview() {
             </Link>
           </AnimatedSection>
 
+          {/* Side articles — span 2 cols */}
           <div className="lg:col-span-2 flex flex-col gap-5">
             {rest.map((article, i) => (
               <AnimatedSection key={article.slug} delay={(i + 1) * 120} className="flex-1">

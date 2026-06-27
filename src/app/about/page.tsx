@@ -146,7 +146,7 @@ export default function AboutPage() {
                     <div>
                       <div className="text-white font-bold font-heading text-xl mb-0.5">Dr. Vijaya Dutta</div>
                       <div className="text-[#4F8A77] font-semibold text-sm mb-1">Founder & Chief Strategy Officer</div>
-                      <div className="text-white/45 text-xs">S.D Consultancy · New Delhi, India</div>
+                      <div className="text-white/65 text-xs">S.D Consultancy · New Delhi, India</div>
                     </div>
                   </div>
 
@@ -154,16 +154,15 @@ export default function AboutPage() {
                     &ldquo;Clinical excellence is the foundation. Strategic communication is what makes it visible. We built S.D Consultancy because healthcare organizations deserve both — not one or the other.&rdquo;
                   </blockquote>
 
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-3 gap-3">
                     {[
-                      { n: '10+',  l: 'Years Expertise',    c: '#2E75B6' },
-                      { n: '30+',  l: 'Organizations',      c: '#4F8A77' },
-                      { n: '98%',  l: 'Client Retention',   c: '#B8924A' },
-                      { n: '6',    l: 'Healthcare Verticals', c: '#1F3A5F' },
+                      { n: '10+',  l: 'Years Expertise',      c: '#2E75B6' },
+                      { n: '98%',  l: 'Client Retention',     c: '#B8924A' },
+                      { n: '6',    l: 'Healthcare Verticals', c: '#4F8A77' },
                     ].map((s) => (
                       <div key={s.l} className="bg-white/5 rounded-xl p-4 border border-white/8 hover:bg-white/10 transition-all duration-300">
                         <div className="text-2xl font-bold font-mono mb-0.5" style={{ color: s.c }}>{s.n}</div>
-                        <div className="text-white/55 text-xs">{s.l}</div>
+                        <div className="text-white/70 text-xs">{s.l}</div>
                       </div>
                     ))}
                   </div>
@@ -210,7 +209,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 {/* Expertise areas */}
                 <div className="mb-8">
-                  <div className="text-xs font-bold tracking-widest uppercase text-[#3A3A3A]/45 dark:text-white/35 mb-4">Areas of Expertise</div>
+                  <div className="text-xs font-bold tracking-widest uppercase text-[#3A3A3A]/60 dark:text-white/55 mb-4">Areas of Expertise</div>
                   <div className="grid grid-cols-1 gap-3">
                     {expertise.map((e, i) => (
                       <div
