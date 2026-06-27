@@ -14,7 +14,7 @@ const industries = [
   {
     label: 'Specialty Hospitals',
     href: '/industries#specialty',
-    desc: 'Clinical excellence communication, reputation-building, and stakeholder engagement for specialist care.',
+    desc: 'Clinical excellence communication and reputation-building for specialist care — including oncology, fertility & IVF, orthopaedics, cardiology, and neurosciences.',
     color: '#4F8A77',
     accent: 'from-[#4F8A77] to-[#3a6b5c]',
     abbr: 'SH',
@@ -28,12 +28,12 @@ const industries = [
     abbr: 'DX',
   },
   {
-    label: 'IVF & Fertility',
-    href: '/industries#ivf',
-    desc: 'Sensitive, evidence-based patient communications for fertility and reproductive health organizations.',
+    label: 'Pharma & Life Sciences',
+    href: '/industries#pharma',
+    desc: 'HCP-targeted communications, patient education platforms, and brand strategy for pharmaceutical and life sciences companies.',
     color: '#B8924A',
     accent: 'from-[#B8924A] to-[#d4a85e]',
-    abbr: 'IVF',
+    abbr: 'PH',
   },
   {
     label: 'HealthTech',
@@ -57,6 +57,7 @@ export function IndustriesSection() {
   return (
     <section className="py-28 bg-[#f8fafc] dark:bg-[#0d1520]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         <AnimatedSection className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
             <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
@@ -82,6 +83,7 @@ export function IndustriesSection() {
                 >
                   <span className="text-white text-[10px] font-bold font-mono tracking-wider">{ind.abbr}</span>
                 </div>
+
                 <div className="flex-1 min-w-0">
                   <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white mb-1.5 group-hover:text-[#2E75B6] transition-colors">
                     {ind.label}

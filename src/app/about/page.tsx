@@ -35,38 +35,38 @@ const values = [
 const timeline = [
   {
     year: '2018',
-    title: 'Foundation of Clinical Excellence',
-    event: 'Dr. Vijaya Dutta completed BDS from ESIC Dental College, ranking 14th in IP University — a rigorous clinical foundation that would inform every strategic decision in the years ahead.',
+    title: 'BDS — Rank 14, IP University',
+    event: 'Graduated as a dental surgeon from ESIC Dental College, ranking 14th in IP University — a rigorous clinical foundation that instilled the deep healthcare fluency underpinning every strategic decision ahead.',
     color: '#2E75B6',
   },
   {
-    year: '2018–2020',
+    year: '2018',
     title: 'Max Healthcare',
-    event: 'Joined Max Healthcare — one of India\'s premier hospital networks — gaining deep exposure to enterprise healthcare brand-building, patient communications, and multi-specialty marketing at scale across flagship hospitals.',
+    event: 'Began her marketing career at Max Healthcare — one of India\'s premier premium hospital networks — immersing herself in enterprise healthcare brand-building, patient communications strategy, and multi-specialty campaign design across flagship hospitals.',
     color: '#4F8A77',
   },
   {
-    year: '2020–2024',
-    title: 'Manipal Hospitals',
-    event: 'Rose to Senior Executive – Marketing at Manipal Hospitals (Regional Office South, Bangalore), leading healthcare brand strategy across complex ecosystems — referral networks, specialist positioning, physician engagement, and integrated communications across multiple verticals.',
+    year: '2020',
+    title: 'Manipal Hospitals — Regional Marketing Lead',
+    event: 'Joined Manipal Hospitals (MHEPL), rising to Senior Executive – Marketing, Regional Office South (Bangalore). Led branding and communication for 6 South Region units and the South East Region (Vijayawada & Bhubaneswar), while also driving Manipal Hospitals Global\'s international patient footfall through targeted brand campaigns.',
     color: '#1F3A5F',
   },
   {
-    year: '2022',
-    title: 'HCLF™ Framework Born',
-    event: 'Developed the foundational principles of the HCLF™ Framework — crystallizing years of frontline healthcare marketing experience at India\'s largest hospital groups into a structured, repeatable methodology for market leadership.',
+    year: '2025',
+    title: 'Kidney Resignation Letter Campaign',
+    event: 'Ideated the concept of the nationally acclaimed “Kidney Resignation Letter” campaign for World Kidney Day 2025 — a bold, thought-provoking initiative by Manipal Hospitals that reached millions and sparked a nationwide conversation around preventive kidney health.',
     color: '#B8924A',
   },
   {
-    year: '2024',
-    title: 'Building the Network',
-    event: 'Led brand strategy and communications for multiple healthcare organizations simultaneously, building a curated network of senior strategists, medical writers, digital specialists, and creative directors.',
+    year: '2025',
+    title: 'HCLF™ Framework Crystallised',
+    event: 'After years of frontline healthcare marketing experience across India\'s largest hospital groups, crystallised the HCLF™ Framework — a proprietary 6-phase Healthcare Communications & Leadership Framework for sustainable market leadership.',
     color: '#2E75B6',
   },
   {
     year: '2026',
     title: 'S.D Consultancy Founded',
-    event: 'Founded S.D Consultancy — channelling clinical credibility, enterprise healthcare marketing experience, and a proven proprietary framework into India\'s premier 360° healthcare brand strategy consultancy.',
+    event: 'Founded S.D Consultancy in New Delhi — channelling clinical credibility, proven campaign leadership, and the HCLF™ Framework into India\'s premier 360° healthcare brand strategy consultancy.',
     color: '#4F8A77',
   },
 ];
@@ -83,7 +83,6 @@ export default function AboutPage() {
     <>
       {/* ── HERO ── */}
       <section className="hero-gradient relative pt-32 pb-24 overflow-hidden">
-        {/* Background orbs */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute -top-40 -right-40 w-[700px] h-[700px] rounded-full bg-[#2E75B6]/12 blur-[140px]" />
           <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-[#4F8A77]/10 blur-[120px]" />
@@ -132,11 +131,9 @@ export default function AboutPage() {
               </div>
             </AnimatedSection>
 
-            {/* Right — founder card */}
             <AnimatedSection direction="right">
               <div className="relative">
                 <div className="glass-card rounded-3xl p-8 border border-white/12 hover:border-white/22 transition-all duration-500">
-                  {/* Gradient top bar */}
                   <div className="absolute top-0 left-8 right-8 h-0.5 rounded-full bg-gradient-to-r from-[#2E75B6] via-[#4F8A77] to-[#B8924A]" />
 
                   <div className="flex items-start gap-5 mb-8">
@@ -198,10 +195,13 @@ export default function AboutPage() {
                   Her path took an unconventional turn when she entered the marketing division of Max Healthcare, one of India&apos;s most respected premium hospital networks. There, she immersed herself in the full spectrum of healthcare brand-building: patient communication strategy, multi-specialty campaign design, and the nuanced art of making clinical excellence visible to patients, physicians, and partner organizations.
                 </p>
                 <p>
-                  At Manipal Hospitals, as Senior Executive – Marketing (Regional Office South, Bangalore), she scaled that expertise across one of Asia&apos;s largest integrated healthcare networks. She led physician referral network development, drove regional brand campaigns, and built patient acquisition systems that blended clinical insight with data-driven strategy.
+                  At Manipal Hospitals, as Senior Executive – Marketing (Regional Office South, Bangalore), she scaled that expertise across one of Asia&apos;s largest integrated healthcare networks. She led branding and communications for 6 South Region units and the South East Region (Vijayawada & Bhubaneswar), and drove Manipal Hospitals Global&apos;s international patient footfall campaigns.
                 </p>
                 <p>
-                  The pattern she witnessed — world-class clinical capabilities consistently struggling to communicate their value — became the founding insight of S.D Consultancy and the HCLF™ Framework.
+                  Her creative instincts found national recognition when she ideated the &ldquo;Kidney Resignation Letter&rdquo; campaign for World Kidney Day 2025 — a campaign that went nationally viral and became one of Manipal Hospitals&apos; most celebrated brand moments.
+                </p>
+                <p>
+                  That body of work became the founding insight of S.D Consultancy and the HCLF™ Framework.
                 </p>
               </div>
             </AnimatedSection>
