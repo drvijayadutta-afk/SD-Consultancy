@@ -9,7 +9,7 @@ export function ContactCTA() {
         <AnimatedSection>
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/20">
             <span className="w-2 h-2 rounded-full bg-[#2E75B6] animate-pulse" />
-            <span className="text-[#2E75B6] text-xs font-semibold tracking-widest uppercase">
+            <span className="text-[var(--text-blue)] text-xs font-semibold tracking-widest uppercase">
               Start Your Growth Journey
             </span>
           </div>
@@ -22,7 +22,7 @@ export function ContactCTA() {
             Strategy
           </h2>
 
-          <p className="text-lg text-[#3A3A3A]/65 dark:text-white/60 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg text-[#3A3A3A]/75 dark:text-white/60 mb-10 max-w-2xl mx-auto">
             Whether you&apos;re looking to strengthen your brand, expand your referral networks, or launch a new digital strategy — we&apos;re ready to help.
           </p>
 
@@ -42,8 +42,8 @@ export function ContactCTA() {
             </Link>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-8 text-sm text-[#3A3A3A]/60 dark:text-white/50">
-            <a href="mailto:drvijayadutta@gmail.com" className="flex items-center gap-2 hover:text-[#2E75B6] transition-colors">
+          <div className="flex flex-wrap justify-center gap-8 text-sm text-[#3A3A3A]/75 dark:text-white/55">
+            <a href="mailto:drvijayadutta@gmail.com" className="flex items-center gap-2 hover:text-[var(--text-blue)] transition-colors">
               <Mail className="w-4 h-4" />
               drvijayadutta@gmail.com
             </a>

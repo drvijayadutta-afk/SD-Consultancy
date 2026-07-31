@@ -63,7 +63,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#4F8A77]/40 bg-[#4F8A77]/10">
-              <span className="text-[#4F8A77] text-xs font-semibold tracking-widest uppercase">Get In Touch</span>
+              <span className="text-[#94b8ac] text-xs font-semibold tracking-widest uppercase">Get In Touch</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-white leading-tight mb-6">
               Let&apos;s Build Your{' '}
@@ -86,7 +86,7 @@ export default function ContactPage() {
             <div className="lg:col-span-1 space-y-8">
               <AnimatedSection>
                 <SectionHeader eyebrow="Contact" title="Start the Conversation" />
-                <p className="mt-4 text-[#3A3A3A]/65 dark:text-white/60 leading-relaxed">
+                <p className="mt-4 text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed">
                   Whether you&apos;re ready to start a project or just exploring how we can help, we&apos;re here to have a meaningful conversation about your healthcare brand.
                 </p>
               </AnimatedSection>
@@ -101,19 +101,19 @@ export default function ContactPage() {
                       <Mail className="w-5 h-5 text-[#2E75B6]" />
                     </div>
                     <div>
-                      <div className="text-xs font-semibold text-[#3A3A3A]/65 dark:text-white/60 uppercase tracking-wide mb-1">Email</div>
-                      <div className="font-medium text-[#1F3A5F] dark:text-white group-hover:text-[#2E75B6] transition-colors">drvijayadutta@gmail.com</div>
+                      <div className="text-xs font-semibold text-[#3A3A3A]/75 dark:text-white/60 uppercase tracking-wide mb-1">Email</div>
+                      <div className="font-medium text-[#1F3A5F] dark:text-white group-hover:text-[var(--text-blue)] transition-colors">drvijayadutta@gmail.com</div>
                     </div>
                   </a>
 
                   <div className="flex items-start gap-4 p-5 bg-[#f8fafc] dark:bg-[#162d4a] rounded-xl border border-gray-100 dark:border-white/5">
                     <div className="w-10 h-10 rounded-xl bg-[#f7f0e6] flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-5 h-5 text-[#B8924A]" />
+                      <MapPin className="w-5 h-5 text-[#796031]" />
                     </div>
                     <div>
-                      <div className="text-xs font-semibold text-[#3A3A3A]/65 dark:text-white/60 uppercase tracking-wide mb-1">Office</div>
+                      <div className="text-xs font-semibold text-[#3A3A3A]/75 dark:text-white/60 uppercase tracking-wide mb-1">Office</div>
                       <div className="font-medium text-[#1F3A5F] dark:text-white">New Delhi</div>
-                      <div className="text-sm text-[#3A3A3A]/70 dark:text-white/65">India</div>
+                      <div className="text-sm text-[#3A3A3A]/75 dark:text-white/65">India</div>
                     </div>
                   </div>
 
@@ -122,9 +122,9 @@ export default function ContactPage() {
                       <Clock className="w-5 h-5 text-[#2E75B6]" />
                     </div>
                     <div>
-                      <div className="text-xs font-semibold text-[#3A3A3A]/65 dark:text-white/60 uppercase tracking-wide mb-1">Response Time</div>
+                      <div className="text-xs font-semibold text-[#3A3A3A]/75 dark:text-white/60 uppercase tracking-wide mb-1">Response Time</div>
                       <div className="font-medium text-[#1F3A5F] dark:text-white">Within 24 hours</div>
-                      <div className="text-sm text-[#3A3A3A]/60 dark:text-white/50">Mon – Sat, 9am – 6pm IST</div>
+                      <div className="text-sm text-[#3A3A3A]/75 dark:text-white/55">Mon – Sat, 9am – 6pm IST</div>
                     </div>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                   {inquiryTypes.map((t) => (
                     <div
                       key={t.label}
-                      className="flex items-center gap-1.5 px-3 py-1.5 bg-[#f8fafc] dark:bg-[#162d4a] border border-gray-100 dark:border-white/5 rounded-full text-sm text-[#3A3A3A]/70 dark:text-white/60"
+                      className="flex items-center gap-1.5 px-3 py-1.5 bg-[#f8fafc] dark:bg-[#162d4a] border border-gray-100 dark:border-white/5 rounded-full text-sm text-[#3A3A3A]/75 dark:text-white/60"
                     >
                       <span>{t.icon}</span>
                       {t.label}
@@ -157,7 +157,7 @@ export default function ContactPage() {
                   <h2 className="text-2xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-4">
                     Thank You, {form.name.split(' ')[0]}!
                   </h2>
-                  <p className="text-[#3A3A3A]/65 dark:text-white/60 max-w-md leading-relaxed">
+                  <p className="text-[#3A3A3A]/75 dark:text-white/60 max-w-md leading-relaxed">
                     We&apos;ve received your enquiry and will respond within 24 hours with our initial perspective on how S.D Consultancy can help {form.organization} achieve its healthcare brand goals.
                   </p>
                 </div>
@@ -181,7 +181,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         placeholder="Dr. Ananya Krishnamurthy"
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-[#0f1923] text-[#3A3A3A] dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[#2E75B6] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-[#0f1923] text-[#3A3A3A] dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/55 focus:outline-none focus:border-[#2E75B6] transition-colors"
                       />
                     </div>
                     <div>
@@ -194,7 +194,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         placeholder="Apollo Hospitals Group"
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-[#0f1923] text-[#3A3A3A] dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[#2E75B6] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-[#0f1923] text-[#3A3A3A] dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/55 focus:outline-none focus:border-[#2E75B6] transition-colors"
                       />
                     </div>
                   </div>
@@ -210,7 +210,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       placeholder="ananya@apollohospitals.com"
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-[#0f1923] text-[#3A3A3A] dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[#2E75B6] transition-colors"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-[#0f1923] text-[#3A3A3A] dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/55 focus:outline-none focus:border-[#2E75B6] transition-colors"
                     />
                   </div>
 
@@ -260,7 +260,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       placeholder="e.g., We need to differentiate our brand in a competitive market..."
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-[#0f1923] text-[#3A3A3A] dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[#2E75B6] transition-colors"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-[#0f1923] text-[#3A3A3A] dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/55 focus:outline-none focus:border-[#2E75B6] transition-colors"
                     />
                   </div>
 
@@ -274,7 +274,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       rows={4}
                       placeholder="Share any additional context about your organization, goals, or timeline..."
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-[#0f1923] text-[#3A3A3A] dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[#2E75B6] transition-colors resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-[#0f1923] text-[#3A3A3A] dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/55 focus:outline-none focus:border-[#2E75B6] transition-colors resize-none"
                     />
                   </div>
 
@@ -286,7 +286,7 @@ export default function ContactPage() {
                     Submit Strategy Consultation Request
                   </button>
 
-                  <p className="text-center text-xs text-[#3A3A3A]/65 dark:text-white/60 mt-4">
+                  <p className="text-center text-xs text-[#3A3A3A]/75 dark:text-white/60 mt-4">
                     We respect your privacy. Your information will never be shared with third parties.
                   </p>
                 </form>

@@ -112,7 +112,10 @@ export function Navigation() {
               )}>
                 S.D Consultancy
               </div>
-              <div className="text-[#4F8A77] text-[10px] font-semibold tracking-[0.18em] uppercase">
+              <div className={cn(
+                'text-[10px] font-semibold tracking-[0.18em] uppercase',
+                scrolled ? 'text-[var(--text-teal)]' : 'text-[#94b8ac]'
+              )}>
                 360° Healthcare Strategy
               </div>
             </div>
@@ -132,9 +135,9 @@ export function Navigation() {
                   className={cn(
                     'flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200',
                     pathname === link.href
-                      ? 'text-[#2E75B6] bg-[#DCE9F4] dark:bg-[#2E75B6]/20'
+                      ? 'text-[var(--text-blue)] bg-[#DCE9F4] dark:bg-[#2E75B6]/20'
                       : scrolled
-                      ? 'text-[#3A3A3A] dark:text-white/80 hover:text-[#2E75B6] hover:bg-[#DCE9F4]/70 dark:hover:bg-white/10'
+                      ? 'text-[#3A3A3A] dark:text-white/80 hover:text-[var(--text-blue)] hover:bg-[#DCE9F4]/70 dark:hover:bg-white/10'
                       : 'text-white/85 hover:text-white hover:bg-white/12'
                   )}
                 >
@@ -155,7 +158,7 @@ export function Navigation() {
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="flex items-center px-4 py-3 text-sm text-[#3A3A3A] dark:text-white/80 hover:bg-[#DCE9F4] dark:hover:bg-white/10 hover:text-[#2E75B6] transition-colors"
+                          className="flex items-center px-4 py-3 text-sm text-[#3A3A3A] dark:text-white/80 hover:bg-[#DCE9F4] dark:hover:bg-white/10 hover:text-[var(--text-blue)] transition-colors"
                         >
                           <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]/40 mr-2.5 flex-shrink-0" />
                           {child.label}
@@ -217,7 +220,7 @@ export function Navigation() {
                   className={cn(
                     'flex items-center px-4 py-3 rounded-lg text-sm font-medium transition-colors',
                     pathname === link.href
-                      ? 'bg-[#DCE9F4] text-[#2E75B6] dark:bg-[#2E75B6]/20'
+                      ? 'bg-[#DCE9F4] text-[var(--text-blue)] dark:bg-[#2E75B6]/20'
                       : 'text-[#3A3A3A] dark:text-white hover:bg-gray-50 dark:hover:bg-white/5'
                   )}
                 >
@@ -229,7 +232,7 @@ export function Navigation() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="flex items-center px-4 py-2 text-sm text-[#3A3A3A]/70 dark:text-white/60 hover:text-[#2E75B6] rounded-lg transition-colors"
+                        className="flex items-center px-4 py-2 text-sm text-[#3A3A3A]/75 dark:text-white/60 hover:text-[var(--text-blue)] rounded-lg transition-colors"
                       >
                         <span className="w-1 h-1 rounded-full bg-[#4F8A77]/60 mr-2.5" />
                         {child.label}

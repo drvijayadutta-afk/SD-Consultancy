@@ -1,11 +1,12 @@
 import { StatCounter } from '@/components/ui/StatCounter';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
+import { ON_DARK } from '@/lib/utils';
 
 const stats = [
-  { value: 10,  suffix: '+', label: 'Years of Sector Expertise',        color: '#2E75B6', icon: '🏥', desc: 'Deep, frontline healthcare experience' },
-  { value: 30,  suffix: '+', label: 'Healthcare Organizations Served',  color: '#4F8A77', icon: '🤝', desc: 'Across hospitals, diagnostics & healthtech' },
-  { value: 98,  suffix: '%', label: 'Client Retention Rate',            color: '#B8924A', icon: '⭐', desc: 'Long-term partnerships built on results' },
-  { value: 6,   suffix: '',  label: 'Healthcare Verticals',             color: '#4F8A77', icon: '📊', desc: 'Specialized expertise across each sector' },
+  { value: 10,  suffix: '+', label: 'Years of Sector Expertise',        color: ON_DARK.blue, icon: '🏥', desc: 'Deep, frontline healthcare experience' },
+  { value: 30,  suffix: '+', label: 'Healthcare Organizations Served',  color: ON_DARK.teal, icon: '🤝', desc: 'Across hospitals, diagnostics & healthtech' },
+  { value: 98,  suffix: '%', label: 'Client Retention Rate',            color: ON_DARK.gold, icon: '⭐', desc: 'Long-term partnerships built on results' },
+  { value: 6,   suffix: '',  label: 'Healthcare Verticals',             color: ON_DARK.teal, icon: '📊', desc: 'Specialized expertise across each sector' },
 ];
 
 export function ImpactStats() {
@@ -49,7 +50,7 @@ export function ImpactStats() {
         <AnimatedSection className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-[#4F8A77]/30 bg-[#4F8A77]/10">
             <span className="w-1.5 h-1.5 rounded-full bg-[#4F8A77] animate-pulse" />
-            <span className="text-[#4F8A77] text-xs font-bold tracking-[0.2em] uppercase">Client Outcomes</span>
+            <span className="text-[#94b8ac] text-xs font-bold tracking-[0.2em] uppercase">Client Outcomes</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-white leading-tight">
             Measurable Impact<br className="hidden md:block" /> Across Healthcare

@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, TrendingUp, Target, Globe, Palette } from 'lu
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { ContactCTA } from '@/components/sections/ContactCTA';
+import { accentText, solidFill } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'Services | S.D Consultancy Healthcare Strategy',
@@ -120,7 +121,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#4F8A77]/40 bg-[#4F8A77]/10">
-              <span className="text-[#4F8A77] text-xs font-semibold tracking-widest uppercase">Our Services</span>
+              <span className="text-[#94b8ac] text-xs font-semibold tracking-widest uppercase">Our Services</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-white leading-tight mb-6">
               Integrated Services for{' '}
@@ -151,21 +152,21 @@ export default function ServicesPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <AnimatedSection>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 text-sm font-semibold"
-                  style={{ color: service.color, backgroundColor: service.color + '15' }}>
+                  style={{ color: accentText(service.color), backgroundColor: service.color + '15' }}>
                   <service.icon className="w-4 h-4" />
                   {service.label}
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-5">
                   {service.title}
                 </h2>
-                <p className="text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed mb-8">{service.overview}</p>
+                <p className="text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed mb-8">{service.overview}</p>
                 <div className="mb-8">
                   <h3 className="font-semibold text-[#1F3A5F] dark:text-white mb-4">Key Benefits</h3>
                   <div className="space-y-3">
                     {service.benefits.map((b) => (
                       <div key={b} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ color: service.color }} />
-                        <span className="text-[#3A3A3A]/70 dark:text-white/65">{b}</span>
+                        <CheckCircle2 className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ color: accentText(service.color) }} />
+                        <span className="text-[#3A3A3A]/75 dark:text-white/65">{b}</span>
                       </div>
                     ))}
                   </div>
@@ -175,13 +176,13 @@ export default function ServicesPage() {
                   <div className="flex flex-wrap gap-2">
                     {service.deliverables.map((d) => (
                       <span key={d} className="text-xs px-3 py-1.5 rounded-full font-medium"
-                        style={{ color: service.color, backgroundColor: service.color + '12' }}>{d}</span>
+                        style={{ color: accentText(service.color), backgroundColor: service.color + '12' }}>{d}</span>
                     ))}
                   </div>
                 </div>
                 <Link href="/contact"
                   className="inline-flex items-center gap-2 mt-8 px-6 py-3 rounded-xl font-semibold text-white hover:-translate-y-0.5 transition-all"
-                  style={{ backgroundColor: service.color }}>
+                  style={{ backgroundColor: solidFill(service.color) }}>
                   Enquire About {service.label}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -192,7 +193,7 @@ export default function ServicesPage() {
                     <div key={offering.name}
                       className="group bg-white dark:bg-[#162d4a] rounded-xl p-5 border border-gray-100 dark:border-white/5 card-hover">
                       <h4 className="font-semibold font-heading text-[#1F3A5F] dark:text-white mb-1.5">{offering.name}</h4>
-                      <p className="text-sm text-[#3A3A3A]/65 dark:text-white/55">{offering.desc}</p>
+                      <p className="text-sm text-[#3A3A3A]/75 dark:text-white/55">{offering.desc}</p>
                     </div>
                   ))}
                 </div>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
+import { accentText } from '@/lib/utils';
 
 const articles = [
   {
@@ -49,7 +50,7 @@ export function InsightsPreview() {
             <div>
               <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
-                <span className="text-[#2E75B6] text-xs font-bold tracking-[0.2em] uppercase">Thought Leadership</span>
+                <span className="text-[var(--text-blue)] text-xs font-bold tracking-[0.2em] uppercase">Thought Leadership</span>
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#1F3A5F] dark:text-white leading-tight mb-3">
                 Healthcare Brand Insights
@@ -83,24 +84,24 @@ export function InsightsPreview() {
                 <div className="flex items-center gap-3 mb-6">
                   <span
                     className="text-xs font-semibold px-3 py-1 rounded-full"
-                    style={{ color: featured.color, backgroundColor: featured.color + '15' }}
+                    style={{ color: accentText(featured.color), backgroundColor: featured.color + '15' }}
                   >
                     {featured.category}
                   </span>
-                  <span className="text-xs text-[#3A3A3A]/60 dark:text-white/50 font-semibold tracking-widest uppercase">Featured</span>
+                  <span className="text-xs text-[#3A3A3A]/75 dark:text-white/55 font-semibold tracking-widest uppercase">Featured</span>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-4 leading-snug group-hover:text-[#2E75B6] transition-colors flex-1">
+                <h3 className="text-xl md:text-2xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-4 leading-snug group-hover:text-[var(--text-blue)] transition-colors flex-1">
                   {featured.title}
                 </h3>
                 <p className="text-[#3A3A3A]/75 dark:text-white/65 leading-relaxed mb-8">
                   {featured.excerpt}
                 </p>
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-5 text-xs text-[#3A3A3A]/60 dark:text-white/55">
+                  <div className="flex items-center gap-5 text-xs text-[#3A3A3A]/75 dark:text-white/55">
                     <span className="flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5" />{featured.date}</span>
                     <span className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" />{featured.readTime}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: featured.color }}>
+                  <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: accentText(featured.color) }}>
                     Read Article <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
@@ -120,18 +121,18 @@ export function InsightsPreview() {
                   <div className="p-6 flex flex-col flex-1">
                     <span
                       className="text-xs font-semibold px-2.5 py-1 rounded-full mb-4 self-start"
-                      style={{ color: article.color, backgroundColor: article.color + '15' }}
+                      style={{ color: accentText(article.color), backgroundColor: article.color + '15' }}
                     >
                       {article.category}
                     </span>
-                    <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white mb-3 leading-snug group-hover:text-[#2E75B6] transition-colors flex-1 text-sm">
+                    <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white mb-3 leading-snug group-hover:text-[var(--text-blue)] transition-colors flex-1 text-sm">
                       {article.title}
                     </h3>
                     <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-50 dark:border-white/5">
-                      <span className="text-xs text-[#3A3A3A]/60 dark:text-white/55 flex items-center gap-1.5">
+                      <span className="text-xs text-[#3A3A3A]/75 dark:text-white/55 flex items-center gap-1.5">
                         <Clock className="w-3 h-3" />{article.readTime}
                       </span>
-                      <div className="flex items-center gap-1.5 text-xs font-semibold" style={{ color: article.color }}>
+                      <div className="flex items-center gap-1.5 text-xs font-semibold" style={{ color: accentText(article.color) }}>
                         Read <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                       </div>
                     </div>

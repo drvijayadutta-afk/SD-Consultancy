@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, TrendingUp, TrendingDown, Sparkles, Scale } f
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { ContactCTA } from '@/components/sections/ContactCTA';
+import { accentText } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'Overview | S.D Consultancy Healthcare Growth & AI Strategy',
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 
 const stats = [
   { num: '10+ yrs', label: 'Inside enterprise hospital marketing at Manipal Hospitals and Max Healthcare' },
-  { num: 'HCLF™', label: 'Proprietary Healthcare Communications & Leadership Framework' },
+  { num: 'HCLF™', label: 'Proprietary Healthcare Communications & Leadership Framework, six phases' },
   { num: 'Clinical +', label: 'Strategic dual lens: BDS clinical training, MBA & IIM-B Brand Management' },
   { num: '4', label: 'Core engagement programs, scoped to your growth stage' },
 ];
@@ -26,16 +27,18 @@ const problems = [
 ];
 
 const services = [
-  { idx: '01', tag: 'Diagnose', title: 'Growth Diagnostic & Audit', desc: 'A structured audit of your digital presence, patient journey, and conversion funnel, benchmarked against comparable healthcare providers, producing a scored, prioritised roadmap.', color: '#2E75B6' },
-  { idx: '02', tag: 'Position', title: 'Brand & Positioning Strategy', desc: 'Institutional and doctor-level brand architecture built on the HCLF™ framework: messaging, visual identity, and specialty positioning that holds up under clinical and competitive scrutiny.', color: '#4F8A77' },
-  { idx: '03', tag: 'Activate', title: 'Digital Patient Acquisition Systems', desc: 'Website, SEO, paid, and content infrastructure rebuilt around measurable enquiry-to-appointment conversion, not vanity engagement metrics.', color: '#1F3A5F' },
-  { idx: '04', tag: 'Scale', title: 'AI-Enabled Operations & Automation', desc: 'Response, follow-up, and reporting workflows automated with healthcare-appropriate AI tooling, reducing lead leakage and staff overhead.', color: '#B8924A' },
+  { idx: '01', tag: 'Evidence', title: 'Market & Business Intelligence', desc: 'Primary research with patients, physicians, and administrators, competitive positioning, and a digital maturity baseline, so every decision that follows is grounded in evidence, not assumption.', color: '#2E75B6' },
+  { idx: '02', tag: 'Position', title: 'Brand Positioning', desc: 'A positioning statement, value proposition, and messaging framework that is clinically credible and commercially powerful, tested with the audiences it needs to convince.', color: '#4F8A77' },
+  { idx: '03', tag: 'Ecosystem', title: 'Stakeholder Ecosystem Design', desc: "Physician KOL mapping, patient journey design, and referral pathway optimisation, tailored engagement strategies for every group that influences a patient's decision.", color: '#1F3A5F' },
+  { idx: '04', tag: 'Activate', title: 'Integrated Communications Strategy', desc: 'Channel mix, message architecture, and content strategy so every touchpoint, from mass media to physician events to digital, reinforces the same brand story.', color: '#B8924A' },
+  { idx: '05', tag: 'Create', title: 'Creative Strategy & Development', desc: 'Films, campaigns, and visual identity systems that carry the strategy with emotional resonance while holding clinical credibility and brand consistency.', color: '#2E75B6' },
+  { idx: '06', tag: 'Govern', title: 'Measurement & Governance', desc: 'KPI frameworks, brand health tracking, and quarterly governance reviews that keep the investment accountable and the brand on track over time.', color: '#4F8A77' },
 ];
 
 const deliverables = [
-  { phase: 'Diagnostic Phase', items: ['Healthcare Growth Audit Report', 'Digital maturity scorecard', 'Competitor benchmark', 'Priority matrix & quick wins'] },
-  { phase: 'Strategy Phase', items: ['Brand & positioning playbook', 'Messaging & content architecture', 'Doctor branding framework', '90-day growth roadmap'] },
-  { phase: 'Execution Phase', items: ['Campaign & content calendars', 'Conversion-ready website & funnel specs', 'Automation & AI rollout plan', 'Monthly performance dashboard'] },
+  { phase: 'Intelligence & Positioning', items: ['Competitive Landscape Report', 'Market Opportunity Assessment', 'Brand Positioning Statement', 'Messaging Matrix'] },
+  { phase: 'Ecosystem & Communications', items: ['Stakeholder Ecosystem Map', 'Patient Journey Blueprint', 'Integrated Communications Plan', 'Content Strategy Framework'] },
+  { phase: 'Creative & Governance', items: ['Brand Film Production', 'Visual Identity Guidelines', 'Brand KPI Framework', 'Performance Dashboard'] },
 ];
 
 const benefits = [
@@ -53,11 +56,11 @@ const credentials = [
 ];
 
 const process = [
-  { n: '1', title: 'Discover', desc: 'Stakeholder interviews and current-state review to align on growth objectives.' },
-  { n: '2', title: 'Diagnose', desc: 'HCLF™ audit across brand, digital, and conversion, scored against benchmarks.' },
-  { n: '3', title: 'Design', desc: 'Strategy, positioning, and roadmap built and presented for leadership sign-off.' },
-  { n: '4', title: 'Deploy', desc: 'Execution across brand, digital, and automation workstreams begins.' },
-  { n: '5', title: 'Drive', desc: 'Monthly performance review against agreed KPIs, with iterative optimisation.' },
+  { n: '1', title: 'Discovery Call', desc: 'Understand your growth objectives, current position, and stakeholders.' },
+  { n: '2', title: 'Framework Scoping', desc: 'Map how the six HCLF™ phases apply to your specific goals and timeline.' },
+  { n: '3', title: 'Phased Execution', desc: 'Market Intelligence through Creative Development, delivered phase by phase.' },
+  { n: '4', title: 'Activation', desc: 'Campaigns, content, and stakeholder programmes go live across channels.' },
+  { n: '5', title: 'Governance & Review', desc: 'Quarterly tracking against the Brand KPI Framework, with iterative optimisation.' },
 ];
 
 export default function OverviewPage() {
@@ -68,7 +71,7 @@ export default function OverviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#4F8A77]/40 bg-[#4F8A77]/10">
-              <span className="text-[#4F8A77] text-xs font-semibold tracking-widest uppercase">One-Page Overview</span>
+              <span className="text-[#94b8ac] text-xs font-semibold tracking-widest uppercase">One-Page Overview</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-white leading-tight mb-6">
               Healthcare growth, engineered, not{' '}
@@ -87,7 +90,7 @@ export default function OverviewPage() {
                 Book a Growth Diagnostic
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <span className="text-white/50 text-sm">30-minute call · No obligation</span>
+              <span className="text-white/55 text-sm">30-minute call · No obligation</span>
             </div>
           </AnimatedSection>
 
@@ -106,7 +109,7 @@ export default function OverviewPage() {
       <section className="py-20 bg-white dark:bg-[#0f1923]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <div className="text-[#B8924A] text-xs font-semibold tracking-[0.2em] uppercase mb-4">Value Proposition</div>
+            <div className="text-[var(--text-gold)] text-xs font-semibold tracking-[0.2em] uppercase mb-4">Value Proposition</div>
             <p className="text-xl md:text-2xl leading-relaxed text-[#3A3A3A] dark:text-white/85">
               Most hospitals and healthcare brands are not short of marketing activity; they are short of a system that turns that activity into patients.{' '}
               <strong className="text-[#1F3A5F] dark:text-white font-semibold">
@@ -132,7 +135,7 @@ export default function OverviewPage() {
               <AnimatedSection key={p.title} delay={i * 80}>
                 <div className="bg-white dark:bg-[#162d4a] rounded-2xl p-7 border border-gray-100 dark:border-white/5 h-full">
                   <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white mb-2">{p.title}</h3>
-                  <p className="text-sm text-[#3A3A3A]/65 dark:text-white/55 leading-relaxed">{p.desc}</p>
+                  <p className="text-sm text-[#3A3A3A]/75 dark:text-white/55 leading-relaxed">{p.desc}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -145,20 +148,20 @@ export default function OverviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Services"
-            title="Four programs, one methodology"
-            subtitle="Each engagement is scoped from a single starting point: the HCLF™ Growth Diagnostic."
+            title="Six phases, one methodology"
+            subtitle="Every engagement runs on HCLF™, from evidence to impact."
             className="mb-14"
           />
           <div className="space-y-4">
             {services.map((s, i) => (
               <AnimatedSection key={s.idx} delay={i * 80}>
                 <div className="grid md:grid-cols-[64px_1fr_1.4fr] gap-4 md:gap-8 items-start p-6 rounded-2xl border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-lg hover:shadow-[#2E75B6]/8 transition-all duration-300">
-                  <div className="font-mono text-sm font-bold" style={{ color: s.color }}>{s.idx}</div>
+                  <div className="font-mono text-sm font-bold" style={{ color: accentText(s.color) }}>{s.idx}</div>
                   <div>
                     <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white text-lg mb-1">{s.title}</h3>
-                    <div className="text-xs font-semibold tracking-widest uppercase" style={{ color: s.color }}>{s.tag}</div>
+                    <div className="text-xs font-semibold tracking-widest uppercase" style={{ color: accentText(s.color) }}>{s.tag}</div>
                   </div>
-                  <p className="text-sm text-[#3A3A3A]/65 dark:text-white/55 leading-relaxed">{s.desc}</p>
+                  <p className="text-sm text-[#3A3A3A]/75 dark:text-white/55 leading-relaxed">{s.desc}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -177,7 +180,7 @@ export default function OverviewPage() {
                   <div className="font-heading font-bold text-[#1F3A5F] dark:text-white mb-4">{d.phase}</div>
                   <ul className="space-y-2.5">
                     {d.items.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-sm text-[#3A3A3A]/65 dark:text-white/55">
+                      <li key={item} className="flex items-start gap-2 text-sm text-[#3A3A3A]/75 dark:text-white/55">
                         <span className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0 bg-[#4F8A77]" />
                         {item}
                       </li>
@@ -199,10 +202,10 @@ export default function OverviewPage() {
               <AnimatedSection key={b.title} delay={i * 100}>
                 <div className="bg-[#f8fafc] dark:bg-[#162d4a] rounded-2xl p-6 border border-gray-100 dark:border-white/5 h-full">
                   <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: b.color + '15' }}>
-                    <b.icon className="w-5 h-5" style={{ color: b.color }} />
+                    <b.icon className="w-5 h-5" style={{ color: accentText(b.color) }} />
                   </div>
                   <div className="font-bold font-heading text-[#1F3A5F] dark:text-white text-sm mb-2">{b.title}</div>
-                  <p className="text-xs text-[#3A3A3A]/60 dark:text-white/50 leading-relaxed">{b.desc}</p>
+                  <p className="text-xs text-[#3A3A3A]/75 dark:text-white/55 leading-relaxed">{b.desc}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -215,12 +218,12 @@ export default function OverviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader eyebrow="Why S.D Consultancy" title="A strategist who has sat inside the hospital, not just outside it" className="mb-14" />
           <div className="grid lg:grid-cols-2 gap-14">
-            <AnimatedSection className="space-y-5 text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed">
+            <AnimatedSection className="space-y-5 text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed">
               <p>
                 Most agencies advising healthcare brands have never sat inside a hospital marketing function. Dr. Vijaya Dutta has, leading marketing across Manipal Hospitals&apos; South and South-East region and Max Healthcare&apos;s Delhi NCR cluster, where clinical stakes, doctor relationships, and patient trust shape every decision differently than in any other industry.
               </p>
               <p>
-                That experience, combined with a clinical (BDS) foundation and formal brand strategy training, is codified into HCLF™, a framework built specifically for healthcare, not adapted from consumer marketing.
+                That experience, combined with a clinical (BDS) foundation and formal brand strategy training, is codified into HCLF™, a six-phase framework built specifically for healthcare, not adapted from consumer marketing.
               </p>
             </AnimatedSection>
             <AnimatedSection direction="right" className="bg-white dark:bg-[#162d4a] rounded-2xl p-8 border-l-4 border-[#B8924A]">
@@ -229,7 +232,7 @@ export default function OverviewPage() {
                 {credentials.map((c, i) => (
                   <div key={c.label} className={`py-4 ${i !== 0 ? 'border-t border-gray-100 dark:border-white/10' : ''}`}>
                     <div className="text-sm font-semibold text-[#1F3A5F] dark:text-white">{c.label}</div>
-                    <div className="text-xs text-[#3A3A3A]/55 dark:text-white/50 mt-1">{c.sub}</div>
+                    <div className="text-xs text-[#3A3A3A]/75 dark:text-white/55 mt-1">{c.sub}</div>
                   </div>
                 ))}
               </div>
@@ -250,7 +253,7 @@ export default function OverviewPage() {
                   {p.n}
                 </div>
                 <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white text-sm mb-2">{p.title}</h3>
-                <p className="text-xs text-[#3A3A3A]/60 dark:text-white/50 leading-relaxed">{p.desc}</p>
+                <p className="text-xs text-[#3A3A3A]/75 dark:text-white/55 leading-relaxed">{p.desc}</p>
               </AnimatedSection>
             ))}
           </div>
@@ -269,8 +272,8 @@ export default function OverviewPage() {
                 </p>
               </div>
               <div className="text-left md:text-right flex-shrink-0">
-                <div className="font-heading font-bold text-[#B8924A]">Growth Diagnostic — scoped on call</div>
-                <div className="text-white/45 text-sm mt-1">Full engagement pricing on scoping call</div>
+                <div className="font-heading font-bold text-[#caad77]">Growth Diagnostic — scoped on call</div>
+                <div className="text-white/55 text-sm mt-1">Full engagement pricing on scoping call</div>
               </div>
             </div>
           </AnimatedSection>

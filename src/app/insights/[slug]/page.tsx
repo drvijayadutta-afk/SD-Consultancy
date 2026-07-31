@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowLeft, Calendar, Clock, ArrowRight } from 'lucide-react';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { ContactCTA } from '@/components/sections/ContactCTA';
+import { onDarkText, solidFill } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'Healthcare Brand Insights | S.D Consultancy',
@@ -262,7 +263,7 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
       <div className="min-h-screen flex items-center justify-center pt-20">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-[#1F3A5F] dark:text-white mb-4">Article not found</h1>
-          <Link href="/insights" className="text-[#2E75B6] hover:underline flex items-center gap-2 justify-center">
+          <Link href="/insights" className="text-[var(--text-blue)] hover:underline flex items-center gap-2 justify-center">
             <ArrowLeft className="w-4 h-4" /> Back to Insights
           </Link>
         </div>
@@ -285,14 +286,14 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
             </Link>
             <span
               className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-5"
-              style={{ color: article.color, backgroundColor: article.color + '25' }}
+              style={{ color: onDarkText(article.color), backgroundColor: article.color + '25' }}
             >
               {article.category}
             </span>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-white leading-tight mb-6">
               {article.title}
             </h1>
-            <div className="flex items-center gap-6 text-white/50 text-sm">
+            <div className="flex items-center gap-6 text-white/55 text-sm">
               <span className="flex items-center gap-2"><Calendar className="w-4 h-4" />{article.date}</span>
               <span className="flex items-center gap-2"><Clock className="w-4 h-4" />{article.readTime}</span>
             </div>
@@ -312,7 +313,7 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
               {article.sections.map((section) => (
                 <div key={section.heading} className="prose-healthcare">
                   <h2 className="dark:text-white">{section.heading}</h2>
-                  <p className="text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed">{section.content}</p>
+                  <p className="text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed">{section.content}</p>
                 </div>
               ))}
             </div>
@@ -322,13 +323,13 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
               <h3 className="text-xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-3">
                 Ready to Build Your Healthcare Brand Strategy?
               </h3>
-              <p className="text-[#3A3A3A]/65 dark:text-white/60 mb-5">
+              <p className="text-[#3A3A3A]/75 dark:text-white/60 mb-5">
                 Schedule a strategy consultation to discuss how S.D Consultancy can help your organization achieve market leadership.
               </p>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white"
-                style={{ backgroundColor: article.color }}
+                style={{ backgroundColor: solidFill(article.color) }}
               >
                 Book a Strategy Consultation
                 <ArrowRight className="w-4 h-4" />

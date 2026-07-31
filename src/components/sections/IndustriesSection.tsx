@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
+import { accentText } from '@/lib/utils';
 
 const industries = [
   {
@@ -32,7 +33,7 @@ const industries = [
     href: '/industries#pharma',
     desc: 'HCP-targeted communications, patient education platforms, and brand strategy for pharmaceutical and life sciences companies.',
     color: '#B8924A',
-    accent: 'from-[#B8924A] to-[#d4a85e]',
+    accent: 'from-[#8a6e38] to-[#B8924A]',
     abbr: 'PH',
   },
   {
@@ -40,7 +41,7 @@ const industries = [
     href: '/industries#healthtech',
     desc: 'B2B and B2C positioning, GTM strategy, and digital health brand-building for technology-led companies.',
     color: '#2E75B6',
-    accent: 'from-[#2E75B6] to-[#4F8A77]',
+    accent: 'from-[#2E75B6] to-[#3a6b5c]',
     abbr: 'HT',
   },
   {
@@ -61,7 +62,7 @@ export function IndustriesSection() {
         <AnimatedSection className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
             <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
-            <span className="text-[#2E75B6] text-xs font-bold tracking-[0.2em] uppercase">Industries We Serve</span>
+            <span className="text-[var(--text-blue)] text-xs font-bold tracking-[0.2em] uppercase">Industries We Serve</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-4 leading-tight">
             Deep Healthcare<br className="hidden md:block" /> Sector Expertise
@@ -85,13 +86,13 @@ export function IndustriesSection() {
                 </div>
 
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white mb-1.5 group-hover:text-[#2E75B6] transition-colors">
+                  <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white mb-1.5 group-hover:text-[var(--text-blue)] transition-colors">
                     {ind.label}
                   </h3>
                   <p className="text-sm text-[#3A3A3A]/75 dark:text-white/65 leading-relaxed mb-3">
                     {ind.desc}
                   </p>
-                  <div className="flex items-center gap-1.5 text-xs font-semibold" style={{ color: ind.color }}>
+                  <div className="flex items-center gap-1.5 text-xs font-semibold" style={{ color: accentText(ind.color) }}>
                     Learn more
                     <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                   </div>

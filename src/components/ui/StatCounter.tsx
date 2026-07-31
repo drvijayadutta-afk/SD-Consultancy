@@ -46,7 +46,7 @@ export function StatCounter({ value, suffix = '', prefix = '', label, duration =
       <div className="stat-number text-4xl md:text-5xl font-bold text-[#1F3A5F] dark:text-white mb-2">
         {prefix}{count.toLocaleString()}{suffix}
       </div>
-      <div className="text-sm text-[#3A3A3A]/60 dark:text-white/50 font-medium">{label}</div>
+      <div className="text-sm text-[#3A3A3A]/75 dark:text-white/55 font-medium">{label}</div>
     </div>
   );
 }

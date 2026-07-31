@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --navy: #1F3A5F;
   --accent-blue: #2E75B6;
@@ -9,11 +11,25 @@
   --charcoal: #3A3A3A;
   --background: #ffffff;
   --foreground: #3A3A3A;
+
+  /* WCAG AA-compliant (4.5:1+) text variants of the brand accents.
+     Light-mode values are darkened for use on white/near-white backgrounds;
+     .dark overrides lighten them for use on the dark background. Reference
+     these (not the raw brand hex above) for any small/colored TEXT. */
+  --text-blue: #2867a0;
+  --text-teal: #3e6c5d;
+  --text-gold: #796031;
+  --text-navy: #1F3A5F;
 }
 
 .dark {
   --background: #0f1923;
   --foreground: #e8eef4;
+
+  --text-blue: #90b6d8;
+  --text-teal: #94b8ac;
+  --text-gold: #caad77;
+  --text-navy: #a8b2c1;
 }
 
 @theme inline {

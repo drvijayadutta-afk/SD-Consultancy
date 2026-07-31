@@ -6,6 +6,7 @@ import { ArrowRight, ChevronDown } from 'lucide-react';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { ContactCTA } from '@/components/sections/ContactCTA';
+import { accentText } from '@/lib/utils';
 
 const phases = [
   {
@@ -164,7 +165,7 @@ export default function HCLFPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#B8924A]/40 bg-[#B8924A]/10">
-              <span className="text-[#B8924A] text-xs font-semibold tracking-widest uppercase">Proprietary Methodology</span>
+              <span className="text-[#caad77] text-xs font-semibold tracking-widest uppercase">Proprietary Methodology</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-white leading-tight mb-6">
               The HCLF™ Framework
@@ -196,16 +197,16 @@ export default function HCLFPage() {
               <button
                 key={phase.num}
                 onClick={() => setActivePhase(activePhase === i ? null : i)}
-                className="group text-center p-5 rounded-2xl border-2 transition-all duration-300 hover:-translate-y-1"
+                className="group text-center p-5 rounded-2xl border-2 transition-all duration-300 hover:-translate-y-1 bg-[#f8fafc] dark:bg-[#111c2e]"
                 style={{
                   borderColor: activePhase === i ? phase.color : 'transparent',
-                  backgroundColor: activePhase === i ? phase.color + '10' : '#f8fafc',
+                  backgroundColor: activePhase === i ? phase.color + '10' : undefined,
                 }}
               >
                 <div className="text-2xl mb-3">{phase.icon}</div>
                 <div
                   className="text-xs font-bold font-mono mb-2"
-                  style={{ color: phase.color }}
+                  style={{ color: accentText(phase.color) }}
                 >
                   Phase {phase.num}
                 </div>
@@ -227,20 +228,20 @@ export default function HCLFPage() {
                   <div>
                     <div
                       className="text-xs font-bold font-mono mb-3"
-                      style={{ color: phases[activePhase].color }}
+                      style={{ color: accentText(phases[activePhase].color) }}
                     >
                       PHASE {phases[activePhase].num}
                     </div>
                     <h2 className="text-2xl md:text-3xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-4">
                       {phases[activePhase].title}
                     </h2>
-                    <p className="text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed mb-6">
+                    <p className="text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed mb-6">
                       {phases[activePhase].description}
                     </p>
                     <h3 className="font-semibold text-[#1F3A5F] dark:text-white mb-4">Key Activities</h3>
                     <ul className="space-y-2">
                       {phases[activePhase].activities.map((act) => (
-                        <li key={act} className="flex items-start gap-2 text-sm text-[#3A3A3A]/70 dark:text-white/60">
+                        <li key={act} className="flex items-start gap-2 text-sm text-[#3A3A3A]/75 dark:text-white/60">
                           <span className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: phases[activePhase].color }} />
                           {act}
                         </li>
@@ -267,7 +268,7 @@ export default function HCLFPage() {
           )}
 
           {!activePhase && (
-            <p className="text-center text-[#3A3A3A]/50 dark:text-white/40 text-sm">
+            <p className="text-center text-[#3A3A3A]/75 dark:text-white/55 text-sm">
               Click any phase above to explore its details →
             </p>
           )}
@@ -291,7 +292,7 @@ export default function HCLFPage() {
                     <div className="flex items-center gap-4">
                       <span
                         className="text-sm font-bold font-mono px-3 py-1 rounded-lg"
-                        style={{ color: phase.color, backgroundColor: phase.color + '15' }}
+                        style={{ color: accentText(phase.color), backgroundColor: phase.color + '15' }}
                       >
                         {phase.num}
                       </span>
@@ -301,13 +302,13 @@ export default function HCLFPage() {
                     <ChevronDown className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" />
                   </summary>
                   <div className="px-6 pb-6 border-t border-gray-100 dark:border-white/5 pt-5">
-                    <p className="text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed mb-5">{phase.description}</p>
+                    <p className="text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed mb-5">{phase.description}</p>
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <h4 className="font-semibold text-sm text-[#1F3A5F] dark:text-white mb-3">Key Activities</h4>
                         <ul className="space-y-1.5">
                           {phase.activities.map((a) => (
-                            <li key={a} className="text-sm text-[#3A3A3A]/65 dark:text-white/55 flex items-start gap-2">
+                            <li key={a} className="text-sm text-[#3A3A3A]/75 dark:text-white/55 flex items-start gap-2">
                               <span className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: phase.color }} />
                               {a}
                             </li>
@@ -318,8 +319,8 @@ export default function HCLFPage() {
                         <h4 className="font-semibold text-sm text-[#1F3A5F] dark:text-white mb-3">Deliverables</h4>
                         <ul className="space-y-1.5">
                           {phase.deliverables.map((d) => (
-                            <li key={d} className="text-sm text-[#3A3A3A]/65 dark:text-white/55 flex items-start gap-2">
-                              <ArrowRight className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" style={{ color: phase.color }} />
+                            <li key={d} className="text-sm text-[#3A3A3A]/75 dark:text-white/55 flex items-start gap-2">
+                              <ArrowRight className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" style={{ color: accentText(phase.color) }} />
                               {d}
                             </li>
                           ))}

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Search, Calendar, Clock, ArrowRight, Send } from 'lucide-react';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
+import { accentText } from '@/lib/utils';
 
 const categories = [
   'All',
@@ -134,17 +135,17 @@ export default function InsightsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#4F8A77]/40 bg-[#4F8A77]/10">
-              <span className="text-[#4F8A77] text-xs font-semibold tracking-widest uppercase">Thought Leadership</span>
+              <span className="text-[#94b8ac] text-xs font-semibold tracking-widest uppercase">Thought Leadership</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-white leading-tight mb-6">Healthcare Brand Insights</h1>
             <p className="text-lg text-white/65 leading-relaxed">Strategic perspectives, frameworks, and practical guidance for healthcare leaders navigating complex markets.</p>
           </AnimatedSection>
           <AnimatedSection delay={200} className="mt-10 max-w-xl">
             <div className="relative">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/40" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/55" />
               <input type="text" value={search} onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search insights..."
-                className="w-full pl-12 pr-4 py-3.5 bg-white/10 border border-white/20 rounded-xl text-white placeholder:text-white/40 focus:outline-none focus:border-[#4F8A77] transition-colors" />
+                className="w-full pl-12 pr-4 py-3.5 bg-white/10 border border-white/20 rounded-xl text-white placeholder:text-white/55 focus:outline-none focus:border-[#4F8A77] transition-colors" />
             </div>
           </AnimatedSection>
         </div>
@@ -158,7 +159,7 @@ export default function InsightsPage() {
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   category === cat
                     ? 'bg-[#1F3A5F] text-white'
-                    : 'bg-[#f8fafc] dark:bg-[#162d4a] text-[#3A3A3A]/70 dark:text-white/60 hover:bg-[#DCE9F4] dark:hover:bg-[#2E75B6]/20'
+                    : 'bg-[#f8fafc] dark:bg-[#162d4a] text-[#3A3A3A]/75 dark:text-white/60 hover:bg-[#DCE9F4] dark:hover:bg-[#2E75B6]/20'
                 }`}>{cat}</button>
             ))}
           </div>
@@ -174,10 +175,10 @@ export default function InsightsPage() {
                       <div className="h-2" style={{ backgroundColor: article.color }} />
                       <div className="p-7">
                         <span className="text-xs font-semibold px-3 py-1 rounded-full"
-                          style={{ color: article.color, backgroundColor: article.color + '15' }}>{article.category}</span>
-                        <h3 className="mt-4 mb-3 font-bold font-heading text-[#1F3A5F] dark:text-white leading-snug group-hover:text-[#2E75B6] transition-colors">{article.title}</h3>
-                        <p className="text-sm text-[#3A3A3A]/65 dark:text-white/55 leading-relaxed mb-5">{article.excerpt}</p>
-                        <div className="flex items-center justify-between text-xs text-[#3A3A3A]/50 dark:text-white/40">
+                          style={{ color: accentText(article.color), backgroundColor: article.color + '15' }}>{article.category}</span>
+                        <h3 className="mt-4 mb-3 font-bold font-heading text-[#1F3A5F] dark:text-white leading-snug group-hover:text-[var(--text-blue)] transition-colors">{article.title}</h3>
+                        <p className="text-sm text-[#3A3A3A]/75 dark:text-white/55 leading-relaxed mb-5">{article.excerpt}</p>
+                        <div className="flex items-center justify-between text-xs text-[#3A3A3A]/75 dark:text-white/55">
                           <span className="flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5" />{article.date}</span>
                           <span className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" />{article.readTime}</span>
                         </div>
@@ -200,11 +201,11 @@ export default function InsightsPage() {
                       <div className="h-1.5" style={{ backgroundColor: article.color }} />
                       <div className="p-6 flex-1 flex flex-col">
                         <span className="text-xs font-semibold px-2.5 py-1 rounded-full self-start"
-                          style={{ color: article.color, backgroundColor: article.color + '15' }}>{article.category}</span>
-                        <h3 className="mt-3 mb-2 font-bold font-heading text-[#1F3A5F] dark:text-white leading-snug group-hover:text-[#2E75B6] transition-colors text-sm flex-1">{article.title}</h3>
-                        <div className="flex items-center justify-between text-xs text-[#3A3A3A]/50 dark:text-white/40 mt-4">
+                          style={{ color: accentText(article.color), backgroundColor: article.color + '15' }}>{article.category}</span>
+                        <h3 className="mt-3 mb-2 font-bold font-heading text-[#1F3A5F] dark:text-white leading-snug group-hover:text-[var(--text-blue)] transition-colors text-sm flex-1">{article.title}</h3>
+                        <div className="flex items-center justify-between text-xs text-[#3A3A3A]/75 dark:text-white/55 mt-4">
                           <span>{article.date}</span>
-                          <span className="flex items-center gap-1.5 text-[#2E75B6]">Read <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" /></span>
+                          <span className="flex items-center gap-1.5 text-[var(--text-blue)]">Read <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" /></span>
                         </div>
                       </div>
                     </Link>
@@ -215,7 +216,7 @@ export default function InsightsPage() {
           )}
 
           {filtered.length === 0 && (
-            <div className="text-center py-20 text-[#3A3A3A]/50 dark:text-white/40">
+            <div className="text-center py-20 text-[#3A3A3A]/75 dark:text-white/55">
               No articles found for your search. Try a different keyword or category.
             </div>
           )}
@@ -227,14 +228,14 @@ export default function InsightsPage() {
           <h2 className="text-3xl font-bold font-heading text-white mb-4">Healthcare Insights Newsletter</h2>
           <p className="text-white/70 mb-8">Strategic insights, framework updates, and sector perspectives — delivered monthly to healthcare leaders who want to stay ahead.</p>
           {subscribed ? (
-            <div className="flex items-center justify-center gap-2 text-[#4F8A77] font-semibold text-lg">
+            <div className="flex items-center justify-center gap-2 text-[#94b8ac] font-semibold text-lg">
               <Send className="w-5 h-5" /> Thank you! You&apos;re subscribed.
             </div>
           ) : (
             <form onSubmit={(e) => { e.preventDefault(); if (email) setSubscribed(true); }} className="flex gap-3">
               <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email address" required
-                className="flex-1 px-5 py-3.5 rounded-xl bg-white/15 border border-white/30 text-white placeholder:text-white/50 focus:outline-none focus:border-white" />
+                className="flex-1 px-5 py-3.5 rounded-xl bg-white/15 border border-white/30 text-white placeholder:text-white/55 focus:outline-none focus:border-white" />
               <button type="submit" className="px-6 py-3.5 bg-white text-[#1F3A5F] font-bold rounded-xl hover:bg-[#DCE9F4] transition-colors">Subscribe</button>
             </form>
           )}

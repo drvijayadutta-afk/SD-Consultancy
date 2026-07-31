@@ -1,6 +1,7 @@
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Stethoscope, Brain, Layers, Sparkles } from 'lucide-react';
+import { onLightText } from '@/lib/utils';
 
 const differences = [
   {
@@ -56,12 +57,12 @@ export function OurDifference() {
         <AnimatedSection className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
             <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
-            <span className="text-[#2E75B6] text-xs font-bold tracking-[0.2em] uppercase">Our Difference</span>
+            <span className="text-[var(--text-blue)] text-xs font-bold tracking-[0.2em] uppercase">Our Difference</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-4 leading-tight">
             Why Healthcare Organizations<br className="hidden md:block" /> Choose S.D Consultancy
           </h2>
-          <p className="text-[#3A3A3A]/60 dark:text-white/50 max-w-xl mx-auto">
+          <p className="text-[#3A3A3A]/75 dark:text-white/55 max-w-xl mx-auto">
             We combine clinical understanding, strategic thinking, and creative excellence in ways that generalist agencies simply cannot.
           </p>
         </AnimatedSection>
@@ -76,13 +77,13 @@ export function OurDifference() {
                     className="w-12 h-12 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm"
                     style={{ backgroundColor: item.lightBg }}
                   >
-                    <item.icon className="w-5 h-5" style={{ color: item.color }} />
+                    <item.icon className="w-5 h-5" style={{ color: onLightText(item.color) }} />
                   </div>
                   <span className="text-3xl font-bold font-mono opacity-[0.07] dark:opacity-[0.12] text-[#1F3A5F] dark:text-white select-none">
                     {item.num}
                   </span>
                 </div>
-                <h3 className="text-base font-bold font-heading text-[#1F3A5F] dark:text-white mb-3 group-hover:text-[#2E75B6] dark:group-hover:text-white transition-colors">
+                <h3 className="text-base font-bold font-heading text-[#1F3A5F] dark:text-white mb-3 group-hover:text-[var(--text-blue)] dark:group-hover:text-white transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-sm text-[#3A3A3A]/75 dark:text-white/65 leading-relaxed">

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, Target, Eye, Heart, Award, CheckCircle2, Stethoscope, TrendingUp, Users, Globe, Zap, Star, BookOpen } from 'lucide-react';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { ContactCTA } from '@/components/sections/ContactCTA';
+import { accentText, ON_DARK, SOLID_FILL } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'About S.D Consultancy | Dr. Vijaya Dutta | Healthcare Brand Strategy',
@@ -37,37 +38,37 @@ const timeline = [
     year: '2018',
     title: 'BDS — PMT Rank 14, IP University',
     event: 'Graduated as a dental surgeon from ESIC Dental College, securing PMT Rank 14 at IP University — a rigorous clinical foundation that instilled the deep healthcare fluency underpinning every strategic decision ahead.',
-    color: '#2E75B6',
+    dot: SOLID_FILL.blue, text: ON_DARK.blue,
   },
   {
     year: '2018',
     title: 'Max Healthcare',
     event: 'Began her marketing career at Max Healthcare — one of India\'s premier premium hospital networks — immersing herself in enterprise healthcare brand-building, patient communications strategy, and multi-specialty campaign design across flagship hospitals.',
-    color: '#4F8A77',
+    dot: SOLID_FILL.teal, text: ON_DARK.teal,
   },
   {
     year: '2020',
     title: 'Manipal Hospitals — Regional Marketing Lead',
     event: 'Joined Manipal Hospitals (MHEPL), rising to Senior Executive – Marketing, Regional Office South (Bangalore). Led branding and communication for 6 South Region units and the South East Region (Vijayawada & Bhubaneswar), while also driving Manipal Hospitals Global\'s international patient footfall through targeted brand campaigns.',
-    color: '#1F3A5F',
+    dot: '#1F3A5F', text: ON_DARK.navy,
   },
   {
     year: '2025',
     title: 'Kidney Resignation Letter Campaign',
     event: 'Ideated the concept of the nationally acclaimed "Kidney Resignation Letter" campaign for World Kidney Day 2025 — a bold, thought-provoking initiative by Manipal Hospitals that reached millions and sparked a nationwide conversation around preventive kidney health.',
-    color: '#B8924A',
+    dot: SOLID_FILL.gold, text: ON_DARK.gold,
   },
   {
     year: '2025',
     title: 'HCLF™ Framework Crystallised',
     event: 'After years of frontline healthcare marketing experience across India\'s largest hospital groups, crystallised the HCLF™ Framework — a proprietary 6-phase Healthcare Communications & Leadership Framework for sustainable market leadership.',
-    color: '#2E75B6',
+    dot: SOLID_FILL.blue, text: ON_DARK.blue,
   },
   {
     year: '2026',
     title: 'S.D Consultancy Founded',
     event: 'Founded S.D Consultancy in New Delhi — channelling clinical credibility, proven campaign leadership, and the HCLF™ Framework into India\'s premier 360° healthcare brand strategy consultancy.',
-    color: '#4F8A77',
+    dot: SOLID_FILL.teal, text: ON_DARK.teal,
   },
 ];
 
@@ -101,7 +102,7 @@ export default function AboutPage() {
             <AnimatedSection>
               <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#4F8A77]/40 bg-[#4F8A77]/10 backdrop-blur-sm">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#4F8A77] animate-pulse" />
-                <span className="text-[#4F8A77] text-xs font-bold tracking-[0.2em] uppercase">About S.D Consultancy</span>
+                <span className="text-[#94b8ac] text-xs font-bold tracking-[0.2em] uppercase">About S.D Consultancy</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white leading-[1.05] mb-6 tracking-tight">
                 Founded by a{' '}
@@ -125,7 +126,7 @@ export default function AboutPage() {
                     <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: c.color }} />
                     <div>
                       <div className="text-white text-xs font-bold">{c.label}</div>
-                      <div className="text-white/50 text-[10px]">{c.sub}</div>
+                      <div className="text-white/55 text-[10px]">{c.sub}</div>
                     </div>
                   </div>
                 ))}
@@ -145,7 +146,7 @@ export default function AboutPage() {
                     </div>
                     <div>
                       <div className="text-white font-bold font-heading text-xl mb-0.5">Dr. Vijaya Dutta</div>
-                      <div className="text-[#4F8A77] font-semibold text-sm mb-1">Founder & Chief Strategy Officer</div>
+                      <div className="text-[#94b8ac] font-semibold text-sm mb-1">Founder & Chief Strategy Officer</div>
                       <div className="text-white/65 text-xs">S.D Consultancy · New Delhi, India</div>
                     </div>
                   </div>
@@ -156,9 +157,9 @@ export default function AboutPage() {
 
                   <div className="grid grid-cols-3 gap-3">
                     {[
-                      { n: '10+',  l: 'Years Expertise',      c: '#2E75B6' },
-                      { n: '98%',  l: 'Client Retention',     c: '#B8924A' },
-                      { n: '6',    l: 'Healthcare Verticals', c: '#4F8A77' },
+                      { n: '10+',  l: 'Years Expertise',      c: ON_DARK.blue },
+                      { n: '98%',  l: 'Client Retention',     c: ON_DARK.gold },
+                      { n: '6',    l: 'Healthcare Verticals', c: ON_DARK.teal },
                     ].map((s) => (
                       <div key={s.l} className="bg-white/5 rounded-xl p-4 border border-white/8 hover:bg-white/10 transition-all duration-300">
                         <div className="text-2xl font-bold font-mono mb-0.5" style={{ color: s.c }}>{s.n}</div>
@@ -181,7 +182,7 @@ export default function AboutPage() {
             <AnimatedSection>
               <div className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
-                <span className="text-[#2E75B6] text-xs font-bold tracking-[0.2em] uppercase">The Founder&apos;s Story</span>
+                <span className="text-[var(--text-blue)] text-xs font-bold tracking-[0.2em] uppercase">The Founder&apos;s Story</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#1F3A5F] dark:text-white leading-tight mb-6">
                 A Dentist Who Chose{' '}
@@ -189,7 +190,7 @@ export default function AboutPage() {
                   Strategy
                 </span>
               </h2>
-              <div className="space-y-5 text-[#3A3A3A]/70 dark:text-white/65 leading-relaxed">
+              <div className="space-y-5 text-[#3A3A3A]/75 dark:text-white/65 leading-relaxed">
                 <p>
                   Dr. Vijaya Dutta graduated in 2018 as a dental surgeon from ESIC Dental College, securing PMT Rank 14 at IP University — a distinction that reflected both academic rigor and an analytical mind primed for complex problem-solving.
                 </p>
@@ -209,7 +210,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 {/* Expertise areas */}
                 <div className="mb-8">
-                  <div className="text-xs font-bold tracking-widest uppercase text-[#3A3A3A]/60 dark:text-white/55 mb-4">Areas of Expertise</div>
+                  <div className="text-xs font-bold tracking-widest uppercase text-[#3A3A3A]/75 dark:text-white/55 mb-4">Areas of Expertise</div>
                   <div className="grid grid-cols-1 gap-3">
                     {expertise.map((e, i) => (
                       <div
@@ -221,7 +222,7 @@ export default function AboutPage() {
                           className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
                           style={{ backgroundColor: e.color + '18' }}
                         >
-                          <e.icon className="w-4 h-4" style={{ color: e.color }} />
+                          <e.icon className="w-4 h-4" style={{ color: accentText(e.color) }} />
                         </div>
                         <span className="font-semibold text-[#1F3A5F] dark:text-white text-sm">{e.label}</span>
                         <div className="ml-auto w-1 h-1 rounded-full" style={{ backgroundColor: e.color }} />
@@ -256,7 +257,7 @@ export default function AboutPage() {
               </blockquote>
               <div className="flex items-center justify-center gap-3">
                 <div className="w-12 h-px bg-gradient-to-r from-transparent to-[#2E75B6]" />
-                <span className="text-[#2E75B6] font-semibold text-sm">Dr. Vijaya Dutta, Founder</span>
+                <span className="text-[var(--text-blue)] font-semibold text-sm">Dr. Vijaya Dutta, Founder</span>
                 <div className="w-12 h-px bg-gradient-to-l from-transparent to-[#2E75B6]" />
               </div>
             </div>
@@ -270,7 +271,7 @@ export default function AboutPage() {
           <AnimatedSection className="text-center mb-14">
             <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
               <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
-              <span className="text-[#2E75B6] text-xs font-bold tracking-[0.2em] uppercase">What We Stand For</span>
+              <span className="text-[var(--text-blue)] text-xs font-bold tracking-[0.2em] uppercase">What We Stand For</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#1F3A5F] dark:text-white">
               Mission, Vision & Promise
@@ -307,12 +308,12 @@ export default function AboutPage() {
                     className="w-13 h-13 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110"
                     style={{ backgroundColor: item.color + '15' }}
                   >
-                    <item.icon className="w-6 h-6" style={{ color: item.color }} />
+                    <item.icon className="w-6 h-6" style={{ color: accentText(item.color) }} />
                   </div>
-                  <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: item.color }}>
+                  <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: accentText(item.color) }}>
                     {item.label}
                   </div>
-                  <p className="text-[#3A3A3A]/70 dark:text-white/65 leading-relaxed">{item.text}</p>
+                  <p className="text-[#3A3A3A]/75 dark:text-white/65 leading-relaxed">{item.text}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -327,12 +328,12 @@ export default function AboutPage() {
             <AnimatedSection>
               <div className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
-                <span className="text-[#2E75B6] text-xs font-bold tracking-[0.2em] uppercase">Our Strategic Approach</span>
+                <span className="text-[var(--text-blue)] text-xs font-bold tracking-[0.2em] uppercase">Our Strategic Approach</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#1F3A5F] dark:text-white leading-tight mb-4">
                 Why a Doctor-Founded Consultancy<br />Is Different
               </h2>
-              <p className="text-[#3A3A3A]/65 dark:text-white/60 leading-relaxed mb-2">
+              <p className="text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed mb-2">
                 Healthcare is one of the most regulated, trust-sensitive, and stakeholder-complex sectors in the world. Generic marketing doesn&apos;t work here — and neither do agencies without clinical credibility.
               </p>
             </AnimatedSection>
@@ -346,7 +347,7 @@ export default function AboutPage() {
                     <CheckCircle2 className="w-5 h-5 text-[#4F8A77] mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
                     <div>
                       <div className="font-bold text-[#1F3A5F] dark:text-white mb-1 text-sm">{pillar.title}</div>
-                      <div className="text-[#3A3A3A]/65 dark:text-white/55 text-sm">{pillar.desc}</div>
+                      <div className="text-[#3A3A3A]/75 dark:text-white/55 text-sm">{pillar.desc}</div>
                     </div>
                   </div>
                 ))}
@@ -362,7 +363,7 @@ export default function AboutPage() {
           <AnimatedSection className="text-center mb-14">
             <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
               <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
-              <span className="text-[#2E75B6] text-xs font-bold tracking-[0.2em] uppercase">What We Stand For</span>
+              <span className="text-[var(--text-blue)] text-xs font-bold tracking-[0.2em] uppercase">What We Stand For</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#1F3A5F] dark:text-white">Our Core Values</h2>
           </AnimatedSection>
@@ -374,7 +375,7 @@ export default function AboutPage() {
                     <v.icon className="w-7 h-7 text-[#2E75B6]" />
                   </div>
                   <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white mb-3">{v.title}</h3>
-                  <p className="text-sm text-[#3A3A3A]/65 dark:text-white/55 leading-relaxed">{v.desc}</p>
+                  <p className="text-sm text-[#3A3A3A]/75 dark:text-white/55 leading-relaxed">{v.desc}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -411,7 +412,7 @@ export default function AboutPage() {
           <AnimatedSection className="text-center mb-16">
             <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-[#B8924A]/30 bg-[#B8924A]/10">
               <span className="w-1.5 h-1.5 rounded-full bg-[#B8924A]" />
-              <span className="text-[#B8924A] text-xs font-bold tracking-[0.2em] uppercase">The Journey</span>
+              <span className="text-[#caad77] text-xs font-bold tracking-[0.2em] uppercase">The Journey</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-white leading-tight">
               From Clinical Excellence<br />to Strategic Leadership
@@ -433,7 +434,7 @@ export default function AboutPage() {
                     <div className="relative z-10 flex-shrink-0 md:mx-8">
                       <div
                         className="w-12 h-12 rounded-full border-2 border-[#0f1923] flex items-center justify-center shadow-lg"
-                        style={{ backgroundColor: item.color }}
+                        style={{ backgroundColor: item.dot }}
                       >
                         <span className="text-white font-bold font-mono text-[10px]">{item.year.slice(0, 4)}</span>
                       </div>
@@ -445,7 +446,7 @@ export default function AboutPage() {
                         <div className="flex items-center gap-3 mb-3">
                           <span
                             className="text-xs font-bold font-mono px-2.5 py-1 rounded-lg"
-                            style={{ color: item.color, backgroundColor: item.color + '18' }}
+                            style={{ color: item.text, backgroundColor: item.dot + '18' }}
                           >
                             {item.year}
                           </span>

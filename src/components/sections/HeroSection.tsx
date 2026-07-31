@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ON_DARK } from '@/lib/utils';
 
 const pillars = [
   'Clinical Fluency',
@@ -12,12 +13,12 @@ const pillars = [
 ];
 
 const phases = [
-  { num: '01', label: 'Market Intelligence', color: '#2E75B6' },
-  { num: '02', label: 'Brand Positioning', color: '#4F8A77' },
-  { num: '03', label: 'Stakeholder Design', color: '#1F3A5F' },
-  { num: '04', label: 'Integrated Comms', color: '#B8924A' },
-  { num: '05', label: 'Creative Strategy', color: '#2E75B6' },
-  { num: '06', label: 'Measurement', color: '#4F8A77' },
+  { num: '01', label: 'Market Intelligence', color: ON_DARK.blue },
+  { num: '02', label: 'Brand Positioning', color: ON_DARK.teal },
+  { num: '03', label: 'Stakeholder Design', color: ON_DARK.navy },
+  { num: '04', label: 'Integrated Comms', color: ON_DARK.gold },
+  { num: '05', label: 'Creative Strategy', color: ON_DARK.blue },
+  { num: '06', label: 'Measurement', color: ON_DARK.teal },
 ];
 
 export function HeroSection() {
@@ -108,7 +109,7 @@ export function HeroSection() {
           <div>
             <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full border border-[#4F8A77]/35 bg-[#4F8A77]/10 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-[#4F8A77] animate-pulse" />
-              <span className="text-[#4F8A77] text-xs font-bold tracking-[0.18em] uppercase">
+              <span className="text-[#94b8ac] text-xs font-bold tracking-[0.18em] uppercase">
                 360° Healthcare Strategy Consultancy
               </span>
             </div>
@@ -154,7 +155,7 @@ export function HeroSection() {
               <div ref={pillarsRef} className="flex flex-wrap gap-x-5 gap-y-2">
                 {pillars.map((pillar) => (
                   <div key={pillar} className="flex items-center gap-1.5 text-sm text-white/75">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#4F8A77] flex-shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#94b8ac] flex-shrink-0" />
                     {pillar}
                   </div>
                 ))}
@@ -179,7 +180,7 @@ export function HeroSection() {
                     <div className="text-white/65 text-xs">Proprietary 6-Phase Methodology</div>
                   </div>
                   <div className="ml-auto">
-                    <span className="px-2 py-0.5 rounded-full bg-[#B8924A]/20 text-[#B8924A] text-[10px] font-bold tracking-wide">
+                    <span className="px-2 py-0.5 rounded-full bg-[#B8924A]/20 text-[#caad77] text-[10px] font-bold tracking-wide">
                       PROPRIETARY
                     </span>
                   </div>
@@ -212,7 +213,7 @@ export function HeroSection() {
                   </div>
                   <Link
                     href="/hclf-framework"
-                    className="text-[#4F8A77] text-xs font-semibold hover:text-[#6aaa95] flex items-center gap-1 transition-colors"
+                    className="text-[#94b8ac] text-xs font-semibold hover:text-[#b2cdc4] flex items-center gap-1 transition-colors"
                   >
                     Explore <ArrowRight className="w-3 h-3" />
                   </Link>
@@ -221,9 +222,9 @@ export function HeroSection() {
 
               <div className="grid grid-cols-3 gap-3">
                 {[
-                  { value: '10+',  label: 'Years Expertise',        color: '#2E75B6' },
-                  { value: '30+',  label: 'Organizations Served',   color: '#4F8A77' },
-                  { value: '98%',  label: 'Client Retention',       color: '#B8924A' },
+                  { value: '10+',  label: 'Years Expertise',        color: ON_DARK.blue },
+                  { value: '30+',  label: 'Organizations Served',   color: ON_DARK.teal },
+                  { value: '98%',  label: 'Client Retention',       color: ON_DARK.gold },
                 ].map((stat) => (
                   <div
                     key={stat.label}
@@ -246,7 +247,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/35">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/55">
         <span className="text-[10px] tracking-[0.25em] uppercase font-medium">Scroll</span>
         <div className="w-px h-10 bg-gradient-to-b from-white/40 to-transparent animate-scroll" />
       </div>

@@ -4,11 +4,12 @@ import { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
+import { ON_DARK, SOLID_FILL } from '@/lib/utils';
 
 const testimonials = [
-  { quote: "S.D Consultancy transformed how we communicate our clinical excellence. Their HCLF™ framework gave us a clear roadmap, and the results exceeded our expectations — patient inquiries increased by 45% within six months.", name: 'Dr. Ananya Krishnamurthy', title: 'CMO, Regional Hospital Group', sector: 'Hospital Chain', initials: 'AK', color: '#2E75B6' },
-  { quote: "Their understanding of the fertility sector is unmatched. They helped us communicate with sensitivity and science — building the trust our patients need during one of the most vulnerable times of their lives.", name: 'Dr. Priya Mehta', title: 'Co-Founder & Medical Director', sector: 'IVF & Fertility', initials: 'PM', color: '#4F8A77' },
-  { quote: "Working with S.D Consultancy on our MedTech go-to-market strategy was a game changer. They understood both the clinical and commercial dimensions in a way no other agency has.", name: 'Rajesh Nair', title: 'VP Marketing, MedTech Startup', sector: 'MedTech', initials: 'RN', color: '#B8924A' },
+  { quote: "S.D Consultancy transformed how we communicate our clinical excellence. Their HCLF™ framework gave us a clear roadmap, and the results exceeded our expectations — patient inquiries increased by 45% within six months.", name: 'Dr. Ananya Krishnamurthy', title: 'CMO, Regional Hospital Group', sector: 'Hospital Chain', initials: 'AK', avatarBg: SOLID_FILL.blue, textColor: ON_DARK.blue },
+  { quote: "Their understanding of the fertility sector is unmatched. They helped us communicate with sensitivity and science — building the trust our patients need during one of the most vulnerable times of their lives.", name: 'Dr. Priya Mehta', title: 'Co-Founder & Medical Director', sector: 'IVF & Fertility', initials: 'PM', avatarBg: SOLID_FILL.teal, textColor: ON_DARK.teal },
+  { quote: "Working with S.D Consultancy on our MedTech go-to-market strategy was a game changer. They understood both the clinical and commercial dimensions in a way no other agency has.", name: 'Rajesh Nair', title: 'VP Marketing, MedTech Startup', sector: 'MedTech', initials: 'RN', avatarBg: SOLID_FILL.gold, textColor: ON_DARK.gold },
 ];
 
 export function TestimonialsSection() {
@@ -23,15 +24,15 @@ export function TestimonialsSection() {
         <SectionHeader eyebrow="Client Voices" title="What Healthcare Leaders Say" centered light className="mb-14" />
         <AnimatedSection>
           <div className="bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 p-10 md:p-14">
-            <Quote className="w-10 h-10 text-[#B8924A] mb-6 opacity-60" />
+            <Quote className="w-10 h-10 text-[#caad77] mb-6 opacity-60" />
             <blockquote className="text-xl md:text-2xl text-white/85 leading-relaxed mb-8 font-light">&ldquo;{testimonials[active].quote}&rdquo;</blockquote>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm" style={{ backgroundColor: testimonials[active].color }}>{testimonials[active].initials}</div>
+                <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm" style={{ backgroundColor: testimonials[active].avatarBg }}>{testimonials[active].initials}</div>
                 <div>
                   <div className="text-white font-semibold">{testimonials[active].name}</div>
-                  <div className="text-white/50 text-sm">{testimonials[active].title}</div>
-                  <div className="text-xs font-medium mt-0.5 px-2 py-0.5 rounded-full inline-block" style={{ color: testimonials[active].color, backgroundColor: testimonials[active].color + '20' }}>{testimonials[active].sector}</div>
+                  <div className="text-white/55 text-sm">{testimonials[active].title}</div>
+                  <div className="text-xs font-medium mt-0.5 px-2 py-0.5 rounded-full inline-block" style={{ color: testimonials[active].textColor, backgroundColor: testimonials[active].avatarBg + '20' }}>{testimonials[active].sector}</div>
                 </div>
               </div>
               <div className="flex gap-2">
@@ -41,7 +42,7 @@ export function TestimonialsSection() {
             </div>
           </div>
           <div className="flex justify-center gap-2 mt-8">
-            {testimonials.map((_, i) => (<button key={i} onClick={() => setActive(i)} className={`rounded-full transition-all ${i === active ? 'w-8 h-2 bg-[#B8924A]' : 'w-2 h-2 bg-white/30'}`} />))}
+            {testimonials.map((_, i) => (<button key={i} onClick={() => setActive(i)} className={`rounded-full transition-all ${i === active ? 'w-8 h-2 bg-[#caad77]' : 'w-2 h-2 bg-white/30'}`} />))}
           </div>
         </AnimatedSection>
       </div>

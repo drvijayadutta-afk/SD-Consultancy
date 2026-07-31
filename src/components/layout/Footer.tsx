@@ -110,7 +110,7 @@ export function Footer() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <div className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full border border-[#4F8A77]/30 bg-[#4F8A77]/10">
             <span className="w-1.5 h-1.5 rounded-full bg-[#4F8A77] animate-pulse" />
-            <span className="text-[#4F8A77] text-xs font-semibold tracking-widest uppercase">Strategy Consultation</span>
+            <span className="text-[#94b8ac] text-xs font-semibold tracking-widest uppercase">Strategy Consultation</span>
           </div>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading mb-4">
             Ready to Transform Your Healthcare Brand?
@@ -137,27 +137,27 @@ export function Footer() {
               <FooterLogo />
               <div>
                 <div className="text-white font-bold text-lg font-heading">S.D Consultancy</div>
-                <div className="text-[#4F8A77] text-[10px] font-semibold tracking-[0.18em] uppercase">360° Healthcare Strategy</div>
+                <div className="text-[#94b8ac] text-[10px] font-semibold tracking-[0.18em] uppercase">360° Healthcare Strategy</div>
               </div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-4 max-w-sm">
               Transforming healthcare expertise into market leadership through integrated strategy, communications, and creative excellence.
             </p>
-            <p className="text-[#B8924A]/80 text-xs font-medium italic mb-8">
+            <p className="text-[#caad77] text-xs font-medium italic mb-8">
               &ldquo;Clinical insight becoming market momentum.&rdquo;
             </p>
 
             {/* Contact */}
             <div className="space-y-3 mb-8">
-              <a href="mailto:drvijayadutta@gmail.com" className="flex items-center gap-3 text-sm text-white/70 hover:text-[#4F8A77] transition-colors group/contact">
+              <a href="mailto:drvijayadutta@gmail.com" className="flex items-center gap-3 text-sm text-white/70 hover:text-[#94b8ac] transition-colors group/contact">
                 <span className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center group-hover/contact:bg-[#4F8A77]/20 transition-colors">
-                  <Mail className="w-3.5 h-3.5 text-[#4F8A77]" />
+                  <Mail className="w-3.5 h-3.5 text-[#94b8ac]" />
                 </span>
                 drvijayadutta@gmail.com
               </a>
               <div className="flex items-start gap-3 text-sm text-white/70">
                 <span className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-3.5 h-3.5 text-[#4F8A77]" />
+                  <MapPin className="w-3.5 h-3.5 text-[#94b8ac]" />
                 </span>
                 New Delhi, India
               </div>
@@ -187,9 +187,9 @@ export function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-white/65 hover:text-[#4F8A77] transition-colors flex items-center gap-1.5 group/link"
+                      className="text-sm text-white/65 hover:text-[#94b8ac] transition-colors flex items-center gap-1.5 group/link"
                     >
-                      <ArrowRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all duration-200 text-[#4F8A77]" />
+                      <ArrowRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all duration-200 text-[#94b8ac]" />
                       {link.label}
                     </Link>
                   </li>
@@ -207,7 +207,7 @@ export function Footer() {
               <p className="text-sm text-white/65">Strategic insights for healthcare leaders, delivered monthly.</p>
             </div>
             {subscribed ? (
-              <div className="flex items-center gap-2 text-[#4F8A77] font-medium">
+              <div className="flex items-center gap-2 text-[#94b8ac] font-medium">
                 <Send className="w-4 h-4" />
                 Thank you for subscribing!
               </div>

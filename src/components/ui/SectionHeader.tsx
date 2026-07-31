@@ -16,7 +16,7 @@ export function SectionHeader({ eyebrow, title, subtitle, centered = false, ligh
       {eyebrow && (
         <div className={cn(
           'inline-flex items-center gap-2 mb-4 text-xs font-semibold tracking-[0.2em] uppercase',
-          light ? 'text-[#4F8A77]' : 'text-[#2E75B6] dark:text-[#4F8A77]'
+          light ? 'text-[#94b8ac]' : 'text-[var(--text-blue)]'
         )}>
           <span className={cn('w-8 h-px', light ? 'bg-[#4F8A77]' : 'bg-[#2E75B6]')} />
           {eyebrow}

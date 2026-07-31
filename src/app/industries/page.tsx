@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { ContactCTA } from '@/components/sections/ContactCTA';
+import { accentText, solidFill } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'Industries We Serve | S.D Consultancy Healthcare Strategy',
@@ -194,7 +195,7 @@ export default function IndustriesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#4F8A77]/40 bg-[#4F8A77]/10">
-              <span className="text-[#4F8A77] text-xs font-semibold tracking-widest uppercase">Industries We Serve</span>
+              <span className="text-[#94b8ac] text-xs font-semibold tracking-widest uppercase">Industries We Serve</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-white leading-tight mb-6">
               Deep Expertise Across{' '}
@@ -224,18 +225,18 @@ export default function IndustriesPage() {
                 <div className="flex items-center gap-4 mb-6">
                   <span className="text-5xl">{ind.emoji}</span>
                   <div>
-                    <div className="text-xs font-semibold tracking-widest uppercase mb-1" style={{ color: ind.color }}>Industry Focus</div>
+                    <div className="text-xs font-semibold tracking-widest uppercase mb-1" style={{ color: accentText(ind.color) }}>Industry Focus</div>
                     <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#1F3A5F] dark:text-white">{ind.title}</h2>
                   </div>
                 </div>
-                <p className="text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed mb-8">{ind.description}</p>
+                <p className="text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed mb-8">{ind.description}</p>
                 <div className="mb-6">
                   <h3 className="font-semibold text-[#1F3A5F] dark:text-white mb-3">Typical Outcomes</h3>
                   <div className="space-y-2">
                     {ind.outcomes.map((o) => (
                       <div key={o} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: ind.color }} />
-                        <span className="text-sm text-[#3A3A3A]/70 dark:text-white/65">{o}</span>
+                        <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: accentText(ind.color) }} />
+                        <span className="text-sm text-[#3A3A3A]/75 dark:text-white/65">{o}</span>
                       </div>
                     ))}
                   </div>
@@ -245,13 +246,13 @@ export default function IndustriesPage() {
                   <div className="flex flex-wrap gap-2">
                     {ind.services.map((s) => (
                       <span key={s} className="text-xs px-3 py-1.5 rounded-full font-medium"
-                        style={{ color: ind.color, backgroundColor: ind.color + '12' }}>{s}</span>
+                        style={{ color: accentText(ind.color), backgroundColor: ind.color + '12' }}>{s}</span>
                     ))}
                   </div>
                 </div>
                 <Link href="/contact"
                   className="inline-flex items-center gap-2 mt-8 px-6 py-3 rounded-xl font-semibold text-white hover:-translate-y-0.5 transition-all"
-                  style={{ backgroundColor: ind.color }}>
+                  style={{ backgroundColor: solidFill(ind.color) }}>
                   Discuss Your {ind.title} Strategy
                   <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -265,7 +266,7 @@ export default function IndustriesPage() {
                     </h3>
                     <ul className="space-y-3">
                       {ind.challenges.map((c) => (
-                        <li key={c} className="text-sm text-[#3A3A3A]/70 dark:text-white/60 flex items-start gap-2">
+                        <li key={c} className="text-sm text-[#3A3A3A]/75 dark:text-white/60 flex items-start gap-2">
                           <span className="text-red-400 mt-0.5">→</span>{c}
                         </li>
                       ))}
@@ -278,8 +279,8 @@ export default function IndustriesPage() {
                     </h3>
                     <ul className="space-y-3">
                       {ind.opportunities.map((o) => (
-                        <li key={o} className="text-sm text-[#3A3A3A]/70 dark:text-white/60 flex items-start gap-2">
-                          <span style={{ color: ind.color }}>→</span>{o}
+                        <li key={o} className="text-sm text-[#3A3A3A]/75 dark:text-white/60 flex items-start gap-2">
+                          <span style={{ color: accentText(ind.color) }}>→</span>{o}
                         </li>
                       ))}
                     </ul>

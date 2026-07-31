@@ -4,6 +4,7 @@ import { ArrowRight, TrendingUp } from 'lucide-react';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { ContactCTA } from '@/components/sections/ContactCTA';
+import { accentText, solidFill } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'Case Studies | S.D Consultancy Healthcare Brand Success Stories',
@@ -92,7 +93,7 @@ export default function CaseStudiesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#4F8A77]/40 bg-[#4F8A77]/10">
-              <span className="text-[#4F8A77] text-xs font-semibold tracking-widest uppercase">Case Studies</span>
+              <span className="text-[#94b8ac] text-xs font-semibold tracking-widest uppercase">Case Studies</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-white leading-tight mb-6">
               Healthcare Brand{' '}
@@ -115,35 +116,35 @@ export default function CaseStudiesPage() {
                   <div className="p-8 md:p-12">
                     <div className="flex flex-wrap items-center gap-3 mb-6">
                       <span className="text-xs font-semibold px-3 py-1.5 rounded-full"
-                        style={{ color: cs.color, backgroundColor: cs.color + '15' }}>{cs.category}</span>
+                        style={{ color: accentText(cs.color), backgroundColor: cs.color + '15' }}>{cs.category}</span>
                       <span className="text-xs font-medium px-3 py-1.5 rounded-full bg-[#1F3A5F]/10 dark:bg-white/10 text-[#1F3A5F] dark:text-white">{cs.badge}</span>
-                      <span className="text-xs text-[#3A3A3A]/50 dark:text-white/40 ml-auto">Engagement: {cs.timeline}</span>
+                      <span className="text-xs text-[#3A3A3A]/75 dark:text-white/55 ml-auto">Engagement: {cs.timeline}</span>
                     </div>
                     <h2 className="text-2xl md:text-3xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-8 leading-tight">{cs.title}</h2>
                     <div className="grid md:grid-cols-3 gap-8 mb-8">
                       <div>
-                        <h3 className="font-semibold text-sm text-[#3A3A3A]/50 dark:text-white/40 uppercase tracking-wide mb-3">The Challenge</h3>
-                        <p className="text-sm text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed">{cs.challenge}</p>
+                        <h3 className="font-semibold text-sm text-[#3A3A3A]/75 dark:text-white/55 uppercase tracking-wide mb-3">The Challenge</h3>
+                        <p className="text-sm text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed">{cs.challenge}</p>
                       </div>
                       <div>
-                        <h3 className="font-semibold text-sm text-[#3A3A3A]/50 dark:text-white/40 uppercase tracking-wide mb-3">Our Approach</h3>
-                        <p className="text-sm text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed">{cs.approach}</p>
+                        <h3 className="font-semibold text-sm text-[#3A3A3A]/75 dark:text-white/55 uppercase tracking-wide mb-3">Our Approach</h3>
+                        <p className="text-sm text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed">{cs.approach}</p>
                       </div>
                       <div>
-                        <h3 className="font-semibold text-sm text-[#3A3A3A]/50 dark:text-white/40 uppercase tracking-wide mb-3">Creative Strategy</h3>
-                        <p className="text-sm text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed">{cs.strategy}</p>
+                        <h3 className="font-semibold text-sm text-[#3A3A3A]/75 dark:text-white/55 uppercase tracking-wide mb-3">Creative Strategy</h3>
+                        <p className="text-sm text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed">{cs.strategy}</p>
                       </div>
                     </div>
                     <div className="bg-white dark:bg-[#0f1923] rounded-2xl p-6 mb-6">
                       <div className="flex items-center gap-2 mb-5">
-                        <TrendingUp className="w-5 h-5" style={{ color: cs.color }} />
+                        <TrendingUp className="w-5 h-5" style={{ color: accentText(cs.color) }} />
                         <h3 className="font-semibold text-[#1F3A5F] dark:text-white">Results &amp; Impact</h3>
                       </div>
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {cs.results.map((r) => (
                           <div key={r.label} className="text-center">
-                            <div className="stat-number text-3xl font-bold mb-1" style={{ color: cs.color }}>{r.metric}</div>
-                            <div className="text-xs text-[#3A3A3A]/60 dark:text-white/50 leading-tight">{r.label}</div>
+                            <div className="stat-number text-3xl font-bold mb-1" style={{ color: accentText(cs.color) }}>{r.metric}</div>
+                            <div className="text-xs text-[#3A3A3A]/75 dark:text-white/55 leading-tight">{r.label}</div>
                           </div>
                         ))}
                       </div>
@@ -152,12 +153,12 @@ export default function CaseStudiesPage() {
                       <div className="flex flex-wrap gap-2">
                         {cs.services.map((s) => (
                           <span key={s} className="text-xs px-3 py-1 rounded-full font-medium border"
-                            style={{ color: cs.color, borderColor: cs.color + '30' }}>{s}</span>
+                            style={{ color: accentText(cs.color), borderColor: cs.color + '30' }}>{s}</span>
                         ))}
                       </div>
                       <Link href="/contact"
                         className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm text-white hover:-translate-y-0.5 transition-all"
-                        style={{ backgroundColor: cs.color }}>
+                        style={{ backgroundColor: solidFill(cs.color) }}>
                         Discuss a Similar Project <ArrowRight className="w-4 h-4" />
                       </Link>
                     </div>

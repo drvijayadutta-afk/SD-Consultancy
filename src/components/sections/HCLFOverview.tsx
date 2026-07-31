@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
+import { accentText } from '@/lib/utils';
 
 const phases = [
   { num: '01', title: 'Market & Business Intelligence', color: '#2E75B6', desc: 'Deep market analysis, competitive landscape, and stakeholder mapping' },
@@ -18,7 +19,7 @@ export function HCLFOverview() {
         <AnimatedSection className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#B8924A]/10 border border-[#B8924A]/25">
             <span className="w-1.5 h-1.5 rounded-full bg-[#B8924A]" />
-            <span className="text-[#B8924A] text-xs font-bold tracking-[0.2em] uppercase">Proprietary Methodology</span>
+            <span className="text-[var(--text-gold)] text-xs font-bold tracking-[0.2em] uppercase">Proprietary Methodology</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#1F3A5F] dark:text-white leading-tight mb-4">
             The HCLF™ Framework
@@ -38,14 +39,14 @@ export function HCLFOverview() {
                 />
                 <div
                   className="text-xs font-bold font-mono mb-3 px-2 py-1 rounded-lg inline-block"
-                  style={{ color: phase.color, backgroundColor: phase.color + '15' }}
+                  style={{ color: accentText(phase.color), backgroundColor: phase.color + '15' }}
                 >
                   {phase.num}
                 </div>
                 <h4 className="text-xs font-bold font-heading text-[#1F3A5F] dark:text-white mb-2 leading-snug">
                   {phase.title}
                 </h4>
-                <p className="text-[11px] text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed">
+                <p className="text-[11px] text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed">
                   {phase.desc}
                 </p>
               </div>
@@ -64,7 +65,7 @@ export function HCLFOverview() {
             />
             <div className="relative flex flex-col md:flex-row items-center justify-between gap-6 px-8 md:px-12 py-10">
               <div>
-                <div className="text-[#B8924A] text-xs font-bold tracking-widest uppercase mb-2">From Intelligence to Impact</div>
+                <div className="text-[#caad77] text-xs font-bold tracking-widest uppercase mb-2">From Intelligence to Impact</div>
                 <h3 className="text-xl md:text-2xl font-bold font-heading text-white">
                   See how the HCLF™ Framework applies to your organization
                 </h3>
