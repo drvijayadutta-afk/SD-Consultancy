@@ -139,7 +139,7 @@ export function HeroSection() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/contact"
-                  className="btn-gradient inline-flex items-center gap-2.5 px-7 py-4 text-white font-bold rounded-xl shadow-lg shadow-[#E8E0CB]/25 hover:shadow-xl hover:shadow-[#E8E0CB]/35 text-sm"
+                  className="btn-gradient inline-flex items-center gap-2.5 px-7 py-4 text-[#101E36] font-bold rounded-xl shadow-lg shadow-[#E8E0CB]/25 hover:shadow-xl hover:shadow-[#E8E0CB]/35 text-sm"
                 >
                   <span>Book a Strategy Consultation</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
