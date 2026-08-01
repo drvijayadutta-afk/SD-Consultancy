@@ -10,7 +10,7 @@ const articles = [
     excerpt: 'In an era where patients have unprecedented access to information and options, clinical quality is the baseline. Brand strategy is the new competitive frontier.',
     date: 'June 15, 2025',
     readTime: '8 min read',
-    color: '#2E75B6',
+    color: '#25405F',
     slug: 'clinical-excellence-brand-strategy',
     featured: true,
   },
@@ -20,7 +20,7 @@ const articles = [
     excerpt: 'Discover the strategic framework for building, nurturing, and expanding physician relationships that sustain hospital growth.',
     date: 'June 5, 2025',
     readTime: '6 min read',
-    color: '#4F8A77',
+    color: '#3E5776',
     slug: 'referral-ecosystem-physician-networks',
     featured: false,
   },
@@ -30,7 +30,7 @@ const articles = [
     excerpt: 'Map the digital touchpoints that matter and design experiences that build lasting patient trust and advocacy.',
     date: 'May 22, 2025',
     readTime: '10 min read',
-    color: '#B8924A',
+    color: '#E8E0CB',
     slug: 'patient-digital-journey-design',
     featured: false,
   },
@@ -48,11 +48,11 @@ export function InsightsPreview() {
         <AnimatedSection>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
             <div>
-              <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
+              <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#E7EAEF] dark:bg-[#25405F]/15">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#25405F]" />
                 <span className="text-[var(--text-blue)] text-xs font-bold tracking-[0.2em] uppercase">Thought Leadership</span>
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#1F3A5F] dark:text-white leading-tight mb-3">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#101E36] dark:text-white leading-tight mb-3">
                 Healthcare Brand Insights
               </h2>
               <p className="text-[#3A3A3A]/75 dark:text-white/65 max-w-lg">
@@ -61,7 +61,7 @@ export function InsightsPreview() {
             </div>
             <Link
               href="/insights"
-              className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 border-2 border-[#1F3A5F] dark:border-white/30 text-[#1F3A5F] dark:text-white font-semibold rounded-xl hover:bg-[#1F3A5F] hover:text-white dark:hover:bg-white/10 transition-all text-sm"
+              className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 border-2 border-[#101E36] dark:border-white/30 text-[#101E36] dark:text-white font-semibold rounded-xl hover:bg-[#101E36] hover:text-white dark:hover:bg-white/10 transition-all text-sm"
             >
               View All Insights
               <ArrowRight className="w-4 h-4" />
@@ -76,10 +76,10 @@ export function InsightsPreview() {
           <AnimatedSection className="lg:col-span-3">
             <Link
               href={`/insights/${featured.slug}`}
-              className="group block bg-white dark:bg-[#111c2e] rounded-2xl overflow-hidden border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-2xl hover:shadow-[#1F3A5F]/10 dark:hover:shadow-black/30 transition-all duration-300 hover:-translate-y-1 h-full"
+              className="group block bg-white dark:bg-[#111c2e] rounded-2xl overflow-hidden border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-2xl hover:shadow-[#101E36]/10 dark:hover:shadow-black/30 transition-all duration-300 hover:-translate-y-1 h-full"
             >
               {/* Color bar */}
-              <div className="h-2" style={{ background: `linear-gradient(to right, ${featured.color}, #1F3A5F)` }} />
+              <div className="h-2" style={{ background: `linear-gradient(to right, ${featured.color}, #101E36)` }} />
               <div className="p-8 md:p-10 flex flex-col h-[calc(100%-8px)]">
                 <div className="flex items-center gap-3 mb-6">
                   <span
@@ -90,7 +90,7 @@ export function InsightsPreview() {
                   </span>
                   <span className="text-xs text-[#3A3A3A]/75 dark:text-white/55 font-semibold tracking-widest uppercase">Featured</span>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-4 leading-snug group-hover:text-[var(--text-blue)] transition-colors flex-1">
+                <h3 className="text-xl md:text-2xl font-bold font-heading text-[#101E36] dark:text-white mb-4 leading-snug group-hover:text-[var(--text-blue)] transition-colors flex-1">
                   {featured.title}
                 </h3>
                 <p className="text-[#3A3A3A]/75 dark:text-white/65 leading-relaxed mb-8">
@@ -115,7 +115,7 @@ export function InsightsPreview() {
               <AnimatedSection key={article.slug} delay={(i + 1) * 120} className="flex-1">
                 <Link
                   href={`/insights/${article.slug}`}
-                  className="group flex flex-col bg-white dark:bg-[#111c2e] rounded-2xl overflow-hidden border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-xl hover:shadow-[#1F3A5F]/8 dark:hover:shadow-black/30 transition-all duration-300 hover:-translate-y-1 h-full"
+                  className="group flex flex-col bg-white dark:bg-[#111c2e] rounded-2xl overflow-hidden border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-xl hover:shadow-[#101E36]/8 dark:hover:shadow-black/30 transition-all duration-300 hover:-translate-y-1 h-full"
                 >
                   <div className="h-1.5" style={{ background: `linear-gradient(to right, ${article.color}, ${article.color}88)` }} />
                   <div className="p-6 flex flex-col flex-1">
@@ -125,7 +125,7 @@ export function InsightsPreview() {
                     >
                       {article.category}
                     </span>
-                    <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white mb-3 leading-snug group-hover:text-[var(--text-blue)] transition-colors flex-1 text-sm">
+                    <h3 className="font-bold font-heading text-[#101E36] dark:text-white mb-3 leading-snug group-hover:text-[var(--text-blue)] transition-colors flex-1 text-sm">
                       {article.title}
                     </h3>
                     <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-50 dark:border-white/5">

@@ -11,11 +11,11 @@ const stats = [
 
 export function ImpactStats() {
   return (
-    <section className="py-28 relative overflow-hidden bg-gradient-to-br from-[#0d1a2e] via-[#1F3A5F] to-[#162d4a]">
+    <section className="py-28 relative overflow-hidden bg-gradient-to-br from-[#0d1a2e] via-[#101E36] to-[#162d4a]">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#2E75B6]/15 rounded-full blur-[140px]" />
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#4F8A77]/10 rounded-full blur-[120px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[200px] bg-[#B8924A]/5 rounded-full blur-[100px]" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#25405F]/15 rounded-full blur-[140px]" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#3E5776]/10 rounded-full blur-[120px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[200px] bg-[#E8E0CB]/5 rounded-full blur-[100px]" />
       </div>
 
       <div
@@ -37,10 +37,10 @@ export function ImpactStats() {
           />
           <defs>
             <linearGradient id="statsEcgGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#2E75B6" stopOpacity="0" />
-              <stop offset="0.2" stopColor="#2E75B6" />
-              <stop offset="0.8" stopColor="#B8924A" />
-              <stop offset="1" stopColor="#B8924A" stopOpacity="0" />
+              <stop stopColor="#25405F" stopOpacity="0" />
+              <stop offset="0.2" stopColor="#25405F" />
+              <stop offset="0.8" stopColor="#E8E0CB" />
+              <stop offset="1" stopColor="#E8E0CB" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
@@ -48,9 +48,9 @@ export function ImpactStats() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-[#4F8A77]/30 bg-[#4F8A77]/10">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#4F8A77] animate-pulse" />
-            <span className="text-[#94b8ac] text-xs font-bold tracking-[0.2em] uppercase">Client Outcomes</span>
+          <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-[#3E5776]/30 bg-[#3E5776]/10">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#3E5776] animate-pulse" />
+            <span className="text-[#8393a7] text-xs font-bold tracking-[0.2em] uppercase">Client Outcomes</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-white leading-tight">
             Measurable Impact<br className="hidden md:block" /> Across Healthcare

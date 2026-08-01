@@ -7,16 +7,16 @@ export function ContactCTA() {
     <section className="py-24 bg-white dark:bg-[#0f1923]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <AnimatedSection>
-          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/20">
-            <span className="w-2 h-2 rounded-full bg-[#2E75B6] animate-pulse" />
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-[#E7EAEF] dark:bg-[#25405F]/20">
+            <span className="w-2 h-2 rounded-full bg-[#25405F] animate-pulse" />
             <span className="text-[var(--text-blue)] text-xs font-semibold tracking-widest uppercase">
               Start Your Growth Journey
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold font-heading text-[#101E36] dark:text-white mb-6 leading-tight">
             Let&apos;s Build Your{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2E75B6] to-[#4F8A77]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#25405F] to-[#3E5776]">
               Healthcare Brand Leadership
             </span>{' '}
             Strategy
@@ -29,14 +29,14 @@ export function ContactCTA() {
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#1F3A5F] to-[#2E75B6] text-white font-bold rounded-xl hover:shadow-xl hover:shadow-[#2E75B6]/30 hover:-translate-y-1 transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#101E36] to-[#25405F] text-white font-bold rounded-xl hover:shadow-xl hover:shadow-[#25405F]/30 hover:-translate-y-1 transition-all"
             >
               Book a Strategy Consultation
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#1F3A5F] dark:border-white text-[#1F3A5F] dark:text-white font-bold rounded-xl hover:bg-[#1F3A5F] hover:text-white dark:hover:bg-white dark:hover:text-[#1F3A5F] transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#101E36] dark:border-white text-[#101E36] dark:text-white font-bold rounded-xl hover:bg-[#101E36] hover:text-white dark:hover:bg-white dark:hover:text-[#101E36] transition-all"
             >
               Explore Our Services
             </Link>

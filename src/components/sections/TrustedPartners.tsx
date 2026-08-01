@@ -37,7 +37,7 @@ export function TrustedPartners() {
               <span className="text-[#3A3A3A]/75 dark:text-white/55 font-bold text-sm tracking-widest uppercase select-none hover:text-[var(--text-blue)] transition-colors duration-300">
                 {partner}
               </span>
-              <span className="ml-8 w-1 h-1 rounded-full bg-[#2E75B6]/20 dark:bg-white/10" />
+              <span className="ml-8 w-1 h-1 rounded-full bg-[#25405F]/20 dark:bg-white/10" />
             </div>
           ))}
         </div>

@@ -7,9 +7,9 @@ import { ContactCTA } from '@/components/sections/ContactCTA';
 import { accentText } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Overview | S.D Consultancy Healthcare Growth & AI Strategy',
+  title: 'Overview | SD Square Consulting Healthcare Growth & AI Strategy',
   description:
-    'A one-page brief on how S.D Consultancy helps hospitals, specialty chains, and healthcare startups convert digital investment into patient volume using the HCLF™ methodology.',
+    'A one-page brief on how SD Square Consulting helps hospitals, specialty chains, and healthcare startups convert digital investment into patient volume using the HCLF™ methodology.',
 };
 
 const stats = [
@@ -27,12 +27,12 @@ const problems = [
 ];
 
 const services = [
-  { idx: '01', tag: 'Evidence', title: 'Market & Business Intelligence', desc: 'Primary research with patients, physicians, and administrators, competitive positioning, and a digital maturity baseline, so every decision that follows is grounded in evidence, not assumption.', color: '#2E75B6' },
-  { idx: '02', tag: 'Position', title: 'Brand Positioning', desc: 'A positioning statement, value proposition, and messaging framework that is clinically credible and commercially powerful, tested with the audiences it needs to convince.', color: '#4F8A77' },
-  { idx: '03', tag: 'Ecosystem', title: 'Stakeholder Ecosystem Design', desc: "Physician KOL mapping, patient journey design, and referral pathway optimisation, tailored engagement strategies for every group that influences a patient's decision.", color: '#1F3A5F' },
-  { idx: '04', tag: 'Activate', title: 'Integrated Communications Strategy', desc: 'Channel mix, message architecture, and content strategy so every touchpoint, from mass media to physician events to digital, reinforces the same brand story.', color: '#B8924A' },
-  { idx: '05', tag: 'Create', title: 'Creative Strategy & Development', desc: 'Films, campaigns, and visual identity systems that carry the strategy with emotional resonance while holding clinical credibility and brand consistency.', color: '#2E75B6' },
-  { idx: '06', tag: 'Govern', title: 'Measurement & Governance', desc: 'KPI frameworks, brand health tracking, and quarterly governance reviews that keep the investment accountable and the brand on track over time.', color: '#4F8A77' },
+  { idx: '01', tag: 'Evidence', title: 'Market & Business Intelligence', desc: 'Primary research with patients, physicians, and administrators, competitive positioning, and a digital maturity baseline, so every decision that follows is grounded in evidence, not assumption.', color: '#25405F' },
+  { idx: '02', tag: 'Position', title: 'Brand Positioning', desc: 'A positioning statement, value proposition, and messaging framework that is clinically credible and commercially powerful, tested with the audiences it needs to convince.', color: '#3E5776' },
+  { idx: '03', tag: 'Ecosystem', title: 'Stakeholder Ecosystem Design', desc: "Physician KOL mapping, patient journey design, and referral pathway optimisation, tailored engagement strategies for every group that influences a patient's decision.", color: '#101E36' },
+  { idx: '04', tag: 'Activate', title: 'Integrated Communications Strategy', desc: 'Channel mix, message architecture, and content strategy so every touchpoint, from mass media to physician events to digital, reinforces the same brand story.', color: '#E8E0CB' },
+  { idx: '05', tag: 'Create', title: 'Creative Strategy & Development', desc: 'Films, campaigns, and visual identity systems that carry the strategy with emotional resonance while holding clinical credibility and brand consistency.', color: '#25405F' },
+  { idx: '06', tag: 'Govern', title: 'Measurement & Governance', desc: 'KPI frameworks, brand health tracking, and quarterly governance reviews that keep the investment accountable and the brand on track over time.', color: '#3E5776' },
 ];
 
 const deliverables = [
@@ -42,17 +42,17 @@ const deliverables = [
 ];
 
 const benefits = [
-  { icon: TrendingUp, title: 'Patient Acquisition', desc: 'A funnel engineered to convert enquiry into booked appointment, not just traffic.', color: '#2E75B6' },
-  { icon: TrendingDown, title: 'Cost Per Patient', desc: 'Spend consolidated around what is proven to convert, cutting waste on unmeasured channels.', color: '#4F8A77' },
-  { icon: Sparkles, title: 'Brand Authority', desc: 'Institutional and doctor-level positioning that reflects genuine clinical standing.', color: '#B8924A' },
-  { icon: Scale, title: 'Executive Visibility', desc: 'One dashboard leadership can trust, replacing fragmented channel reporting.', color: '#1F3A5F' },
+  { icon: TrendingUp, title: 'Patient Acquisition', desc: 'A funnel engineered to convert enquiry into booked appointment, not just traffic.', color: '#25405F' },
+  { icon: TrendingDown, title: 'Cost Per Patient', desc: 'Spend consolidated around what is proven to convert, cutting waste on unmeasured channels.', color: '#3E5776' },
+  { icon: Sparkles, title: 'Brand Authority', desc: 'Institutional and doctor-level positioning that reflects genuine clinical standing.', color: '#E8E0CB' },
+  { icon: Scale, title: 'Executive Visibility', desc: 'One dashboard leadership can trust, replacing fragmented channel reporting.', color: '#101E36' },
 ];
 
 const credentials = [
-  { label: 'BDS (Dental Surgery)', sub: 'Clinical foundation informing every strategic recommendation', color: '#2E75B6' },
-  { label: 'MBA (in progress), MAHE Manipal', sub: 'Formal business and strategy grounding', color: '#4F8A77' },
-  { label: 'Brand Management, IIM Bangalore', sub: 'Executive-level brand strategy credential', color: '#B8924A' },
-  { label: 'Outstanding Performance Award, Max Healthcare (2023)', sub: 'Delhi NCR marketing leadership', color: '#1F3A5F' },
+  { label: 'BDS (Dental Surgery)', sub: 'Clinical foundation informing every strategic recommendation', color: '#25405F' },
+  { label: 'MBA (in progress), MAHE Manipal', sub: 'Formal business and strategy grounding', color: '#3E5776' },
+  { label: 'Brand Management, IIM Bangalore', sub: 'Executive-level brand strategy credential', color: '#E8E0CB' },
+  { label: 'Outstanding Performance Award, Max Healthcare (2023)', sub: 'Delhi NCR marketing leadership', color: '#101E36' },
 ];
 
 const process = [
@@ -70,22 +70,22 @@ export default function OverviewPage() {
       <section className="hero-gradient pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#4F8A77]/40 bg-[#4F8A77]/10">
-              <span className="text-[#94b8ac] text-xs font-semibold tracking-widest uppercase">One-Page Overview</span>
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#3E5776]/40 bg-[#3E5776]/10">
+              <span className="text-[#8393a7] text-xs font-semibold tracking-widest uppercase">One-Page Overview</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-white leading-tight mb-6">
               Healthcare growth, engineered, not{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8A77] to-[#B8924A]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E5776] to-[#E8E0CB]">
                 guessed at
               </span>.
             </h1>
             <p className="text-lg text-white/65 leading-relaxed max-w-2xl">
-              S.D Consultancy helps hospitals, specialty chains, and healthcare startups convert digital investment into patient volume, using the HCLF™ methodology, a diagnostic-led framework built on a decade inside India&apos;s leading hospital networks.
+              SD Square Consulting helps hospitals, specialty chains, and healthcare startups convert digital investment into patient volume, using the HCLF™ methodology, a diagnostic-led framework built on a decade inside India&apos;s leading hospital networks.
             </p>
             <div className="mt-8 flex items-center gap-6 flex-wrap">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#1F3A5F] to-[#2E75B6] text-white font-bold rounded-xl hover:shadow-xl hover:shadow-[#2E75B6]/30 hover:-translate-y-1 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#101E36] to-[#25405F] text-white font-bold rounded-xl hover:shadow-xl hover:shadow-[#25405F]/30 hover:-translate-y-1 transition-all"
               >
                 Book a Growth Diagnostic
                 <ArrowRight className="w-4 h-4" />
@@ -112,8 +112,8 @@ export default function OverviewPage() {
             <div className="text-[var(--text-gold)] text-xs font-semibold tracking-[0.2em] uppercase mb-4">Value Proposition</div>
             <p className="text-xl md:text-2xl leading-relaxed text-[#3A3A3A] dark:text-white/85">
               Most hospitals and healthcare brands are not short of marketing activity; they are short of a system that turns that activity into patients.{' '}
-              <strong className="text-[#1F3A5F] dark:text-white font-semibold">
-                S.D Consultancy diagnoses where your growth engine is leaking, rebuilds the brand and digital architecture around it, and installs the operating rhythm to keep it converting
+              <strong className="text-[#101E36] dark:text-white font-semibold">
+                SD Square Consulting diagnoses where your growth engine is leaking, rebuilds the brand and digital architecture around it, and installs the operating rhythm to keep it converting
               </strong>
               , without the generic playbooks that agencies repurpose from unrelated industries.
             </p>
@@ -134,7 +134,7 @@ export default function OverviewPage() {
             {problems.map((p, i) => (
               <AnimatedSection key={p.title} delay={i * 80}>
                 <div className="bg-white dark:bg-[#162d4a] rounded-2xl p-7 border border-gray-100 dark:border-white/5 h-full">
-                  <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white mb-2">{p.title}</h3>
+                  <h3 className="font-bold font-heading text-[#101E36] dark:text-white mb-2">{p.title}</h3>
                   <p className="text-sm text-[#3A3A3A]/75 dark:text-white/55 leading-relaxed">{p.desc}</p>
                 </div>
               </AnimatedSection>
@@ -155,10 +155,10 @@ export default function OverviewPage() {
           <div className="space-y-4">
             {services.map((s, i) => (
               <AnimatedSection key={s.idx} delay={i * 80}>
-                <div className="grid md:grid-cols-[64px_1fr_1.4fr] gap-4 md:gap-8 items-start p-6 rounded-2xl border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-lg hover:shadow-[#2E75B6]/8 transition-all duration-300">
+                <div className="grid md:grid-cols-[64px_1fr_1.4fr] gap-4 md:gap-8 items-start p-6 rounded-2xl border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-lg hover:shadow-[#25405F]/8 transition-all duration-300">
                   <div className="font-mono text-sm font-bold" style={{ color: accentText(s.color) }}>{s.idx}</div>
                   <div>
-                    <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white text-lg mb-1">{s.title}</h3>
+                    <h3 className="font-bold font-heading text-[#101E36] dark:text-white text-lg mb-1">{s.title}</h3>
                     <div className="text-xs font-semibold tracking-widest uppercase" style={{ color: accentText(s.color) }}>{s.tag}</div>
                   </div>
                   <p className="text-sm text-[#3A3A3A]/75 dark:text-white/55 leading-relaxed">{s.desc}</p>
@@ -176,12 +176,12 @@ export default function OverviewPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {deliverables.map((d, i) => (
               <AnimatedSection key={d.phase} delay={i * 100}>
-                <div className="border-t-2 border-[#1F3A5F] dark:border-[#4F8A77] pt-5">
-                  <div className="font-heading font-bold text-[#1F3A5F] dark:text-white mb-4">{d.phase}</div>
+                <div className="border-t-2 border-[#101E36] dark:border-[#3E5776] pt-5">
+                  <div className="font-heading font-bold text-[#101E36] dark:text-white mb-4">{d.phase}</div>
                   <ul className="space-y-2.5">
                     {d.items.map((item) => (
                       <li key={item} className="flex items-start gap-2 text-sm text-[#3A3A3A]/75 dark:text-white/55">
-                        <span className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0 bg-[#4F8A77]" />
+                        <span className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0 bg-[#3E5776]" />
                         {item}
                       </li>
                     ))}
@@ -204,7 +204,7 @@ export default function OverviewPage() {
                   <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: b.color + '15' }}>
                     <b.icon className="w-5 h-5" style={{ color: accentText(b.color) }} />
                   </div>
-                  <div className="font-bold font-heading text-[#1F3A5F] dark:text-white text-sm mb-2">{b.title}</div>
+                  <div className="font-bold font-heading text-[#101E36] dark:text-white text-sm mb-2">{b.title}</div>
                   <p className="text-xs text-[#3A3A3A]/75 dark:text-white/55 leading-relaxed">{b.desc}</p>
                 </div>
               </AnimatedSection>
@@ -216,7 +216,7 @@ export default function OverviewPage() {
       {/* Why Us */}
       <section className="py-24 bg-[#f8fafc] dark:bg-[#0d1520]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader eyebrow="Why S.D Consultancy" title="A strategist who has sat inside the hospital, not just outside it" className="mb-14" />
+          <SectionHeader eyebrow="Why SD Square Consulting" title="A strategist who has sat inside the hospital, not just outside it" className="mb-14" />
           <div className="grid lg:grid-cols-2 gap-14">
             <AnimatedSection className="space-y-5 text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed">
               <p>
@@ -226,12 +226,12 @@ export default function OverviewPage() {
                 That experience, combined with a clinical (BDS) foundation and formal brand strategy training, is codified into HCLF™, a six-phase framework built specifically for healthcare, not adapted from consumer marketing.
               </p>
             </AnimatedSection>
-            <AnimatedSection direction="right" className="bg-white dark:bg-[#162d4a] rounded-2xl p-8 border-l-4 border-[#B8924A]">
-              <div className="text-xs font-bold tracking-widest uppercase text-[#1F3A5F] dark:text-white mb-5">Credentials</div>
+            <AnimatedSection direction="right" className="bg-white dark:bg-[#162d4a] rounded-2xl p-8 border-l-4 border-[#E8E0CB]">
+              <div className="text-xs font-bold tracking-widest uppercase text-[#101E36] dark:text-white mb-5">Credentials</div>
               <div className="space-y-0">
                 {credentials.map((c, i) => (
                   <div key={c.label} className={`py-4 ${i !== 0 ? 'border-t border-gray-100 dark:border-white/10' : ''}`}>
-                    <div className="text-sm font-semibold text-[#1F3A5F] dark:text-white">{c.label}</div>
+                    <div className="text-sm font-semibold text-[#101E36] dark:text-white">{c.label}</div>
                     <div className="text-xs text-[#3A3A3A]/75 dark:text-white/55 mt-1">{c.sub}</div>
                   </div>
                 ))}
@@ -249,10 +249,10 @@ export default function OverviewPage() {
             <div className="hidden md:block absolute top-[15px] left-0 right-0 h-px bg-gray-200 dark:bg-white/10" />
             {process.map((p, i) => (
               <AnimatedSection key={p.n} delay={i * 80} className="relative">
-                <div className="w-8 h-8 rounded-full bg-white dark:bg-[#0f1923] border-2 border-[#1F3A5F] dark:border-[#4F8A77] flex items-center justify-center text-xs font-bold font-mono text-[#1F3A5F] dark:text-white mb-4 relative z-10">
+                <div className="w-8 h-8 rounded-full bg-white dark:bg-[#0f1923] border-2 border-[#101E36] dark:border-[#3E5776] flex items-center justify-center text-xs font-bold font-mono text-[#101E36] dark:text-white mb-4 relative z-10">
                   {p.n}
                 </div>
-                <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white text-sm mb-2">{p.title}</h3>
+                <h3 className="font-bold font-heading text-[#101E36] dark:text-white text-sm mb-2">{p.title}</h3>
                 <p className="text-xs text-[#3A3A3A]/75 dark:text-white/55 leading-relaxed">{p.desc}</p>
               </AnimatedSection>
             ))}
@@ -264,7 +264,7 @@ export default function OverviewPage() {
       <section className="py-24 bg-[#f8fafc] dark:bg-[#0d1520]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <div className="bg-gradient-to-br from-[#1F3A5F] to-[#162d4a] rounded-3xl p-10 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div className="bg-gradient-to-br from-[#101E36] to-[#162d4a] rounded-3xl p-10 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold font-heading text-white mb-3">Investment</h2>
                 <p className="text-white/60 leading-relaxed max-w-xl">
@@ -272,7 +272,7 @@ export default function OverviewPage() {
                 </p>
               </div>
               <div className="text-left md:text-right flex-shrink-0">
-                <div className="font-heading font-bold text-[#caad77]">Growth Diagnostic — scoped on call</div>
+                <div className="font-heading font-bold text-[#E8E0CB]">Growth Diagnostic — scoped on call</div>
                 <div className="text-white/55 text-sm mt-1">Full engagement pricing on scoping call</div>
               </div>
             </div>

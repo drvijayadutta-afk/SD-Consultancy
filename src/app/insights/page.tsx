@@ -25,7 +25,7 @@ const articles = [
     excerpt: 'In an era where patients have unprecedented access to information and options, clinical quality is the baseline — not the differentiator. Learn why brand strategy is the new competitive frontier.',
     date: 'June 15, 2026',
     readTime: '8 min read',
-    color: '#2E75B6',
+    color: '#25405F',
     slug: 'clinical-excellence-brand-strategy',
     featured: true,
   },
@@ -35,7 +35,7 @@ const articles = [
     excerpt: 'Referral networks remain the backbone of hospital growth. Discover the strategic framework for building, nurturing, and expanding physician relationships at scale.',
     date: 'June 5, 2026',
     readTime: '6 min read',
-    color: '#4F8A77',
+    color: '#3E5776',
     slug: 'referral-ecosystem-physician-networks',
     featured: true,
   },
@@ -45,7 +45,7 @@ const articles = [
     excerpt: 'The patient decision journey begins long before the first appointment. Map the digital touchpoints that matter most and design experiences that build lasting trust.',
     date: 'May 22, 2026',
     readTime: '10 min read',
-    color: '#B8924A',
+    color: '#E8E0CB',
     slug: 'patient-digital-journey-design',
     featured: true,
   },
@@ -55,7 +55,7 @@ const articles = [
     excerpt: 'How do you translate complex clinical data into compelling patient communications? This framework helps healthcare marketers tell outcome stories with integrity and impact.',
     date: 'May 10, 2026',
     readTime: '7 min read',
-    color: '#1F3A5F',
+    color: '#101E36',
     slug: 'clinical-outcomes-data-storytelling',
     featured: false,
   },
@@ -65,7 +65,7 @@ const articles = [
     excerpt: 'The traditional medical representative model is under pressure. Discover how leading MedTech brands are redesigning HCP engagement for the post-pandemic world.',
     date: 'April 28, 2026',
     readTime: '9 min read',
-    color: '#2E75B6',
+    color: '#25405F',
     slug: 'hcp-engagement-digital-age',
     featured: false,
   },
@@ -75,7 +75,7 @@ const articles = [
     excerpt: 'Patient experience extends far beyond clinical care. Learn how leading healthcare organizations design end-to-end experiences that turn patients into brand advocates.',
     date: 'April 15, 2026',
     readTime: '8 min read',
-    color: '#4F8A77',
+    color: '#3E5776',
     slug: 'holistic-patient-experience-advocacy',
     featured: false,
   },
@@ -85,7 +85,7 @@ const articles = [
     excerpt: 'Physician referral decisions are driven by trust, communication quality, and relationship depth — not just clinical reputation. Here is the framework for building lasting loyalty.',
     date: 'April 5, 2026',
     readTime: '11 min read',
-    color: '#B8924A',
+    color: '#E8E0CB',
     slug: 'physician-loyalty-referral-science',
     featured: false,
   },
@@ -95,7 +95,7 @@ const articles = [
     excerpt: 'A hospital rebrand is one of the highest-stakes communications decisions an organization can make. This guide covers everything — from strategy to stakeholder management to launch.',
     date: 'March 20, 2026',
     readTime: '14 min read',
-    color: '#2E75B6',
+    color: '#25405F',
     slug: 'hospital-rebranding-strategic-playbook',
     featured: false,
   },
@@ -105,7 +105,7 @@ const articles = [
     excerpt: 'Healthcare SEO is uniquely complex — YMYL guidelines, medical terminology, local SEO, and reputation management all intersect. This is the complete guide for healthcare marketers.',
     date: 'March 8, 2026',
     readTime: '12 min read',
-    color: '#4F8A77',
+    color: '#3E5776',
     slug: 'hospital-seo-organic-patient-acquisition',
     featured: false,
   },
@@ -134,8 +134,8 @@ export default function InsightsPage() {
       <section className="hero-gradient pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#4F8A77]/40 bg-[#4F8A77]/10">
-              <span className="text-[#94b8ac] text-xs font-semibold tracking-widest uppercase">Thought Leadership</span>
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#3E5776]/40 bg-[#3E5776]/10">
+              <span className="text-[#8393a7] text-xs font-semibold tracking-widest uppercase">Thought Leadership</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-white leading-tight mb-6">Healthcare Brand Insights</h1>
             <p className="text-lg text-white/65 leading-relaxed">Strategic perspectives, frameworks, and practical guidance for healthcare leaders navigating complex markets.</p>
@@ -145,7 +145,7 @@ export default function InsightsPage() {
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/55" />
               <input type="text" value={search} onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search insights..."
-                className="w-full pl-12 pr-4 py-3.5 bg-white/10 border border-white/20 rounded-xl text-white placeholder:text-white/55 focus:outline-none focus:border-[#4F8A77] transition-colors" />
+                className="w-full pl-12 pr-4 py-3.5 bg-white/10 border border-white/20 rounded-xl text-white placeholder:text-white/55 focus:outline-none focus:border-[#3E5776] transition-colors" />
             </div>
           </AnimatedSection>
         </div>
@@ -158,8 +158,8 @@ export default function InsightsPage() {
               <button key={cat} onClick={() => setCategory(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   category === cat
-                    ? 'bg-[#1F3A5F] text-white'
-                    : 'bg-[#f8fafc] dark:bg-[#162d4a] text-[#3A3A3A]/75 dark:text-white/60 hover:bg-[#DCE9F4] dark:hover:bg-[#2E75B6]/20'
+                    ? 'bg-[#101E36] text-white'
+                    : 'bg-[#f8fafc] dark:bg-[#162d4a] text-[#3A3A3A]/75 dark:text-white/60 hover:bg-[#E7EAEF] dark:hover:bg-[#25405F]/20'
                 }`}>{cat}</button>
             ))}
           </div>
@@ -176,7 +176,7 @@ export default function InsightsPage() {
                       <div className="p-7">
                         <span className="text-xs font-semibold px-3 py-1 rounded-full"
                           style={{ color: accentText(article.color), backgroundColor: article.color + '15' }}>{article.category}</span>
-                        <h3 className="mt-4 mb-3 font-bold font-heading text-[#1F3A5F] dark:text-white leading-snug group-hover:text-[var(--text-blue)] transition-colors">{article.title}</h3>
+                        <h3 className="mt-4 mb-3 font-bold font-heading text-[#101E36] dark:text-white leading-snug group-hover:text-[var(--text-blue)] transition-colors">{article.title}</h3>
                         <p className="text-sm text-[#3A3A3A]/75 dark:text-white/55 leading-relaxed mb-5">{article.excerpt}</p>
                         <div className="flex items-center justify-between text-xs text-[#3A3A3A]/75 dark:text-white/55">
                           <span className="flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5" />{article.date}</span>
@@ -202,7 +202,7 @@ export default function InsightsPage() {
                       <div className="p-6 flex-1 flex flex-col">
                         <span className="text-xs font-semibold px-2.5 py-1 rounded-full self-start"
                           style={{ color: accentText(article.color), backgroundColor: article.color + '15' }}>{article.category}</span>
-                        <h3 className="mt-3 mb-2 font-bold font-heading text-[#1F3A5F] dark:text-white leading-snug group-hover:text-[var(--text-blue)] transition-colors text-sm flex-1">{article.title}</h3>
+                        <h3 className="mt-3 mb-2 font-bold font-heading text-[#101E36] dark:text-white leading-snug group-hover:text-[var(--text-blue)] transition-colors text-sm flex-1">{article.title}</h3>
                         <div className="flex items-center justify-between text-xs text-[#3A3A3A]/75 dark:text-white/55 mt-4">
                           <span>{article.date}</span>
                           <span className="flex items-center gap-1.5 text-[var(--text-blue)]">Read <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" /></span>
@@ -223,12 +223,12 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-r from-[#1F3A5F] to-[#2E75B6]">
+      <section className="py-20 bg-gradient-to-r from-[#101E36] to-[#25405F]">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold font-heading text-white mb-4">Healthcare Insights Newsletter</h2>
           <p className="text-white/70 mb-8">Strategic insights, framework updates, and sector perspectives — delivered monthly to healthcare leaders who want to stay ahead.</p>
           {subscribed ? (
-            <div className="flex items-center justify-center gap-2 text-[#94b8ac] font-semibold text-lg">
+            <div className="flex items-center justify-center gap-2 text-[#8393a7] font-semibold text-lg">
               <Send className="w-5 h-5" /> Thank you! You&apos;re subscribed.
             </div>
           ) : (
@@ -236,7 +236,7 @@ export default function InsightsPage() {
               <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email address" required
                 className="flex-1 px-5 py-3.5 rounded-xl bg-white/15 border border-white/30 text-white placeholder:text-white/55 focus:outline-none focus:border-white" />
-              <button type="submit" className="px-6 py-3.5 bg-white text-[#1F3A5F] font-bold rounded-xl hover:bg-[#DCE9F4] transition-colors">Subscribe</button>
+              <button type="submit" className="px-6 py-3.5 bg-white text-[#101E36] font-bold rounded-xl hover:bg-[#E7EAEF] transition-colors">Subscribe</button>
             </form>
           )}
         </div>

@@ -6,24 +6,24 @@ import { ContactCTA } from '@/components/sections/ContactCTA';
 import { accentText, ON_DARK, SOLID_FILL } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'About S.D Consultancy | Dr. Vijaya Dutta | Healthcare Brand Strategy',
-  description: 'S.D Consultancy was founded by Dr. Vijaya Dutta — BDS, PMT Rank 14 IP University, formerly Senior Executive Marketing at Manipal Hospitals & Max Healthcare. India\'s premier 360° healthcare brand strategy consultancy.',
+  title: 'About SD Square Consulting | Dr. Vijaya Dutta | Healthcare Brand Strategy',
+  description: 'SD Square Consulting was founded by Dr. Vijaya Dutta — BDS, PMT Rank 14 IP University, formerly Senior Executive Marketing at Manipal Hospitals & Max Healthcare. India\'s premier 360° healthcare brand strategy consultancy.',
 };
 
 const expertise = [
-  { icon: TrendingUp, label: 'Healthcare Brand Strategy',     color: '#2E75B6' },
-  { icon: Users,      label: 'Patient Acquisition & Loyalty', color: '#4F8A77' },
-  { icon: Globe,      label: 'Integrated Communications',     color: '#1F3A5F' },
-  { icon: Zap,        label: 'Digital Health Marketing',      color: '#B8924A' },
-  { icon: Star,       label: 'Physician Engagement Networks', color: '#2E75B6' },
-  { icon: BookOpen,   label: 'Clinical Content & Messaging',  color: '#4F8A77' },
+  { icon: TrendingUp, label: 'Healthcare Brand Strategy',     color: '#25405F' },
+  { icon: Users,      label: 'Patient Acquisition & Loyalty', color: '#3E5776' },
+  { icon: Globe,      label: 'Integrated Communications',     color: '#101E36' },
+  { icon: Zap,        label: 'Digital Health Marketing',      color: '#E8E0CB' },
+  { icon: Star,       label: 'Physician Engagement Networks', color: '#25405F' },
+  { icon: BookOpen,   label: 'Clinical Content & Messaging',  color: '#3E5776' },
 ];
 
 const credentials = [
-  { label: 'BDS Graduate',           sub: 'ESIC Dental College',                    color: '#2E75B6' },
-  { label: 'PMT Rank 14',            sub: 'IP University (2018)',                    color: '#B8924A' },
-  { label: 'Manipal Hospitals',      sub: 'Sr. Executive – Marketing (South)',       color: '#4F8A77' },
-  { label: 'Max Healthcare',         sub: 'Healthcare Brand & Communications',       color: '#1F3A5F' },
+  { label: 'BDS Graduate',           sub: 'ESIC Dental College',                    color: '#25405F' },
+  { label: 'PMT Rank 14',            sub: 'IP University (2018)',                    color: '#E8E0CB' },
+  { label: 'Manipal Hospitals',      sub: 'Sr. Executive – Marketing (South)',       color: '#3E5776' },
+  { label: 'Max Healthcare',         sub: 'Healthcare Brand & Communications',       color: '#101E36' },
 ];
 
 const values = [
@@ -50,7 +50,7 @@ const timeline = [
     year: '2020',
     title: 'Manipal Hospitals — Regional Marketing Lead',
     event: 'Joined Manipal Hospitals (MHEPL), rising to Senior Executive – Marketing, Regional Office South (Bangalore). Led branding and communication for 6 South Region units and the South East Region (Vijayawada & Bhubaneswar), while also driving Manipal Hospitals Global\'s international patient footfall through targeted brand campaigns.',
-    dot: '#1F3A5F', text: ON_DARK.navy,
+    dot: '#101E36', text: ON_DARK.navy,
   },
   {
     year: '2025',
@@ -66,8 +66,8 @@ const timeline = [
   },
   {
     year: '2026',
-    title: 'S.D Consultancy Founded',
-    event: 'Founded S.D Consultancy in New Delhi — channelling clinical credibility, proven campaign leadership, and the HCLF™ Framework into India\'s premier 360° healthcare brand strategy consultancy.',
+    title: 'SD Square Consulting Founded',
+    event: 'Founded SD Square Consulting in New Delhi — channelling clinical credibility, proven campaign leadership, and the HCLF™ Framework into India\'s premier 360° healthcare brand strategy consultancy.',
     dot: SOLID_FILL.teal, text: ON_DARK.teal,
   },
 ];
@@ -86,8 +86,8 @@ export default function AboutPage() {
       <section className="hero-gradient relative pt-32 pb-24 overflow-hidden">
         {/* Background orbs */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-[700px] h-[700px] rounded-full bg-[#2E75B6]/12 blur-[140px]" />
-          <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-[#4F8A77]/10 blur-[120px]" />
+          <div className="absolute -top-40 -right-40 w-[700px] h-[700px] rounded-full bg-[#25405F]/12 blur-[140px]" />
+          <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-[#3E5776]/10 blur-[120px]" />
           <div
             className="absolute inset-0 opacity-[0.03]"
             style={{
@@ -100,22 +100,22 @@ export default function AboutPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection>
-              <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#4F8A77]/40 bg-[#4F8A77]/10 backdrop-blur-sm">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#4F8A77] animate-pulse" />
-                <span className="text-[#94b8ac] text-xs font-bold tracking-[0.2em] uppercase">About S.D Consultancy</span>
+              <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#3E5776]/40 bg-[#3E5776]/10 backdrop-blur-sm">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#3E5776] animate-pulse" />
+                <span className="text-[#8393a7] text-xs font-bold tracking-[0.2em] uppercase">About SD Square Consulting</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white leading-[1.05] mb-6 tracking-tight">
                 Founded by a{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8A77] to-[#B8924A]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E5776] to-[#E8E0CB]">
                   Doctor.
                 </span>
                 <br />Built for{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#DCE9F4] to-[#4F8A77]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E7EAEF] to-[#3E5776]">
                   Healthcare Leaders.
                 </span>
               </h1>
               <p className="text-lg text-white/70 leading-relaxed mb-8 max-w-lg">
-                S.D Consultancy is India&apos;s premier 360° healthcare brand, communications, and creative strategy consultancy — built on the rare combination of clinical credibility and enterprise marketing experience.
+                SD Square Consulting is India&apos;s premier 360° healthcare brand, communications, and creative strategy consultancy — built on the rare combination of clinical credibility and enterprise marketing experience.
               </p>
               <div className="flex flex-wrap gap-3">
                 {credentials.map((c) => (
@@ -138,21 +138,21 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="glass-card rounded-3xl p-8 border border-white/12 hover:border-white/22 transition-all duration-500">
                   {/* Gradient top bar */}
-                  <div className="absolute top-0 left-8 right-8 h-0.5 rounded-full bg-gradient-to-r from-[#2E75B6] via-[#4F8A77] to-[#B8924A]" />
+                  <div className="absolute top-0 left-8 right-8 h-0.5 rounded-full bg-gradient-to-r from-[#25405F] via-[#3E5776] to-[#E8E0CB]" />
 
                   <div className="flex items-start gap-5 mb-8">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#2E75B6] to-[#4F8A77] flex items-center justify-center flex-shrink-0 shadow-xl shadow-[#2E75B6]/30">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#25405F] to-[#3E5776] flex items-center justify-center flex-shrink-0 shadow-xl shadow-[#25405F]/30">
                       <Stethoscope className="w-8 h-8 text-white" />
                     </div>
                     <div>
                       <div className="text-white font-bold font-heading text-xl mb-0.5">Dr. Vijaya Dutta</div>
-                      <div className="text-[#94b8ac] font-semibold text-sm mb-1">Founder & Chief Strategy Officer</div>
-                      <div className="text-white/65 text-xs">S.D Consultancy · New Delhi, India</div>
+                      <div className="text-[#8393a7] font-semibold text-sm mb-1">Founder & Chief Strategy Officer</div>
+                      <div className="text-white/65 text-xs">SD Square Consulting · New Delhi, India</div>
                     </div>
                   </div>
 
-                  <blockquote className="text-white/75 text-sm leading-relaxed italic border-l-2 border-[#4F8A77] pl-4 mb-8">
-                    &ldquo;Clinical excellence is the foundation. Strategic communication is what makes it visible. We built S.D Consultancy because healthcare organizations deserve both — not one or the other.&rdquo;
+                  <blockquote className="text-white/75 text-sm leading-relaxed italic border-l-2 border-[#3E5776] pl-4 mb-8">
+                    &ldquo;Clinical excellence is the foundation. Strategic communication is what makes it visible. We built SD Square Consulting because healthcare organizations deserve both — not one or the other.&rdquo;
                   </blockquote>
 
                   <div className="grid grid-cols-3 gap-3">
@@ -168,7 +168,7 @@ export default function AboutPage() {
                     ))}
                   </div>
                 </div>
-                <div className="absolute -inset-6 bg-gradient-to-br from-[#2E75B6]/6 to-[#4F8A77]/4 rounded-3xl blur-2xl -z-10" />
+                <div className="absolute -inset-6 bg-gradient-to-br from-[#25405F]/6 to-[#3E5776]/4 rounded-3xl blur-2xl -z-10" />
               </div>
             </AnimatedSection>
           </div>
@@ -180,13 +180,13 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-20 items-start">
             <AnimatedSection>
-              <div className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
+              <div className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full bg-[#E7EAEF] dark:bg-[#25405F]/15">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#25405F]" />
                 <span className="text-[var(--text-blue)] text-xs font-bold tracking-[0.2em] uppercase">The Founder&apos;s Story</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#1F3A5F] dark:text-white leading-tight mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#101E36] dark:text-white leading-tight mb-6">
                 A Dentist Who Chose{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2E75B6] to-[#4F8A77]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#25405F] to-[#3E5776]">
                   Strategy
                 </span>
               </h2>
@@ -201,7 +201,7 @@ export default function AboutPage() {
                   At Manipal Hospitals, as Senior Executive – Marketing (Regional Office South, Bangalore), she scaled that expertise across one of Asia&apos;s largest integrated healthcare networks. She led physician referral network development, drove regional brand campaigns, and built patient acquisition systems that blended clinical insight with data-driven strategy.
                 </p>
                 <p>
-                  The pattern she witnessed — world-class clinical capabilities consistently struggling to communicate their value — became the founding insight of S.D Consultancy and the HCLF™ Framework.
+                  The pattern she witnessed — world-class clinical capabilities consistently struggling to communicate their value — became the founding insight of SD Square Consulting and the HCLF™ Framework.
                 </p>
               </div>
             </AnimatedSection>
@@ -215,7 +215,7 @@ export default function AboutPage() {
                     {expertise.map((e, i) => (
                       <div
                         key={e.label}
-                        className="flex items-center gap-4 p-4 bg-[#f8fafc] dark:bg-[#162d4a] rounded-xl border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-lg hover:shadow-[#2E75B6]/8 dark:hover:shadow-black/20 transition-all duration-300 hover:-translate-x-1"
+                        className="flex items-center gap-4 p-4 bg-[#f8fafc] dark:bg-[#162d4a] rounded-xl border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-lg hover:shadow-[#25405F]/8 dark:hover:shadow-black/20 transition-all duration-300 hover:-translate-x-1"
                         style={{ transitionDelay: `${i * 40}ms` }}
                       >
                         <div
@@ -224,7 +224,7 @@ export default function AboutPage() {
                         >
                           <e.icon className="w-4 h-4" style={{ color: accentText(e.color) }} />
                         </div>
-                        <span className="font-semibold text-[#1F3A5F] dark:text-white text-sm">{e.label}</span>
+                        <span className="font-semibold text-[#101E36] dark:text-white text-sm">{e.label}</span>
                         <div className="ml-auto w-1 h-1 rounded-full" style={{ backgroundColor: e.color }} />
                       </div>
                     ))}
@@ -241,24 +241,24 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center">
             <div className="relative">
-              <div className="text-[120px] md:text-[180px] font-bold font-heading text-[#1F3A5F]/5 dark:text-white/4 leading-none absolute -top-8 left-1/2 -translate-x-1/2 select-none pointer-events-none whitespace-nowrap">
+              <div className="text-[120px] md:text-[180px] font-bold font-heading text-[#101E36]/5 dark:text-white/4 leading-none absolute -top-8 left-1/2 -translate-x-1/2 select-none pointer-events-none whitespace-nowrap">
                 &ldquo;
               </div>
-              <blockquote className="relative text-2xl md:text-3xl lg:text-4xl font-bold font-heading text-[#1F3A5F] dark:text-white leading-snug mb-6">
+              <blockquote className="relative text-2xl md:text-3xl lg:text-4xl font-bold font-heading text-[#101E36] dark:text-white leading-snug mb-6">
                 Healthcare brands that patients{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2E75B6] to-[#4F8A77]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#25405F] to-[#3E5776]">
                   trust
                 </span>{' '}
                 aren&apos;t built on bigger budgets.{' '}
                 They&apos;re built on{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8A77] to-[#B8924A]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E5776] to-[#E8E0CB]">
                   deeper understanding.
                 </span>
               </blockquote>
               <div className="flex items-center justify-center gap-3">
-                <div className="w-12 h-px bg-gradient-to-r from-transparent to-[#2E75B6]" />
+                <div className="w-12 h-px bg-gradient-to-r from-transparent to-[#25405F]" />
                 <span className="text-[var(--text-blue)] font-semibold text-sm">Dr. Vijaya Dutta, Founder</span>
-                <div className="w-12 h-px bg-gradient-to-l from-transparent to-[#2E75B6]" />
+                <div className="w-12 h-px bg-gradient-to-l from-transparent to-[#25405F]" />
               </div>
             </div>
           </AnimatedSection>
@@ -269,11 +269,11 @@ export default function AboutPage() {
       <section className="py-24 bg-white dark:bg-[#0f1923]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#E7EAEF] dark:bg-[#25405F]/15">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#25405F]" />
               <span className="text-[var(--text-blue)] text-xs font-bold tracking-[0.2em] uppercase">What We Stand For</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#1F3A5F] dark:text-white">
+            <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#101E36] dark:text-white">
               Mission, Vision & Promise
             </h2>
           </AnimatedSection>
@@ -282,27 +282,27 @@ export default function AboutPage() {
               {
                 icon: Target,
                 label: 'Our Mission',
-                color: '#2E75B6',
-                gradient: 'from-[#2E75B6] to-[#1F3A5F]',
+                color: '#25405F',
+                gradient: 'from-[#25405F] to-[#101E36]',
                 text: 'To help healthcare organizations build stronger brands, deeper stakeholder trust, and sustainable market leadership through integrated strategy, communications, and creative excellence.',
               },
               {
                 icon: Eye,
                 label: 'Our Vision',
-                color: '#4F8A77',
-                gradient: 'from-[#4F8A77] to-[#1F3A5F]',
+                color: '#3E5776',
+                gradient: 'from-[#3E5776] to-[#101E36]',
                 text: 'To be the most trusted strategic partner for healthcare organizations across South Asia — known for clinical understanding, strategic rigor, and creative impact that transforms healthcare brands.',
               },
               {
                 icon: Heart,
                 label: 'Brand Promise',
-                color: '#B8924A',
-                gradient: 'from-[#B8924A] to-[#4F8A77]',
+                color: '#E8E0CB',
+                gradient: 'from-[#E8E0CB] to-[#3E5776]',
                 text: "We bring the strategic depth of a management consultancy, the communication expertise of a healthcare agency, and the creative energy of a world-class studio — unified in service of your growth.",
               },
             ].map((item, i) => (
               <AnimatedSection key={item.label} delay={i * 120}>
-                <div className="group relative bg-[#f8fafc] dark:bg-[#162d4a] rounded-2xl p-8 border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-2xl hover:shadow-[#2E75B6]/10 dark:hover:shadow-black/30 transition-all duration-400 hover:-translate-y-2 h-full overflow-hidden">
+                <div className="group relative bg-[#f8fafc] dark:bg-[#162d4a] rounded-2xl p-8 border border-gray-100 dark:border-white/5 hover:border-transparent hover:shadow-2xl hover:shadow-[#25405F]/10 dark:hover:shadow-black/30 transition-all duration-400 hover:-translate-y-2 h-full overflow-hidden">
                   <div className={`absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r ${item.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
                   <div
                     className="w-13 h-13 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110"
@@ -326,11 +326,11 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection>
-              <div className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
+              <div className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full bg-[#E7EAEF] dark:bg-[#25405F]/15">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#25405F]" />
                 <span className="text-[var(--text-blue)] text-xs font-bold tracking-[0.2em] uppercase">Our Strategic Approach</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#1F3A5F] dark:text-white leading-tight mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#101E36] dark:text-white leading-tight mb-4">
                 Why a Doctor-Founded Consultancy<br />Is Different
               </h2>
               <p className="text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed mb-2">
@@ -342,11 +342,11 @@ export default function AboutPage() {
                 {pillars.map((pillar, i) => (
                   <div
                     key={i}
-                    className="group flex items-start gap-4 p-5 bg-white dark:bg-[#162d4a] rounded-xl border border-gray-100 dark:border-white/5 hover:border-[#2E75B6]/30 hover:shadow-lg hover:shadow-[#2E75B6]/8 transition-all duration-300 hover:-translate-x-1"
+                    className="group flex items-start gap-4 p-5 bg-white dark:bg-[#162d4a] rounded-xl border border-gray-100 dark:border-white/5 hover:border-[#25405F]/30 hover:shadow-lg hover:shadow-[#25405F]/8 transition-all duration-300 hover:-translate-x-1"
                   >
-                    <CheckCircle2 className="w-5 h-5 text-[#4F8A77] mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                    <CheckCircle2 className="w-5 h-5 text-[#3E5776] mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
                     <div>
-                      <div className="font-bold text-[#1F3A5F] dark:text-white mb-1 text-sm">{pillar.title}</div>
+                      <div className="font-bold text-[#101E36] dark:text-white mb-1 text-sm">{pillar.title}</div>
                       <div className="text-[#3A3A3A]/75 dark:text-white/55 text-sm">{pillar.desc}</div>
                     </div>
                   </div>
@@ -361,20 +361,20 @@ export default function AboutPage() {
       <section className="py-24 bg-white dark:bg-[#0f1923]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#DCE9F4] dark:bg-[#2E75B6]/15">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2E75B6]" />
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-[#E7EAEF] dark:bg-[#25405F]/15">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#25405F]" />
               <span className="text-[var(--text-blue)] text-xs font-bold tracking-[0.2em] uppercase">What We Stand For</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#1F3A5F] dark:text-white">Our Core Values</h2>
+            <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#101E36] dark:text-white">Our Core Values</h2>
           </AnimatedSection>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {values.map((v, i) => (
               <AnimatedSection key={v.title} delay={i * 100}>
-                <div className="group bg-[#f8fafc] dark:bg-[#162d4a] rounded-2xl p-7 border border-gray-100 dark:border-white/5 hover:border-transparent hover:-translate-y-2 hover:shadow-xl hover:shadow-[#2E75B6]/10 dark:hover:shadow-black/30 transition-all duration-400 text-center h-full">
-                  <div className="w-14 h-14 rounded-2xl bg-[#DCE9F4] dark:bg-[#2E75B6]/20 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
-                    <v.icon className="w-7 h-7 text-[#2E75B6]" />
+                <div className="group bg-[#f8fafc] dark:bg-[#162d4a] rounded-2xl p-7 border border-gray-100 dark:border-white/5 hover:border-transparent hover:-translate-y-2 hover:shadow-xl hover:shadow-[#25405F]/10 dark:hover:shadow-black/30 transition-all duration-400 text-center h-full">
+                  <div className="w-14 h-14 rounded-2xl bg-[#E7EAEF] dark:bg-[#25405F]/20 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <v.icon className="w-7 h-7 text-[#25405F]" />
                   </div>
-                  <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white mb-3">{v.title}</h3>
+                  <h3 className="font-bold font-heading text-[#101E36] dark:text-white mb-3">{v.title}</h3>
                   <p className="text-sm text-[#3A3A3A]/75 dark:text-white/55 leading-relaxed">{v.desc}</p>
                 </div>
               </AnimatedSection>
@@ -385,7 +385,7 @@ export default function AboutPage() {
 
       {/* ── JOURNEY TIMELINE ── */}
       <section className="py-28 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1F3A5F] via-[#162d4a] to-[#0b1520]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#101E36] via-[#162d4a] to-[#0b1520]" />
         <div className="absolute inset-0 opacity-[0.04]"
           style={{
             backgroundImage: 'linear-gradient(rgba(255,255,255,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.8) 1px, transparent 1px)',
@@ -399,10 +399,10 @@ export default function AboutPage() {
               stroke="url(#tlEcgGrad)" strokeWidth="1.5" fill="none" strokeLinecap="round" />
             <defs>
               <linearGradient id="tlEcgGrad" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#2E75B6" stopOpacity="0" />
-                <stop offset="0.3" stopColor="#2E75B6" stopOpacity="1" />
-                <stop offset="0.7" stopColor="#4F8A77" stopOpacity="1" />
-                <stop offset="1" stopColor="#B8924A" stopOpacity="0" />
+                <stop stopColor="#25405F" stopOpacity="0" />
+                <stop offset="0.3" stopColor="#25405F" stopOpacity="1" />
+                <stop offset="0.7" stopColor="#3E5776" stopOpacity="1" />
+                <stop offset="1" stopColor="#E8E0CB" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>
@@ -410,9 +410,9 @@ export default function AboutPage() {
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-[#B8924A]/30 bg-[#B8924A]/10">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#B8924A]" />
-              <span className="text-[#caad77] text-xs font-bold tracking-[0.2em] uppercase">The Journey</span>
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-[#E8E0CB]/30 bg-[#E8E0CB]/10">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E8E0CB]" />
+              <span className="text-[#E8E0CB] text-xs font-bold tracking-[0.2em] uppercase">The Journey</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-white leading-tight">
               From Clinical Excellence<br />to Strategic Leadership

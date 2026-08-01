@@ -12,7 +12,7 @@ const phases = [
   {
     num: '01',
     title: 'Market & Business Intelligence',
-    color: '#2E75B6',
+    color: '#25405F',
     icon: '📊',
     summary: 'Deep market analysis, competitive landscape mapping, and stakeholder intelligence to ground all strategy in evidence.',
     description:
@@ -36,7 +36,7 @@ const phases = [
   {
     num: '02',
     title: 'Brand Positioning',
-    color: '#4F8A77',
+    color: '#3E5776',
     icon: '🎯',
     summary: 'Developing distinctive, evidence-based brand positioning that commands premium perception and stakeholder trust.',
     description:
@@ -60,7 +60,7 @@ const phases = [
   {
     num: '03',
     title: 'Stakeholder Ecosystem Design',
-    color: '#1F3A5F',
+    color: '#101E36',
     icon: '🔗',
     summary: 'Mapping and designing engagement strategies for every critical stakeholder — physicians, patients, payers, partners, and media.',
     description:
@@ -84,7 +84,7 @@ const phases = [
   {
     num: '04',
     title: 'Integrated Communications Strategy',
-    color: '#B8924A',
+    color: '#E8E0CB',
     icon: '📡',
     summary: 'A unified communications strategy that ensures consistent brand experience across every ATL, BTL, digital, and earned media touchpoint.',
     description:
@@ -108,7 +108,7 @@ const phases = [
   {
     num: '05',
     title: 'Creative Strategy & Development',
-    color: '#2E75B6',
+    color: '#25405F',
     icon: '✨',
     summary: 'Purposeful creative excellence — films, campaigns, and visual systems that translate strategy into compelling brand experiences.',
     description:
@@ -132,7 +132,7 @@ const phases = [
   {
     num: '06',
     title: 'Measurement & Governance',
-    color: '#4F8A77',
+    color: '#3E5776',
     icon: '📈',
     summary: 'Robust KPI frameworks, brand tracking systems, and governance models that ensure sustained brand performance and continuous optimization.',
     description:
@@ -164,8 +164,8 @@ export default function HCLFPage() {
       <section className="hero-gradient pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#B8924A]/40 bg-[#B8924A]/10">
-              <span className="text-[#caad77] text-xs font-semibold tracking-widest uppercase">Proprietary Methodology</span>
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#E8E0CB]/40 bg-[#E8E0CB]/10">
+              <span className="text-[#E8E0CB] text-xs font-semibold tracking-widest uppercase">Proprietary Methodology</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-white leading-tight mb-6">
               The HCLF™ Framework
@@ -210,7 +210,7 @@ export default function HCLFPage() {
                 >
                   Phase {phase.num}
                 </div>
-                <div className="text-xs font-semibold text-[#1F3A5F] dark:text-white leading-tight">
+                <div className="text-xs font-semibold text-[#101E36] dark:text-white leading-tight">
                   {phase.title}
                 </div>
               </button>
@@ -232,13 +232,13 @@ export default function HCLFPage() {
                     >
                       PHASE {phases[activePhase].num}
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-4">
+                    <h2 className="text-2xl md:text-3xl font-bold font-heading text-[#101E36] dark:text-white mb-4">
                       {phases[activePhase].title}
                     </h2>
                     <p className="text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed mb-6">
                       {phases[activePhase].description}
                     </p>
-                    <h3 className="font-semibold text-[#1F3A5F] dark:text-white mb-4">Key Activities</h3>
+                    <h3 className="font-semibold text-[#101E36] dark:text-white mb-4">Key Activities</h3>
                     <ul className="space-y-2">
                       {phases[activePhase].activities.map((act) => (
                         <li key={act} className="flex items-start gap-2 text-sm text-[#3A3A3A]/75 dark:text-white/60">
@@ -249,7 +249,7 @@ export default function HCLFPage() {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#1F3A5F] dark:text-white mb-4">Deliverables</h3>
+                    <h3 className="font-semibold text-[#101E36] dark:text-white mb-4">Deliverables</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {phases[activePhase].deliverables.map((d) => (
                         <div
@@ -257,7 +257,7 @@ export default function HCLFPage() {
                           className="flex items-center gap-3 p-4 bg-white dark:bg-[#162d4a] rounded-xl border border-gray-100 dark:border-white/5"
                         >
                           <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: phases[activePhase].color }} />
-                          <span className="text-sm font-medium text-[#1F3A5F] dark:text-white">{d}</span>
+                          <span className="text-sm font-medium text-[#101E36] dark:text-white">{d}</span>
                         </div>
                       ))}
                     </div>
@@ -297,7 +297,7 @@ export default function HCLFPage() {
                         {phase.num}
                       </span>
                       <span className="text-2xl">{phase.icon}</span>
-                      <h3 className="font-bold font-heading text-[#1F3A5F] dark:text-white">{phase.title}</h3>
+                      <h3 className="font-bold font-heading text-[#101E36] dark:text-white">{phase.title}</h3>
                     </div>
                     <ChevronDown className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" />
                   </summary>
@@ -305,7 +305,7 @@ export default function HCLFPage() {
                     <p className="text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed mb-5">{phase.description}</p>
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
-                        <h4 className="font-semibold text-sm text-[#1F3A5F] dark:text-white mb-3">Key Activities</h4>
+                        <h4 className="font-semibold text-sm text-[#101E36] dark:text-white mb-3">Key Activities</h4>
                         <ul className="space-y-1.5">
                           {phase.activities.map((a) => (
                             <li key={a} className="text-sm text-[#3A3A3A]/75 dark:text-white/55 flex items-start gap-2">
@@ -316,7 +316,7 @@ export default function HCLFPage() {
                         </ul>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-sm text-[#1F3A5F] dark:text-white mb-3">Deliverables</h4>
+                        <h4 className="font-semibold text-sm text-[#101E36] dark:text-white mb-3">Deliverables</h4>
                         <ul className="space-y-1.5">
                           {phase.deliverables.map((d) => (
                             <li key={d} className="text-sm text-[#3A3A3A]/75 dark:text-white/55 flex items-start gap-2">
@@ -336,7 +336,7 @@ export default function HCLFPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-[#1F3A5F] to-[#2E75B6]">
+      <section className="py-20 bg-gradient-to-r from-[#101E36] to-[#25405F]">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold font-heading text-white mb-4">
             Ready to Apply the HCLF™ Framework to Your Organization?
@@ -346,7 +346,7 @@ export default function HCLFPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#1F3A5F] font-bold rounded-xl hover:bg-[#DCE9F4] transition-all hover:-translate-y-1 shadow-xl"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#101E36] font-bold rounded-xl hover:bg-[#E7EAEF] transition-all hover:-translate-y-1 shadow-xl"
           >
             Book a Framework Consultation
             <ArrowRight className="w-5 h-5" />

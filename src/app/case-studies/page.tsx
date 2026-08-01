@@ -7,15 +7,15 @@ import { ContactCTA } from '@/components/sections/ContactCTA';
 import { accentText, solidFill } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Case Studies | S.D Consultancy Healthcare Brand Success Stories',
-  description: 'Explore how S.D Consultancy has transformed healthcare brands across hospital chains, diagnostics, IVF, HealthTech, and MedTech organizations.',
+  title: 'Case Studies | SD Square Consulting Healthcare Brand Success Stories',
+  description: 'Explore how SD Square Consulting has transformed healthcare brands across hospital chains, diagnostics, IVF, HealthTech, and MedTech organizations.',
 };
 
 const caseStudies = [
   {
     id: 'multi-specialty-rebrand',
     category: 'Hospital Chain',
-    color: '#2E75B6',
+    color: '#25405F',
     badge: 'Brand Transformation',
     title: 'Rebranding a 12-Hospital Network: From Regional Player to National Authority',
     challenge: 'A 12-hospital network with strong regional presence was struggling to communicate a unified brand identity across locations. Each hospital had evolved independently, resulting in inconsistent patient experience, fragmented physician communications, and minimal brand equity at the network level.',
@@ -33,7 +33,7 @@ const caseStudies = [
   {
     id: 'ivf-chain-positioning',
     category: 'IVF & Fertility',
-    color: '#4F8A77',
+    color: '#3E5776',
     badge: 'Brand Positioning',
     title: 'Building a Trusted Fertility Brand: Turning Science Into Hope',
     challenge: 'A rapidly growing IVF chain with 8 centres across 3 cities was competing in an increasingly crowded fertility market. Despite strong clinical outcomes, the brand was perceived as "just another IVF clinic" — lacking the emotional differentiation and patient-centricity that fertility patients desperately seek.',
@@ -51,7 +51,7 @@ const caseStudies = [
   {
     id: 'diagnostics-premium',
     category: 'Diagnostics Network',
-    color: '#1F3A5F',
+    color: '#101E36',
     badge: 'Premium Positioning',
     title: 'Breaking the Price War: Repositioning a Diagnostics Chain as the Premium Choice',
     challenge: 'A 25-centre diagnostics chain was caught in an intensifying price war with budget competitors. Despite superior quality, NABL accreditation, and faster turnaround times, the brand was unable to command a premium — and physician loyalty was eroding.',
@@ -69,7 +69,7 @@ const caseStudies = [
   {
     id: 'healthtech-gtm',
     category: 'HealthTech',
-    color: '#B8924A',
+    color: '#E8E0CB',
     badge: 'Go-to-Market Strategy',
     title: 'From MVP to Market: HealthTech B2B Go-to-Market Strategy',
     challenge: 'A HealthTech startup with a validated chronic disease management platform needed to transition from product development to market entry. The team had deep clinical and technology expertise but no healthcare market strategy, brand, or sales communications infrastructure.',
@@ -92,12 +92,12 @@ export default function CaseStudiesPage() {
       <section className="hero-gradient pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#4F8A77]/40 bg-[#4F8A77]/10">
-              <span className="text-[#94b8ac] text-xs font-semibold tracking-widest uppercase">Case Studies</span>
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-[#3E5776]/40 bg-[#3E5776]/10">
+              <span className="text-[#8393a7] text-xs font-semibold tracking-widest uppercase">Case Studies</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-white leading-tight mb-6">
               Healthcare Brand{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8A77] to-[#B8924A]">Transformations</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E5776] to-[#E8E0CB]">Transformations</span>
             </h1>
             <p className="text-lg text-white/65 leading-relaxed">
               Real strategies, real implementations, real results. Explore how we&apos;ve helped healthcare organizations achieve market leadership across sectors.
@@ -117,10 +117,10 @@ export default function CaseStudiesPage() {
                     <div className="flex flex-wrap items-center gap-3 mb-6">
                       <span className="text-xs font-semibold px-3 py-1.5 rounded-full"
                         style={{ color: accentText(cs.color), backgroundColor: cs.color + '15' }}>{cs.category}</span>
-                      <span className="text-xs font-medium px-3 py-1.5 rounded-full bg-[#1F3A5F]/10 dark:bg-white/10 text-[#1F3A5F] dark:text-white">{cs.badge}</span>
+                      <span className="text-xs font-medium px-3 py-1.5 rounded-full bg-[#101E36]/10 dark:bg-white/10 text-[#101E36] dark:text-white">{cs.badge}</span>
                       <span className="text-xs text-[#3A3A3A]/75 dark:text-white/55 ml-auto">Engagement: {cs.timeline}</span>
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-8 leading-tight">{cs.title}</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold font-heading text-[#101E36] dark:text-white mb-8 leading-tight">{cs.title}</h2>
                     <div className="grid md:grid-cols-3 gap-8 mb-8">
                       <div>
                         <h3 className="font-semibold text-sm text-[#3A3A3A]/75 dark:text-white/55 uppercase tracking-wide mb-3">The Challenge</h3>
@@ -138,7 +138,7 @@ export default function CaseStudiesPage() {
                     <div className="bg-white dark:bg-[#0f1923] rounded-2xl p-6 mb-6">
                       <div className="flex items-center gap-2 mb-5">
                         <TrendingUp className="w-5 h-5" style={{ color: accentText(cs.color) }} />
-                        <h3 className="font-semibold text-[#1F3A5F] dark:text-white">Results &amp; Impact</h3>
+                        <h3 className="font-semibold text-[#101E36] dark:text-white">Results &amp; Impact</h3>
                       </div>
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {cs.results.map((r) => (
