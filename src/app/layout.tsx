@@ -5,16 +5,16 @@ import { Footer } from '@/components/layout/Footer';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 
 export const metadata: Metadata = {
-  title: 'S.D Consultancy | 360° Healthcare Brand & Strategy Consultancy',
+  title: 'SD Square Consulting | 360° Healthcare Brand & Strategy Consultancy',
   description:
-    'S.D Consultancy helps hospitals, specialty healthcare providers, diagnostics networks, healthtech, and medtech organizations build stronger brands, deeper stakeholder trust, and sustainable market leadership.',
+    'SD Square Consulting helps hospitals, specialty healthcare providers, diagnostics networks, healthtech, and medtech organizations build stronger brands, deeper stakeholder trust, and sustainable market leadership.',
   keywords:
     'healthcare branding, hospital marketing, healthcare communications, medical brand strategy, healthtech consulting, medtech marketing',
   openGraph: {
-    title: 'S.D Consultancy | Transforming Healthcare Expertise Into Market Leadership',
+    title: 'SD Square Consulting | Transforming Healthcare Expertise Into Market Leadership',
     description: 'A 360° Healthcare Brand, Communications & Creative Strategy Consultancy',
     type: 'website',
-    siteName: 'S.D Consultancy',
+    siteName: 'SD Square Consulting',
   },
   robots: 'index, follow',
 };

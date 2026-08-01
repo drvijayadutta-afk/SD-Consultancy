@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ON_DARK } from '@/lib/utils';
 
 const pillars = [
   'Clinical Fluency',
@@ -12,12 +13,12 @@ const pillars = [
 ];
 
 const phases = [
-  { num: '01', label: 'Market Intelligence', color: '#2E75B6' },
-  { num: '02', label: 'Brand Positioning', color: '#4F8A77' },
-  { num: '03', label: 'Stakeholder Design', color: '#1F3A5F' },
-  { num: '04', label: 'Integrated Comms', color: '#B8924A' },
-  { num: '05', label: 'Creative Strategy', color: '#2E75B6' },
-  { num: '06', label: 'Measurement', color: '#4F8A77' },
+  { num: '01', label: 'Market Intelligence', color: ON_DARK.blue },
+  { num: '02', label: 'Brand Positioning', color: ON_DARK.teal },
+  { num: '03', label: 'Stakeholder Design', color: ON_DARK.navy },
+  { num: '04', label: 'Integrated Comms', color: ON_DARK.gold },
+  { num: '05', label: 'Creative Strategy', color: ON_DARK.blue },
+  { num: '06', label: 'Measurement', color: ON_DARK.teal },
 ];
 
 export function HeroSection() {
@@ -50,10 +51,10 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden hero-gradient">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-60 -right-60 w-[800px] h-[800px] rounded-full bg-[#2E75B6]/18 blur-[140px] animate-pulse-slow" />
-        <div className="absolute -bottom-60 -left-60 w-[700px] h-[700px] rounded-full bg-[#4F8A77]/12 blur-[120px] animate-pulse-slower" />
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-[#1F3A5F]/30 blur-[100px] animate-orb" />
-        <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] rounded-full bg-[#B8924A]/8 blur-[80px] animate-float-slow" style={{ animationDelay: '3s' }} />
+        <div className="absolute -top-60 -right-60 w-[800px] h-[800px] rounded-full bg-[#25405F]/18 blur-[140px] animate-pulse-slow" />
+        <div className="absolute -bottom-60 -left-60 w-[700px] h-[700px] rounded-full bg-[#3E5776]/12 blur-[120px] animate-pulse-slower" />
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-[#101E36]/30 blur-[100px] animate-orb" />
+        <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] rounded-full bg-[#E8E0CB]/8 blur-[80px] animate-float-slow" style={{ animationDelay: '3s' }} />
         <div
           className="absolute inset-0 opacity-[0.025]"
           style={{
@@ -93,11 +94,11 @@ export function HeroSection() {
           />
           <defs>
             <linearGradient id="heroEcgGrad" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#2E75B6" stopOpacity="0" />
-              <stop offset="0.15" stopColor="#2E75B6" stopOpacity="0.4" />
-              <stop offset="0.5" stopColor="#4F8A77" stopOpacity="0.5" />
-              <stop offset="0.85" stopColor="#B8924A" stopOpacity="0.4" />
-              <stop offset="1" stopColor="#B8924A" stopOpacity="0" />
+              <stop stopColor="#25405F" stopOpacity="0" />
+              <stop offset="0.15" stopColor="#25405F" stopOpacity="0.4" />
+              <stop offset="0.5" stopColor="#3E5776" stopOpacity="0.5" />
+              <stop offset="0.85" stopColor="#E8E0CB" stopOpacity="0.4" />
+              <stop offset="1" stopColor="#E8E0CB" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
@@ -106,9 +107,9 @@ export function HeroSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full border border-[#4F8A77]/35 bg-[#4F8A77]/10 backdrop-blur-sm">
-              <span className="w-2 h-2 rounded-full bg-[#4F8A77] animate-pulse" />
-              <span className="text-[#4F8A77] text-xs font-bold tracking-[0.18em] uppercase">
+            <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full border border-[#3E5776]/35 bg-[#3E5776]/10 backdrop-blur-sm">
+              <span className="w-2 h-2 rounded-full bg-[#3E5776] animate-pulse" />
+              <span className="text-[#8393a7] text-xs font-bold tracking-[0.18em] uppercase">
                 360° Healthcare Strategy Consultancy
               </span>
             </div>
@@ -122,7 +123,7 @@ export function HeroSection() {
                 <span className="shimmer-text">Healthcare Expertise</span>
               </span>
               {' '}Into{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#DCE9F4] via-white to-[#DCE9F4]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E7EAEF] via-white to-[#E7EAEF]">
                 Market Leadership
               </span>
             </h1>
@@ -138,7 +139,7 @@ export function HeroSection() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/contact"
-                  className="btn-gradient inline-flex items-center gap-2.5 px-7 py-4 text-white font-bold rounded-xl shadow-lg shadow-[#B8924A]/25 hover:shadow-xl hover:shadow-[#B8924A]/35 text-sm"
+                  className="btn-gradient inline-flex items-center gap-2.5 px-7 py-4 text-white font-bold rounded-xl shadow-lg shadow-[#E8E0CB]/25 hover:shadow-xl hover:shadow-[#E8E0CB]/35 text-sm"
                 >
                   <span>Book a Strategy Consultation</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -154,7 +155,7 @@ export function HeroSection() {
               <div ref={pillarsRef} className="flex flex-wrap gap-x-5 gap-y-2">
                 {pillars.map((pillar) => (
                   <div key={pillar} className="flex items-center gap-1.5 text-sm text-white/75">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#4F8A77] flex-shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#8393a7] flex-shrink-0" />
                     {pillar}
                   </div>
                 ))}
@@ -166,12 +167,16 @@ export function HeroSection() {
             <div className="relative animate-float-slow">
               <div className="glass-card rounded-2xl p-7 mb-4 border border-white/10 hover:border-white/20 transition-all duration-500 group/card">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2E75B6] to-[#4F8A77] flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#2E75B6]/30">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <text x="10" y="11" textAnchor="middle" dominantBaseline="middle"
-                        fill="white" fontFamily="Space Grotesk, sans-serif" fontWeight="700" fontSize="7" letterSpacing="0.5">
-                        S·D
-                      </text>
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#25405F] to-[#3E5776] flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#25405F]/30">
+                    <svg width="20" height="20" viewBox="0 0 44 44" fill="none">
+                      <path
+                        d="M 15 13 L 15 31 L 31 31 L 31 19 C 31 15.5 28 13 24 13 L 15 13"
+                        stroke="#E8E0CB"
+                        strokeWidth="3"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                   </div>
                   <div>
@@ -179,7 +184,7 @@ export function HeroSection() {
                     <div className="text-white/65 text-xs">Proprietary 6-Phase Methodology</div>
                   </div>
                   <div className="ml-auto">
-                    <span className="px-2 py-0.5 rounded-full bg-[#B8924A]/20 text-[#B8924A] text-[10px] font-bold tracking-wide">
+                    <span className="px-2 py-0.5 rounded-full bg-[#E8E0CB]/20 text-[#E8E0CB] text-[10px] font-bold tracking-wide">
                       PROPRIETARY
                     </span>
                   </div>
@@ -207,12 +212,12 @@ export function HeroSection() {
 
                 <div className="mt-5 pt-4 border-t border-white/8 flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-[#4F8A77] animate-pulse" />
+                    <div className="w-2 h-2 rounded-full bg-[#3E5776] animate-pulse" />
                     <span className="text-white/65 text-xs">From intelligence to impact</span>
                   </div>
                   <Link
                     href="/hclf-framework"
-                    className="text-[#4F8A77] text-xs font-semibold hover:text-[#6aaa95] flex items-center gap-1 transition-colors"
+                    className="text-[#8393a7] text-xs font-semibold hover:text-[#8FA6B8] flex items-center gap-1 transition-colors"
                   >
                     Explore <ArrowRight className="w-3 h-3" />
                   </Link>
@@ -221,9 +226,9 @@ export function HeroSection() {
 
               <div className="grid grid-cols-3 gap-3">
                 {[
-                  { value: '10+',  label: 'Years Expertise',        color: '#2E75B6' },
-                  { value: '30+',  label: 'Organizations Served',   color: '#4F8A77' },
-                  { value: '98%',  label: 'Client Retention',       color: '#B8924A' },
+                  { value: '10+',  label: 'Years Expertise',        color: ON_DARK.blue },
+                  { value: '30+',  label: 'Organizations Served',   color: ON_DARK.teal },
+                  { value: '98%',  label: 'Client Retention',       color: ON_DARK.gold },
                 ].map((stat) => (
                   <div
                     key={stat.label}
@@ -240,13 +245,13 @@ export function HeroSection() {
                 ))}
               </div>
 
-              <div className="absolute -inset-8 bg-gradient-to-br from-[#2E75B6]/8 to-[#4F8A77]/5 rounded-3xl blur-2xl -z-10 pointer-events-none" />
+              <div className="absolute -inset-8 bg-gradient-to-br from-[#25405F]/8 to-[#3E5776]/5 rounded-3xl blur-2xl -z-10 pointer-events-none" />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/35">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/55">
         <span className="text-[10px] tracking-[0.25em] uppercase font-medium">Scroll</span>
         <div className="w-px h-10 bg-gradient-to-b from-white/40 to-transparent animate-scroll" />
       </div>

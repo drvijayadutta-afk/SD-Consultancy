@@ -3,9 +3,10 @@ import Link from 'next/link';
 import { ArrowLeft, Calendar, Clock, ArrowRight } from 'lucide-react';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { ContactCTA } from '@/components/sections/ContactCTA';
+import { onDarkText, solidFill } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Healthcare Brand Insights | S.D Consultancy',
+  title: 'Healthcare Brand Insights | SD Square Consulting',
 };
 
 const articleContent: Record<string, {
@@ -19,7 +20,7 @@ const articleContent: Record<string, {
 }> = {
   'clinical-excellence-brand-strategy': {
     category: 'Healthcare Branding',
-    color: '#2E75B6',
+    color: '#25405F',
     title: 'Why Clinical Excellence Alone Is No Longer Enough: The Case for Healthcare Brand Strategy',
     date: 'June 15, 2025',
     readTime: '8 min read',
@@ -45,7 +46,7 @@ const articleContent: Record<string, {
   },
   'referral-ecosystem-physician-networks': {
     category: 'Hospital Marketing Strategy',
-    color: '#4F8A77',
+    color: '#3E5776',
     title: 'The Referral Ecosystem: Building Physician Networks That Drive Sustainable Growth',
     date: 'June 5, 2025',
     readTime: '6 min read',
@@ -71,7 +72,7 @@ const articleContent: Record<string, {
   },
   'patient-digital-journey-design': {
     category: 'Digital Health',
-    color: '#B8924A',
+    color: '#E8E0CB',
     title: 'Patient Digital Journey Design: From First Search to Brand Loyalty',
     date: 'May 22, 2025',
     readTime: '10 min read',
@@ -97,7 +98,7 @@ const articleContent: Record<string, {
   },
   'clinical-outcomes-data-storytelling': {
     category: 'Healthcare Communications',
-    color: '#1F3A5F',
+    color: '#101E36',
     title: 'Communicating Clinical Outcomes: The Art and Science of Healthcare Data Storytelling',
     date: 'May 10, 2025',
     readTime: '7 min read',
@@ -123,7 +124,7 @@ const articleContent: Record<string, {
   },
   'hcp-engagement-digital-age': {
     category: 'MedTech Growth',
-    color: '#2E75B6',
+    color: '#25405F',
     title: 'HCP Engagement in the Digital Age: Rethinking Medical Representative Strategies',
     date: 'April 28, 2025',
     readTime: '9 min read',
@@ -149,7 +150,7 @@ const articleContent: Record<string, {
   },
   'holistic-patient-experience-advocacy': {
     category: 'Patient Experience',
-    color: '#4F8A77',
+    color: '#3E5776',
     title: 'Beyond Treatment: Designing the Holistic Patient Experience That Builds Advocacy',
     date: 'April 15, 2025',
     readTime: '8 min read',
@@ -175,7 +176,7 @@ const articleContent: Record<string, {
   },
   'physician-loyalty-referral-science': {
     category: 'Referral Network Development',
-    color: '#B8924A',
+    color: '#E8E0CB',
     title: 'The Science of Physician Loyalty: What Makes Doctors Refer — And Keep Referring',
     date: 'April 5, 2025',
     readTime: '11 min read',
@@ -201,7 +202,7 @@ const articleContent: Record<string, {
   },
   'hospital-rebranding-strategic-playbook': {
     category: 'Healthcare Branding',
-    color: '#2E75B6',
+    color: '#25405F',
     title: 'Rebranding a Hospital: The Complete Strategic Playbook',
     date: 'March 20, 2025',
     readTime: '14 min read',
@@ -227,7 +228,7 @@ const articleContent: Record<string, {
   },
   'hospital-seo-organic-patient-acquisition': {
     category: 'Digital Health',
-    color: '#4F8A77',
+    color: '#3E5776',
     title: 'SEO for Hospitals: The Definitive Guide to Organic Patient Acquisition',
     date: 'March 8, 2025',
     readTime: '12 min read',
@@ -261,8 +262,8 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
     return (
       <div className="min-h-screen flex items-center justify-center pt-20">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-[#1F3A5F] dark:text-white mb-4">Article not found</h1>
-          <Link href="/insights" className="text-[#2E75B6] hover:underline flex items-center gap-2 justify-center">
+          <h1 className="text-2xl font-bold text-[#101E36] dark:text-white mb-4">Article not found</h1>
+          <Link href="/insights" className="text-[var(--text-blue)] hover:underline flex items-center gap-2 justify-center">
             <ArrowLeft className="w-4 h-4" /> Back to Insights
           </Link>
         </div>
@@ -285,14 +286,14 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
             </Link>
             <span
               className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-5"
-              style={{ color: article.color, backgroundColor: article.color + '25' }}
+              style={{ color: onDarkText(article.color), backgroundColor: article.color + '25' }}
             >
               {article.category}
             </span>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-white leading-tight mb-6">
               {article.title}
             </h1>
-            <div className="flex items-center gap-6 text-white/50 text-sm">
+            <div className="flex items-center gap-6 text-white/55 text-sm">
               <span className="flex items-center gap-2"><Calendar className="w-4 h-4" />{article.date}</span>
               <span className="flex items-center gap-2"><Clock className="w-4 h-4" />{article.readTime}</span>
             </div>
@@ -312,23 +313,23 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
               {article.sections.map((section) => (
                 <div key={section.heading} className="prose-healthcare">
                   <h2 className="dark:text-white">{section.heading}</h2>
-                  <p className="text-[#3A3A3A]/70 dark:text-white/60 leading-relaxed">{section.content}</p>
+                  <p className="text-[#3A3A3A]/75 dark:text-white/60 leading-relaxed">{section.content}</p>
                 </div>
               ))}
             </div>
 
             {/* CTA Box */}
             <div className="mt-16 p-8 rounded-2xl border-2" style={{ borderColor: article.color + '40', backgroundColor: article.color + '08' }}>
-              <h3 className="text-xl font-bold font-heading text-[#1F3A5F] dark:text-white mb-3">
+              <h3 className="text-xl font-bold font-heading text-[#101E36] dark:text-white mb-3">
                 Ready to Build Your Healthcare Brand Strategy?
               </h3>
-              <p className="text-[#3A3A3A]/65 dark:text-white/60 mb-5">
-                Schedule a strategy consultation to discuss how S.D Consultancy can help your organization achieve market leadership.
+              <p className="text-[#3A3A3A]/75 dark:text-white/60 mb-5">
+                Schedule a strategy consultation to discuss how SD Square Consulting can help your organization achieve market leadership.
               </p>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white"
-                style={{ backgroundColor: article.color }}
+                style={{ backgroundColor: solidFill(article.color) }}
               >
                 Book a Strategy Consultation
                 <ArrowRight className="w-4 h-4" />

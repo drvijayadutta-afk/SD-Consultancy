@@ -18,7 +18,7 @@ export function TrustedPartners() {
     <section className="py-14 bg-white dark:bg-[#0f1923] border-y border-gray-100 dark:border-white/5 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-10">
-          <p className="text-xs text-[#3A3A3A]/60 dark:text-white/50 font-semibold tracking-[0.25em] uppercase">
+          <p className="text-xs text-[#3A3A3A]/75 dark:text-white/55 font-semibold tracking-[0.25em] uppercase">
             Trusted by India&apos;s Leading Healthcare Organizations
           </p>
         </AnimatedSection>
@@ -34,10 +34,10 @@ export function TrustedPartners() {
               key={i}
               className="inline-flex items-center mx-8"
             >
-              <span className="text-[#3A3A3A]/25 dark:text-white/15 font-bold text-sm tracking-widest uppercase select-none hover:text-[#2E75B6]/60 dark:hover:text-[#2E75B6]/50 transition-colors duration-300">
+              <span className="text-[#3A3A3A]/75 dark:text-white/55 font-bold text-sm tracking-widest uppercase select-none hover:text-[var(--text-blue)] transition-colors duration-300">
                 {partner}
               </span>
-              <span className="ml-8 w-1 h-1 rounded-full bg-[#2E75B6]/20 dark:bg-white/10" />
+              <span className="ml-8 w-1 h-1 rounded-full bg-[#25405F]/20 dark:bg-white/10" />
             </div>
           ))}
         </div>
