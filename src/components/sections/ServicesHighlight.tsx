@@ -36,7 +36,7 @@ const services = [
   },
   {
     icon: Palette,
-    title: 'Creative Solutions',
+    title: 'Creative Production',
     desc: 'Brand films, patient education content, visual identity systems, and compelling campaign concepts that move people.',
     href: '/services#creative',
     color: '#E8E0CB',

@@ -15,7 +15,7 @@ const footerLinks = {
     { label: 'ATL Strategy', href: '/services#atl' },
     { label: 'BTL Strategy', href: '/services#btl' },
     { label: 'Digital Strategy', href: '/services#digital' },
-    { label: 'Creative Solutions', href: '/services#creative' },
+    { label: 'Creative Production', href: '/services#creative' },
   ],
   Industries: [
     { label: 'Hospital Chains', href: '/industries#hospitals' },

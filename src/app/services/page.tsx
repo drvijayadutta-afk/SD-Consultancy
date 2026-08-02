@@ -8,7 +8,7 @@ import { accentText, solidFill } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'Services | SD Square Consulting Healthcare Strategy',
-  description: 'Explore our comprehensive healthcare brand and communications services — ATL Strategy, BTL Strategy, Digital Strategy, and Creative Solutions.',
+  description: 'Explore our comprehensive healthcare brand and communications services — ATL Strategy, BTL Strategy, Digital Strategy, and Creative Production.',
 };
 
 const services = [
@@ -92,7 +92,7 @@ const services = [
     icon: Palette,
     color: '#E8E0CB',
     bg: '#F3EEE0',
-    label: 'Creative Solutions',
+    label: 'Creative Production',
     title: 'Creative Strategy & Development',
     overview:
       'Purposeful creative excellence — brand films, patient stories, visual identity systems, and campaign concepts that build trust, inspire action, and elevate your healthcare brand.',
