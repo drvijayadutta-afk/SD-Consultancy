@@ -27,10 +27,12 @@ const problems = [
 ];
 
 const services = [
-  { idx: '01', tag: 'Above The Line', title: 'ATL Strategy', desc: 'Mass media campaigns across TV, radio, print, and OOH that build brand awareness, thought leadership, and lasting equity for healthcare organizations.', color: '#25405F' },
-  { idx: '02', tag: 'Below The Line', title: 'BTL Strategy', desc: 'Physician engagement programs, healthcare activations, and referral network development that build direct, high-conversion relationships.', color: '#3E5776' },
-  { idx: '03', tag: 'Digital', title: 'Digital Strategy', desc: 'Website, SEO, content, and performance marketing infrastructure engineered around measurable patient acquisition, not vanity metrics.', color: '#101E36' },
-  { idx: '04', tag: 'Creative', title: 'Creative Production', desc: 'Brand films, visual identity systems, and campaign concepts that carry the strategy with emotional resonance and clinical credibility.', color: '#E8E0CB' },
+  { idx: '01', tag: 'Evidence', title: 'Market & Business Intelligence', desc: 'Primary research with patients, physicians, and administrators, competitive positioning, and a digital maturity baseline, so every decision that follows is grounded in evidence, not assumption.', color: '#25405F' },
+  { idx: '02', tag: 'Position', title: 'Brand Positioning', desc: 'A positioning statement, value proposition, and messaging framework that is clinically credible and commercially powerful, tested with the audiences it needs to convince.', color: '#3E5776' },
+  { idx: '03', tag: 'Ecosystem', title: 'Stakeholder Ecosystem Design', desc: "Physician KOL mapping, patient journey design, and referral pathway optimisation, tailored engagement strategies for every group that influences a patient's decision.", color: '#101E36' },
+  { idx: '04', tag: 'Activate', title: 'Integrated Communications Strategy', desc: 'ATL, BTL, and digital strategy unified into one channel mix, message architecture, and content plan, so every touchpoint — from mass media to physician events to digital — reinforces the same brand story.', color: '#E8E0CB' },
+  { idx: '05', tag: 'Create', title: 'Creative Strategy & Production', desc: 'Creative production — films, campaigns, and visual identity systems — that carries the strategy with emotional resonance while holding clinical credibility and brand consistency.', color: '#25405F' },
+  { idx: '06', tag: 'Govern', title: 'Measurement & Governance', desc: 'KPI frameworks, brand health tracking, and quarterly governance reviews that keep the investment accountable and the brand on track over time.', color: '#3E5776' },
 ];
 
 const deliverables = [
@@ -146,8 +148,8 @@ export default function OverviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Services"
-            title="Four disciplines, one integrated system"
-            subtitle="ATL, BTL, digital, and creative — planned and governed through the HCLF™ methodology."
+            title="Six phases, one methodology"
+            subtitle="Every engagement runs on HCLF™, from evidence to impact."
             className="mb-14"
           />
           <div className="space-y-4">
